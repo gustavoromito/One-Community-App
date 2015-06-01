@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@interface MBaseViewController : UIViewController <SlideNavigationControllerDelegate>
+@interface OCBaseViewController : UIViewController
 
 #pragma mark - MBProgressHUD Helpers
 - (void(^)(void))showHUDWithMessage:(NSString *)message andCancellableRequestPath:(NSString *)requestPath;

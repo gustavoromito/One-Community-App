@@ -40,6 +40,8 @@
 			<false/>
 		</dict>
 	</dict>
+	<key>CryptoKey</key>
+	<string>CFB387114F763D12B39F6B2525EC9</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

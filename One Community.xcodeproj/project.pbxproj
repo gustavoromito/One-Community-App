@@ -18,8 +18,28 @@
 		A25821441B1CC74900A9168D /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25821431B1CC74900A9168D /* login.storyboard */; };
 		A25821491B1CD09200A9168D /* MRoundedCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821481B1CD09200A9168D /* MRoundedCornerView.m */; };
 		A25821501B1CD31200A9168D /* MFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A258214F1B1CD31200A9168D /* MFlatButton.m */; };
-		A25821541B1CD4A000A9168D /* UIColor+MHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821531B1CD4A000A9168D /* UIColor+MHelper.m */; };
-		A25821591B1CD6E300A9168D /* MBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821581B1CD6E300A9168D /* MBaseViewController.m */; };
+		A258215C1B1CD87C00A9168D /* OCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A258215B1B1CD87C00A9168D /* OCBaseViewController.m */; };
+		A25821601B1CDAD400A9168D /* OCSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A258215F1B1CDAD400A9168D /* OCSignInViewController.m */; };
+		A25821631B1CFB9300A9168D /* OCActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821621B1CFB9300A9168D /* OCActivitiesViewController.m */; };
+		A25821B91B1D0E3500A9168D /* Barcode.mm in Sources */ = {isa = PBXBuildFile; fileRef = A25821981B1D0E3500A9168D /* Barcode.mm */; };
+		A25821BA1B1D0E3500A9168D /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = A258219A1B1D0E3500A9168D /* png.c */; };
+		A25821BB1B1D0E3500A9168D /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = A258219E1B1D0E3500A9168D /* pngerror.c */; };
+		A25821BC1B1D0E3500A9168D /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = A258219F1B1D0E3500A9168D /* pngget.c */; };
+		A25821BD1B1D0E3500A9168D /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A21B1D0E3500A9168D /* pngmem.c */; };
+		A25821BE1B1D0E3500A9168D /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A31B1D0E3500A9168D /* pngpread.c */; };
+		A25821BF1B1D0E3500A9168D /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A51B1D0E3500A9168D /* pngread.c */; };
+		A25821C01B1D0E3500A9168D /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A61B1D0E3500A9168D /* pngrio.c */; };
+		A25821C11B1D0E3500A9168D /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A71B1D0E3500A9168D /* pngrtran.c */; };
+		A25821C21B1D0E3500A9168D /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A81B1D0E3500A9168D /* pngrutil.c */; };
+		A25821C31B1D0E3500A9168D /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821A91B1D0E3500A9168D /* pngset.c */; };
+		A25821C41B1D0E3500A9168D /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821AB1B1D0E3500A9168D /* pngtrans.c */; };
+		A25821C51B1D0E3500A9168D /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821AC1B1D0E3500A9168D /* pngwio.c */; };
+		A25821C61B1D0E3500A9168D /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821AD1B1D0E3500A9168D /* pngwrite.c */; };
+		A25821C71B1D0E3500A9168D /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821AE1B1D0E3500A9168D /* pngwtran.c */; };
+		A25821C81B1D0E3500A9168D /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = A25821AF1B1D0E3500A9168D /* pngwutil.c */; };
+		A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */ = {isa = PBXBuildFile; fileRef = A25821B21B1D0E3500A9168D /* qr_draw_png.mm */; };
+		A25821CA1B1D0E3500A9168D /* QR_Encode.mm in Sources */ = {isa = PBXBuildFile; fileRef = A25821B51B1D0E3500A9168D /* QR_Encode.mm */; };
+		A25821CE1B1D0E6800A9168D /* UIColor+MHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821CD1B1D0E6800A9168D /* UIColor+MHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +72,45 @@
 		A25821481B1CD09200A9168D /* MRoundedCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoundedCornerView.m; path = "Custom Components/UIView/MRoundedCornerView.m"; sourceTree = "<group>"; };
 		A258214E1B1CD31200A9168D /* MFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFlatButton.h; path = "Custom Components/UIButton/MFlatButton.h"; sourceTree = "<group>"; };
 		A258214F1B1CD31200A9168D /* MFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFlatButton.m; path = "Custom Components/UIButton/MFlatButton.m"; sourceTree = "<group>"; };
-		A25821521B1CD4A000A9168D /* UIColor+MHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MHelper.h"; sourceTree = "<group>"; };
-		A25821531B1CD4A000A9168D /* UIColor+MHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MHelper.m"; sourceTree = "<group>"; };
-		A25821571B1CD6E300A9168D /* MBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBaseViewController.h; sourceTree = "<group>"; };
-		A25821581B1CD6E300A9168D /* MBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBaseViewController.m; sourceTree = "<group>"; };
+		A258215A1B1CD87C00A9168D /* OCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCBaseViewController.h; path = "View Controllers/Reusable Controllers/OCBaseViewController.h"; sourceTree = "<group>"; };
+		A258215B1B1CD87C00A9168D /* OCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCBaseViewController.m; path = "View Controllers/Reusable Controllers/OCBaseViewController.m"; sourceTree = "<group>"; };
+		A258215E1B1CDAD400A9168D /* OCSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCSignInViewController.h; path = "View Controllers/Sign In Controllers/OCSignInViewController.h"; sourceTree = "<group>"; };
+		A258215F1B1CDAD400A9168D /* OCSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCSignInViewController.m; path = "View Controllers/Sign In Controllers/OCSignInViewController.m"; sourceTree = "<group>"; };
+		A25821611B1CFB9300A9168D /* OCActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCActivitiesViewController.h; path = "View Controllers/First Tab Controllers/OCActivitiesViewController.h"; sourceTree = "<group>"; };
+		A25821621B1CFB9300A9168D /* OCActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCActivitiesViewController.m; path = "View Controllers/First Tab Controllers/OCActivitiesViewController.m"; sourceTree = "<group>"; };
+		A25821971B1D0E3500A9168D /* Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Barcode.h; path = "View Controllers/Barcode Generator/Barcode.h"; sourceTree = "<group>"; };
+		A25821981B1D0E3500A9168D /* Barcode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Barcode.mm; path = "View Controllers/Barcode Generator/Barcode.mm"; sourceTree = "<group>"; };
+		A258219A1B1D0E3500A9168D /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
+		A258219B1B1D0E3500A9168D /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		A258219C1B1D0E3500A9168D /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		A258219D1B1D0E3500A9168D /* pngdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngdebug.h; sourceTree = "<group>"; };
+		A258219E1B1D0E3500A9168D /* pngerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngerror.c; sourceTree = "<group>"; };
+		A258219F1B1D0E3500A9168D /* pngget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngget.c; sourceTree = "<group>"; };
+		A25821A01B1D0E3500A9168D /* pnginfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnginfo.h; sourceTree = "<group>"; };
+		A25821A11B1D0E3500A9168D /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
+		A25821A21B1D0E3500A9168D /* pngmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngmem.c; sourceTree = "<group>"; };
+		A25821A31B1D0E3500A9168D /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngpread.c; sourceTree = "<group>"; };
+		A25821A41B1D0E3500A9168D /* pngpriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngpriv.h; sourceTree = "<group>"; };
+		A25821A51B1D0E3500A9168D /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngread.c; sourceTree = "<group>"; };
+		A25821A61B1D0E3500A9168D /* pngrio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrio.c; sourceTree = "<group>"; };
+		A25821A71B1D0E3500A9168D /* pngrtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrtran.c; sourceTree = "<group>"; };
+		A25821A81B1D0E3500A9168D /* pngrutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngrutil.c; sourceTree = "<group>"; };
+		A25821A91B1D0E3500A9168D /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngset.c; sourceTree = "<group>"; };
+		A25821AA1B1D0E3500A9168D /* pngstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngstruct.h; sourceTree = "<group>"; };
+		A25821AB1B1D0E3500A9168D /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtrans.c; sourceTree = "<group>"; };
+		A25821AC1B1D0E3500A9168D /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwio.c; sourceTree = "<group>"; };
+		A25821AD1B1D0E3500A9168D /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwrite.c; sourceTree = "<group>"; };
+		A25821AE1B1D0E3500A9168D /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
+		A25821AF1B1D0E3500A9168D /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwutil.c; sourceTree = "<group>"; };
+		A25821B01B1D0E3500A9168D /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		A25821B11B1D0E3500A9168D /* qr_draw_png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = qr_draw_png.h; path = "View Controllers/Barcode Generator/qr_draw_png.h"; sourceTree = "<group>"; };
+		A25821B21B1D0E3500A9168D /* qr_draw_png.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = qr_draw_png.mm; path = "View Controllers/Barcode Generator/qr_draw_png.mm"; sourceTree = "<group>"; };
+		A25821B31B1D0E3500A9168D /* qr_draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = qr_draw.h; path = "View Controllers/Barcode Generator/qr_draw.h"; sourceTree = "<group>"; };
+		A25821B41B1D0E3500A9168D /* QR_Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QR_Encode.h; path = "View Controllers/Barcode Generator/QR_Encode.h"; sourceTree = "<group>"; };
+		A25821B51B1D0E3500A9168D /* QR_Encode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QR_Encode.mm; path = "View Controllers/Barcode Generator/QR_Encode.mm"; sourceTree = "<group>"; };
+		A25821B81B1D0E3500A9168D /* win2ansi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = win2ansi.h; path = "View Controllers/Barcode Generator/win2ansi.h"; sourceTree = "<group>"; };
+		A25821CC1B1D0E6800A9168D /* UIColor+MHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+MHelper.h"; path = "Category Helpers/UIColor+MHelper.h"; sourceTree = "<group>"; };
+		A25821CD1B1D0E6800A9168D /* UIColor+MHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MHelper.m"; path = "Category Helpers/UIColor+MHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +214,7 @@
 		A258213C1B1CC6C000A9168D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A25821641B1D0C5900A9168D /* Barcode Generator */,
 				A25821561B1CD69400A9168D /* Reusable Controllers */,
 				A25821551B1CD66E00A9168D /* Sign In Controllers */,
 				A258213F1B1CC6FA00A9168D /* First Tab Controllers */,
@@ -170,6 +226,8 @@
 		A258213F1B1CC6FA00A9168D /* First Tab Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A25821611B1CFB9300A9168D /* OCActivitiesViewController.h */,
+				A25821621B1CFB9300A9168D /* OCActivitiesViewController.m */,
 			);
 			name = "First Tab Controllers";
 			sourceTree = "<group>";
@@ -211,8 +269,8 @@
 		A25821511B1CD47300A9168D /* Category Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A25821521B1CD4A000A9168D /* UIColor+MHelper.h */,
-				A25821531B1CD4A000A9168D /* UIColor+MHelper.m */,
+				A25821CC1B1D0E6800A9168D /* UIColor+MHelper.h */,
+				A25821CD1B1D0E6800A9168D /* UIColor+MHelper.m */,
 			);
 			name = "Category Helpers";
 			sourceTree = "<group>";
@@ -220,6 +278,8 @@
 		A25821551B1CD66E00A9168D /* Sign In Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A258215E1B1CDAD400A9168D /* OCSignInViewController.h */,
+				A258215F1B1CDAD400A9168D /* OCSignInViewController.m */,
 			);
 			name = "Sign In Controllers";
 			sourceTree = "<group>";
@@ -227,10 +287,57 @@
 		A25821561B1CD69400A9168D /* Reusable Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A25821571B1CD6E300A9168D /* MBaseViewController.h */,
-				A25821581B1CD6E300A9168D /* MBaseViewController.m */,
+				A258215A1B1CD87C00A9168D /* OCBaseViewController.h */,
+				A258215B1B1CD87C00A9168D /* OCBaseViewController.m */,
 			);
 			name = "Reusable Controllers";
+			sourceTree = "<group>";
+		};
+		A25821641B1D0C5900A9168D /* Barcode Generator */ = {
+			isa = PBXGroup;
+			children = (
+				A25821971B1D0E3500A9168D /* Barcode.h */,
+				A25821981B1D0E3500A9168D /* Barcode.mm */,
+				A25821991B1D0E3500A9168D /* libpng */,
+				A25821B11B1D0E3500A9168D /* qr_draw_png.h */,
+				A25821B21B1D0E3500A9168D /* qr_draw_png.mm */,
+				A25821B31B1D0E3500A9168D /* qr_draw.h */,
+				A25821B41B1D0E3500A9168D /* QR_Encode.h */,
+				A25821B51B1D0E3500A9168D /* QR_Encode.mm */,
+				A25821B81B1D0E3500A9168D /* win2ansi.h */,
+			);
+			name = "Barcode Generator";
+			sourceTree = "<group>";
+		};
+		A25821991B1D0E3500A9168D /* libpng */ = {
+			isa = PBXGroup;
+			children = (
+				A258219A1B1D0E3500A9168D /* png.c */,
+				A258219B1B1D0E3500A9168D /* png.h */,
+				A258219C1B1D0E3500A9168D /* pngconf.h */,
+				A258219D1B1D0E3500A9168D /* pngdebug.h */,
+				A258219E1B1D0E3500A9168D /* pngerror.c */,
+				A258219F1B1D0E3500A9168D /* pngget.c */,
+				A25821A01B1D0E3500A9168D /* pnginfo.h */,
+				A25821A11B1D0E3500A9168D /* pnglibconf.h */,
+				A25821A21B1D0E3500A9168D /* pngmem.c */,
+				A25821A31B1D0E3500A9168D /* pngpread.c */,
+				A25821A41B1D0E3500A9168D /* pngpriv.h */,
+				A25821A51B1D0E3500A9168D /* pngread.c */,
+				A25821A61B1D0E3500A9168D /* pngrio.c */,
+				A25821A71B1D0E3500A9168D /* pngrtran.c */,
+				A25821A81B1D0E3500A9168D /* pngrutil.c */,
+				A25821A91B1D0E3500A9168D /* pngset.c */,
+				A25821AA1B1D0E3500A9168D /* pngstruct.h */,
+				A25821AB1B1D0E3500A9168D /* pngtrans.c */,
+				A25821AC1B1D0E3500A9168D /* pngwio.c */,
+				A25821AD1B1D0E3500A9168D /* pngwrite.c */,
+				A25821AE1B1D0E3500A9168D /* pngwtran.c */,
+				A25821AF1B1D0E3500A9168D /* pngwutil.c */,
+				A25821B01B1D0E3500A9168D /* zlib.h */,
+			);
+			name = libpng;
+			path = "View Controllers/Barcode Generator/libpng";
 			sourceTree = "<group>";
 		};
 		E0D935DFD5FCF8A266AD9A0C /* Pods */ = {
@@ -379,12 +486,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25821C71B1D0E3500A9168D /* pngwtran.c in Sources */,
+				A25821C11B1D0E3500A9168D /* pngrtran.c in Sources */,
 				A25821501B1CD31200A9168D /* MFlatButton.m in Sources */,
 				A258213A1B1CC66100A9168D /* main.m in Sources */,
+				A25821BC1B1D0E3500A9168D /* pngget.c in Sources */,
 				A25821491B1CD09200A9168D /* MRoundedCornerView.m in Sources */,
+				A25821601B1CDAD400A9168D /* OCSignInViewController.m in Sources */,
 				A25821381B1CC66100A9168D /* AppDelegate.m in Sources */,
-				A25821541B1CD4A000A9168D /* UIColor+MHelper.m in Sources */,
-				A25821591B1CD6E300A9168D /* MBaseViewController.m in Sources */,
+				A25821BA1B1D0E3500A9168D /* png.c in Sources */,
+				A25821C51B1D0E3500A9168D /* pngwio.c in Sources */,
+				A25821C41B1D0E3500A9168D /* pngtrans.c in Sources */,
+				A25821CE1B1D0E6800A9168D /* UIColor+MHelper.m in Sources */,
+				A25821631B1CFB9300A9168D /* OCActivitiesViewController.m in Sources */,
+				A25821C01B1D0E3500A9168D /* pngrio.c in Sources */,
+				A25821C81B1D0E3500A9168D /* pngwutil.c in Sources */,
+				A25821BB1B1D0E3500A9168D /* pngerror.c in Sources */,
+				A25821C31B1D0E3500A9168D /* pngset.c in Sources */,
+				A25821B91B1D0E3500A9168D /* Barcode.mm in Sources */,
+				A25821BE1B1D0E3500A9168D /* pngpread.c in Sources */,
+				A25821BF1B1D0E3500A9168D /* pngread.c in Sources */,
+				A25821BD1B1D0E3500A9168D /* pngmem.c in Sources */,
+				A25821C61B1D0E3500A9168D /* pngwrite.c in Sources */,
+				A25821C21B1D0E3500A9168D /* pngrutil.c in Sources */,
+				A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */,
+				A25821CA1B1D0E3500A9168D /* QR_Encode.mm in Sources */,
+				A258215C1B1CD87C00A9168D /* OCBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

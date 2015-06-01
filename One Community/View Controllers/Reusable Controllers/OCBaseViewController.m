@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 MKM Brasil. All rights reserved.
 //
 
-#import "MBaseViewController.h"
+#import "OCBaseViewController.h"
 
-@interface MBaseViewController ()
+@interface OCBaseViewController ()
 
 @end
 
-@implementation MBaseViewController
+@implementation OCBaseViewController
 
 - (void)viewDidLoad {
    [super viewDidLoad];
@@ -60,11 +60,11 @@
 - (void)genericStoryboardPushWithName:(NSString *)storyboardName {
    UIStoryboard *story = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
    UIViewController *viewController = [story instantiateInitialViewController];
-   [[MSlideNavigationController sharedInstance] pushViewController:viewController animated:YES];
+   [self.navigationController pushViewController:viewController animated:YES];
 }
 
 - (void)pushUserStoryboard {
-   [self genericStoryboardPushWithName:@"MUserSB"];
+   [self genericStoryboardPushWithName:@"main"];
 }
 
 - (void)pushSignInSignUpStoryboard {
@@ -113,15 +113,6 @@
                                message:@"Por favor, reporte este erro para a equipe de desenvolvimento!"
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
-}
-
-#pragma mark - iOS-Slide-Menu Delegates & Helpers
-- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
-   return YES;
-}
-
-- (BOOL)slideNavigationControllerShouldDisplayRightMenu {
-   return YES;
 }
 
 @end

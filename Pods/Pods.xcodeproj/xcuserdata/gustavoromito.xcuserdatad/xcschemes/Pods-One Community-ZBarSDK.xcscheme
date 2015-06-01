@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5639A4FA60926446093DCD52"
+               BlueprintIdentifier = "72D7C83ECC8C28F9242FD4F5"
                BuildableName = "libPods-One Community-ZBarSDK.a"
                BlueprintName = "Pods-One Community-ZBarSDK"
                ReferencedContainer = "container:Pods.xcodeproj">

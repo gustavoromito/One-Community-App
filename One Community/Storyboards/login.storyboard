@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jOU-bZ-9SS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mHm-UW-3Fk">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="LAA-I3-2WL">
+            <objects>
+                <navigationController id="mHm-UW-3Fk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="tND-gA-Czf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="jOU-bZ-9SS" kind="relationship" relationship="rootViewController" id="bUs-ue-8Jj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6C-5i-U89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1278" y="-275.25"/>
+        </scene>
+        <!--Sign In View Controller-->
         <scene sceneID="hgR-ir-gSE">
             <objects>
-                <viewController id="jOU-bZ-9SS" sceneMemberID="viewController">
+                <viewController id="jOU-bZ-9SS" customClass="OCSignInViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LTh-Bp-DQY"/>
                         <viewControllerLayoutGuide type="bottom" id="ohG-QF-NK7"/>
@@ -16,7 +32,7 @@
                     <view key="view" contentMode="scaleToFill" id="qci-xO-7lh">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-login" translatesAutoresizingMaskIntoConstraints="NO" id="iYU-NW-Mwg">
+                            <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-login" translatesAutoresizingMaskIntoConstraints="NO" id="iYU-NW-Mwg">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9c-h0-ryP" userLabel="Sign In view" customClass="MRoundedCornerView">
@@ -223,6 +239,9 @@
                                                 <include reference="vgT-cy-fxR"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="SignInTapped:" destination="jOU-bZ-9SS" eventType="touchUpInside" id="Igb-qa-BYQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCn-Qt-Sa0" customClass="MFlatButton">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -247,6 +266,9 @@
                                                 <include reference="IN1-aT-WUt"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="forgotPasswordTapped:" destination="jOU-bZ-9SS" eventType="touchUpInside" id="EY4-sN-fSO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95623720462091155" green="0.95623720462091155" blue="0.95623720462091155" alpha="1" colorSpace="calibratedRGB"/>
@@ -312,7 +334,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="H3T-wX-56g">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="H3T-wX-56g">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="342" id="VIM-zJ-lAy"/>
@@ -375,7 +397,7 @@
                                 <include reference="H3T-wX-56g"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="3gZ-PS-MxS"/>
+                                <exclude reference="3gZ-PS-MxS"/>
                                 <include reference="4DJ-fw-CBd"/>
                                 <include reference="Dpu-b6-XCB"/>
                                 <include reference="GX6-iW-okd"/>
@@ -390,10 +412,16 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="eP9-dN-Hwh"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Ao8-nZ-dbP" id="GRZ-NY-3iI"/>
+                        <outlet property="userIdTextField" destination="BcN-D2-6B9" id="7vX-ND-CPA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oHH-ez-DzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="255" y="-273"/>
+            <point key="canvasLocation" x="-345" y="-275.25"/>
         </scene>
     </scenes>
     <resources>
