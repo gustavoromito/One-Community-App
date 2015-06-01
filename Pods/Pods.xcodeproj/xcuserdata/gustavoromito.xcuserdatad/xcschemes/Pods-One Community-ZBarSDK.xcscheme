@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91B1881503951E7E8EC37919"
+               BlueprintIdentifier = "5639A4FA60926446093DCD52"
                BuildableName = "libPods-One Community-ZBarSDK.a"
                BlueprintName = "Pods-One Community-ZBarSDK"
                ReferencedContainer = "container:Pods.xcodeproj">

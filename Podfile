@@ -3,6 +3,7 @@
 
 target 'One Community' do
 	pod 'ZBarSDK'
+	pod 'MBProgressHUD'
 end
 
 target 'One CommunityTests' do

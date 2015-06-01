@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-One Community-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-One Community-ZBarSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4918AF50FC04297B0A3A427D</key>
+		<key>5639A4FA60926446093DCD52</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91B1881503951E7E8EC37919</key>
+		<key>9876B992077C69200425A88C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9931B512A94B25FE219E5A84</key>
 		<dict>
 			<key>primary</key>
 			<true/>

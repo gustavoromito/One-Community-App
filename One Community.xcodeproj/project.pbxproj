@@ -17,6 +17,9 @@
 		A25821421B1CC73500A9168D /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25821411B1CC73500A9168D /* main.storyboard */; };
 		A25821441B1CC74900A9168D /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25821431B1CC74900A9168D /* login.storyboard */; };
 		A25821491B1CD09200A9168D /* MRoundedCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821481B1CD09200A9168D /* MRoundedCornerView.m */; };
+		A25821501B1CD31200A9168D /* MFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A258214F1B1CD31200A9168D /* MFlatButton.m */; };
+		A25821541B1CD4A000A9168D /* UIColor+MHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821531B1CD4A000A9168D /* UIColor+MHelper.m */; };
+		A25821591B1CD6E300A9168D /* MBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821581B1CD6E300A9168D /* MBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,12 @@
 		A25821431B1CC74900A9168D /* login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = login.storyboard; path = Storyboards/login.storyboard; sourceTree = "<group>"; };
 		A25821471B1CD09200A9168D /* MRoundedCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MRoundedCornerView.h; path = "Custom Components/UIView/MRoundedCornerView.h"; sourceTree = "<group>"; };
 		A25821481B1CD09200A9168D /* MRoundedCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MRoundedCornerView.m; path = "Custom Components/UIView/MRoundedCornerView.m"; sourceTree = "<group>"; };
+		A258214E1B1CD31200A9168D /* MFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFlatButton.h; path = "Custom Components/UIButton/MFlatButton.h"; sourceTree = "<group>"; };
+		A258214F1B1CD31200A9168D /* MFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFlatButton.m; path = "Custom Components/UIButton/MFlatButton.m"; sourceTree = "<group>"; };
+		A25821521B1CD4A000A9168D /* UIColor+MHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MHelper.h"; sourceTree = "<group>"; };
+		A25821531B1CD4A000A9168D /* UIColor+MHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MHelper.m"; sourceTree = "<group>"; };
+		A25821571B1CD6E300A9168D /* MBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBaseViewController.h; sourceTree = "<group>"; };
+		A25821581B1CD6E300A9168D /* MBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +108,7 @@
 		A258210A1B1CC13300A9168D /* One Community */ = {
 			isa = PBXGroup;
 			children = (
+				A25821511B1CD47300A9168D /* Category Helpers */,
 				A25821451B1CD04D00A9168D /* Custom Components */,
 				A258213C1B1CC6C000A9168D /* View Controllers */,
 				A258213B1B1CC6B800A9168D /* Storyboards */,
@@ -149,6 +159,8 @@
 		A258213C1B1CC6C000A9168D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A25821561B1CD69400A9168D /* Reusable Controllers */,
+				A25821551B1CD66E00A9168D /* Sign In Controllers */,
 				A258213F1B1CC6FA00A9168D /* First Tab Controllers */,
 				A25821401B1CC70300A9168D /* Second Tab Controllers */,
 			);
@@ -172,6 +184,7 @@
 		A25821451B1CD04D00A9168D /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				A258214A1B1CD27B00A9168D /* UIButton */,
 				A25821461B1CD06A00A9168D /* UIView */,
 			);
 			name = "Custom Components";
@@ -184,6 +197,40 @@
 				A25821481B1CD09200A9168D /* MRoundedCornerView.m */,
 			);
 			name = UIView;
+			sourceTree = "<group>";
+		};
+		A258214A1B1CD27B00A9168D /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				A258214E1B1CD31200A9168D /* MFlatButton.h */,
+				A258214F1B1CD31200A9168D /* MFlatButton.m */,
+			);
+			name = UIButton;
+			sourceTree = "<group>";
+		};
+		A25821511B1CD47300A9168D /* Category Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A25821521B1CD4A000A9168D /* UIColor+MHelper.h */,
+				A25821531B1CD4A000A9168D /* UIColor+MHelper.m */,
+			);
+			name = "Category Helpers";
+			sourceTree = "<group>";
+		};
+		A25821551B1CD66E00A9168D /* Sign In Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Sign In Controllers";
+			sourceTree = "<group>";
+		};
+		A25821561B1CD69400A9168D /* Reusable Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A25821571B1CD6E300A9168D /* MBaseViewController.h */,
+				A25821581B1CD6E300A9168D /* MBaseViewController.m */,
+			);
+			name = "Reusable Controllers";
 			sourceTree = "<group>";
 		};
 		E0D935DFD5FCF8A266AD9A0C /* Pods */ = {
@@ -332,9 +379,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25821501B1CD31200A9168D /* MFlatButton.m in Sources */,
 				A258213A1B1CC66100A9168D /* main.m in Sources */,
 				A25821491B1CD09200A9168D /* MRoundedCornerView.m in Sources */,
 				A25821381B1CC66100A9168D /* AppDelegate.m in Sources */,
+				A25821541B1CD4A000A9168D /* UIColor+MHelper.m in Sources */,
+				A25821591B1CD6E300A9168D /* MBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +503,7 @@
 			baseConfigurationReference = 89FECDD5B46F00C0C1DC7C82 /* Pods-One Community.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "One Community/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/One Community/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -464,7 +514,7 @@
 			baseConfigurationReference = 47258BF6A406B4AB4A8E7A0D /* Pods-One Community.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "One Community/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/One Community/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
