@@ -6,6 +6,9 @@
 //  Copyright (c) 2011 Kuapay LLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
 @class Barcode;
 
 typedef enum

@@ -4,6 +4,7 @@
 target 'One Community' do
 	pod 'ZBarSDK'
 	pod 'MBProgressHUD'
+	pod 'NSUserDefaults-AESEncryptor'
 end
 
 target 'One CommunityTests' do

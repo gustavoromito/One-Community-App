@@ -42,7 +42,6 @@ int mh = 140;
 
 -(void)setupOneDimBarcode:(NSString *)code type:(OneDimCodeType)type
 {
-    [oneDimCode release];
     oneDimCode = [code copy];
     
     NSString *barcodeBits;
@@ -62,7 +61,7 @@ int mh = 140;
     
     CGImageRef rawImageRef = image.CGImage;
     
-    const float colorMasking[6] = {222, 255, 222, 255, 222, 255};
+    const CGFloat colorMasking[6] = {222, 255, 222, 255, 222, 255};
     
     UIGraphicsBeginImageContext(image.size);
     CGImageRef maskedImageRef = CGImageCreateWithMaskingColors(rawImageRef, colorMasking);
@@ -75,9 +74,8 @@ int mh = 140;
     UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
     CGImageRelease(maskedImageRef);
     UIGraphicsEndImageContext();  
-    
-    [oneDimBarcode release];
-    oneDimBarcode = [result retain];
+   
+    oneDimBarcode = result;
 }
 
 
@@ -111,11 +109,10 @@ int mh = 140;
     
     NSData *data = [[NSData alloc] initWithContentsOfFile:qRFile];
     UIImage *image = [UIImage imageWithData:data];
-    [data release];
-    
+   
     CGImageRef rawImageRef = image.CGImage;
     
-    const float colorMasking[6] = {222, 255, 222, 255, 222, 255};
+    const CGFloat colorMasking[6] = {222, 255, 222, 255, 222, 255};
     
     UIGraphicsBeginImageContext(image.size);
     CGImageRef maskedImageRef = CGImageCreateWithMaskingColors(rawImageRef, colorMasking);
@@ -131,7 +128,7 @@ int mh = 140;
     
     CGSize size = result.size;   
     CGImageRef imageRef = CGImageCreateWithImageInRect(result.CGImage, CGRectMake(20, 20, size.width - 40, size.height - 40));
-    qRBarcode = [[UIImage imageWithCGImage:imageRef] retain]; 
+    qRBarcode = [UIImage imageWithCGImage:imageRef];
     CGImageRelease(imageRef);
 }
 
@@ -219,7 +216,7 @@ int mh = 140;
     }
     
     NSInteger sum = (tableCActivated )? 105 : 104;
-    NSMutableString *result = [[[code128Encoding objectAtIndex:sum] mutableCopy] autorelease];
+    NSMutableString *result = [[code128Encoding objectAtIndex:sum] mutableCopy];
     
     int i = 0;
     int j = 0;  
@@ -443,18 +440,5 @@ int mh = 140;
     }
     return  self;
 }
-
-
-#pragma mark - Initialization/cleanup methods
--(void)dealloc
-{
-    [oneDimBarcode release];
-    [qRBarcode release]; 
-    
-    [oneDimCode release]; 
-    
-    [super dealloc];
-}
-
 
 @end

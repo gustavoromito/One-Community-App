@@ -40,6 +40,8 @@
 		A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */ = {isa = PBXBuildFile; fileRef = A25821B21B1D0E3500A9168D /* qr_draw_png.mm */; };
 		A25821CA1B1D0E3500A9168D /* QR_Encode.mm in Sources */ = {isa = PBXBuildFile; fileRef = A25821B51B1D0E3500A9168D /* QR_Encode.mm */; };
 		A25821CE1B1D0E6800A9168D /* UIColor+MHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821CD1B1D0E6800A9168D /* UIColor+MHelper.m */; };
+		A25821D01B1D0FFC00A9168D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A25821CF1B1D0FFC00A9168D /* libz.dylib */; };
+		A25821DA1B1D151D00A9168D /* OCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821D91B1D151D00A9168D /* OCProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,12 @@
 		A25821B81B1D0E3500A9168D /* win2ansi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = win2ansi.h; path = "View Controllers/Barcode Generator/win2ansi.h"; sourceTree = "<group>"; };
 		A25821CC1B1D0E6800A9168D /* UIColor+MHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+MHelper.h"; path = "Category Helpers/UIColor+MHelper.h"; sourceTree = "<group>"; };
 		A25821CD1B1D0E6800A9168D /* UIColor+MHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MHelper.m"; path = "Category Helpers/UIColor+MHelper.m"; sourceTree = "<group>"; };
+		A25821CF1B1D0FFC00A9168D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A25821D11B1D10D000A9168D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A25821D31B1D10D700A9168D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A25821D51B1D10DF00A9168D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A25821D81B1D151D00A9168D /* OCProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProfileViewController.h; path = "View Controllers/Third Tab Controllers/OCProfileViewController.h"; sourceTree = "<group>"; };
+		A25821D91B1D151D00A9168D /* OCProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProfileViewController.m; path = "View Controllers/Third Tab Controllers/OCProfileViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25821D01B1D0FFC00A9168D /* libz.dylib in Frameworks */,
 				974B14C9AA413F0E9BF2AA0F /* libPods-One Community.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +144,10 @@
 		30C1B00E7A27ADAC38F5015D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A25821D51B1D10DF00A9168D /* CoreGraphics.framework */,
+				A25821D31B1D10D700A9168D /* Foundation.framework */,
+				A25821D11B1D10D000A9168D /* UIKit.framework */,
+				A25821CF1B1D0FFC00A9168D /* libz.dylib */,
 				197C2E4265930F3908669BE0 /* libPods-One Community.a */,
 			);
 			name = Frameworks;
@@ -219,6 +232,7 @@
 				A25821551B1CD66E00A9168D /* Sign In Controllers */,
 				A258213F1B1CC6FA00A9168D /* First Tab Controllers */,
 				A25821401B1CC70300A9168D /* Second Tab Controllers */,
+				A25821D71B1D14FC00A9168D /* Third Tab Controllers */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -338,6 +352,15 @@
 			);
 			name = libpng;
 			path = "View Controllers/Barcode Generator/libpng";
+			sourceTree = "<group>";
+		};
+		A25821D71B1D14FC00A9168D /* Third Tab Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A25821D81B1D151D00A9168D /* OCProfileViewController.h */,
+				A25821D91B1D151D00A9168D /* OCProfileViewController.m */,
+			);
+			name = "Third Tab Controllers";
 			sourceTree = "<group>";
 		};
 		E0D935DFD5FCF8A266AD9A0C /* Pods */ = {
@@ -509,6 +532,7 @@
 				A25821BD1B1D0E3500A9168D /* pngmem.c in Sources */,
 				A25821C61B1D0E3500A9168D /* pngwrite.c in Sources */,
 				A25821C21B1D0E3500A9168D /* pngrutil.c in Sources */,
+				A25821DA1B1D151D00A9168D /* OCProfileViewController.m in Sources */,
 				A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */,
 				A25821CA1B1D0E3500A9168D /* QR_Encode.mm in Sources */,
 				A258215C1B1CD87C00A9168D /* OCBaseViewController.m in Sources */,
@@ -630,6 +654,13 @@
 			baseConfigurationReference = 89FECDD5B46F00C0C1DC7C82 /* Pods-One Community.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/ZBarSDK\"",
+					"\"./One Community/View Controllers/Barcode Generator/libpng\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/One Community/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,6 +672,13 @@
 			baseConfigurationReference = 47258BF6A406B4AB4A8E7A0D /* Pods-One Community.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/ZBarSDK\"",
+					"\"./One Community/View Controllers/Barcode Generator/libpng\"",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/One Community/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

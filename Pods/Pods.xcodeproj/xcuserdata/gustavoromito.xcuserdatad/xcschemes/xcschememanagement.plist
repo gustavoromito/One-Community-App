@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-One Community-CocoaSecurity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-One Community-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-One Community-NSUserDefaults-AESEncryptor.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28A1C8DE48AD1A6A07A2322F</key>
+		<key>16F5F7FE0253ADFFF7A7C4FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C34A05E7925B6254A5F369C</key>
+		<key>9F6CAADD55A89D7C46ABC8FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>72D7C83ECC8C28F9242FD4F5</key>
+		<key>C3061252B8C71AA6D3B80B25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA906543EE5151E0F351DD48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DE9EEE43D0189DB5F7D4C6C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

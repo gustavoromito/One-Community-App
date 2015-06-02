@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA906543EE5151E0F351DD48"
-               BuildableName = "libPods-One Community-MBProgressHUD.a"
-               BlueprintName = "Pods-One Community-MBProgressHUD"
+               BlueprintIdentifier = "C3061252B8C71AA6D3B80B25"
+               BuildableName = "libPods-One Community-NSUserDefaults-AESEncryptor.a"
+               BlueprintName = "Pods-One Community-NSUserDefaults-AESEncryptor"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
