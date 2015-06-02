@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		974B14C9AA413F0E9BF2AA0F /* libPods-One Community.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 197C2E4265930F3908669BE0 /* libPods-One Community.a */; };
+		2EEF2A99DA58A9C4178FC68B /* Pods_One_Community.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB2344D079A0CDA119A8535 /* Pods_One_Community.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		A258211C1B1CC13300A9168D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A258211B1B1CC13300A9168D /* Images.xcassets */; };
 		A258211F1B1CC13300A9168D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A258211D1B1CC13300A9168D /* LaunchScreen.xib */; };
 		A258212B1B1CC13300A9168D /* One_CommunityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A258212A1B1CC13300A9168D /* One_CommunityTests.m */; };
@@ -42,6 +42,8 @@
 		A25821CE1B1D0E6800A9168D /* UIColor+MHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821CD1B1D0E6800A9168D /* UIColor+MHelper.m */; };
 		A25821D01B1D0FFC00A9168D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A25821CF1B1D0FFC00A9168D /* libz.dylib */; };
 		A25821DA1B1D151D00A9168D /* OCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821D91B1D151D00A9168D /* OCProfileViewController.m */; };
+		A25821DE1B1E059D00A9168D /* OCCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821DD1B1E059D00A9168D /* OCCustomTableViewCell.m */; };
+		A25821E11B1E237A00A9168D /* OCProgramCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821E01B1E237A00A9168D /* OCProgramCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		197C2E4265930F3908669BE0 /* libPods-One Community.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-One Community.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB2344D079A0CDA119A8535 /* Pods_One_Community.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_One_Community.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47258BF6A406B4AB4A8E7A0D /* Pods-One Community.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Community.release.xcconfig"; path = "Pods/Target Support Files/Pods-One Community/Pods-One Community.release.xcconfig"; sourceTree = "<group>"; };
 		89FECDD5B46F00C0C1DC7C82 /* Pods-One Community.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-One Community.debug.xcconfig"; path = "Pods/Target Support Files/Pods-One Community/Pods-One Community.debug.xcconfig"; sourceTree = "<group>"; };
 		A25821081B1CC13300A9168D /* One Community.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Community.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,10 @@
 		A25821D51B1D10DF00A9168D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A25821D81B1D151D00A9168D /* OCProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProfileViewController.h; path = "View Controllers/Third Tab Controllers/OCProfileViewController.h"; sourceTree = "<group>"; };
 		A25821D91B1D151D00A9168D /* OCProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProfileViewController.m; path = "View Controllers/Third Tab Controllers/OCProfileViewController.m"; sourceTree = "<group>"; };
+		A25821DC1B1E059D00A9168D /* OCCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCCustomTableViewCell.h; path = "Custom Components/UITableViewCell/OCCustomTableViewCell.h"; sourceTree = "<group>"; };
+		A25821DD1B1E059D00A9168D /* OCCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCCustomTableViewCell.m; path = "Custom Components/UITableViewCell/OCCustomTableViewCell.m"; sourceTree = "<group>"; };
+		A25821DF1B1E237A00A9168D /* OCProgramCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProgramCell.h; path = "Custom Components/UITableViewCell/OCProgramCell.h"; sourceTree = "<group>"; };
+		A25821E01B1E237A00A9168D /* OCProgramCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProgramCell.m; path = "Custom Components/UITableViewCell/OCProgramCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25821D01B1D0FFC00A9168D /* libz.dylib in Frameworks */,
-				974B14C9AA413F0E9BF2AA0F /* libPods-One Community.a in Frameworks */,
+				2EEF2A99DA58A9C4178FC68B /* Pods_One_Community.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +154,7 @@
 				A25821D31B1D10D700A9168D /* Foundation.framework */,
 				A25821D11B1D10D000A9168D /* UIKit.framework */,
 				A25821CF1B1D0FFC00A9168D /* libz.dylib */,
-				197C2E4265930F3908669BE0 /* libPods-One Community.a */,
+				2EB2344D079A0CDA119A8535 /* Pods_One_Community.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -256,6 +262,7 @@
 		A25821451B1CD04D00A9168D /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				A25821DB1B1E04F700A9168D /* UITableViewCell */,
 				A258214A1B1CD27B00A9168D /* UIButton */,
 				A25821461B1CD06A00A9168D /* UIView */,
 			);
@@ -363,6 +370,17 @@
 			name = "Third Tab Controllers";
 			sourceTree = "<group>";
 		};
+		A25821DB1B1E04F700A9168D /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A25821DC1B1E059D00A9168D /* OCCustomTableViewCell.h */,
+				A25821DD1B1E059D00A9168D /* OCCustomTableViewCell.m */,
+				A25821DF1B1E237A00A9168D /* OCProgramCell.h */,
+				A25821E01B1E237A00A9168D /* OCProgramCell.m */,
+			);
+			name = UITableViewCell;
+			sourceTree = "<group>";
+		};
 		E0D935DFD5FCF8A266AD9A0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +402,7 @@
 				A25821051B1CC13300A9168D /* Frameworks */,
 				A25821061B1CC13300A9168D /* Resources */,
 				7056D2AFAAA868BCDA447BA9 /* Copy Pods Resources */,
+				0103966108F1263AA5BCD843 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -472,6 +491,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0103966108F1263AA5BCD843 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-One Community/Pods-One Community-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7056D2AFAAA868BCDA447BA9 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,7 +564,9 @@
 				A25821BE1B1D0E3500A9168D /* pngpread.c in Sources */,
 				A25821BF1B1D0E3500A9168D /* pngread.c in Sources */,
 				A25821BD1B1D0E3500A9168D /* pngmem.c in Sources */,
+				A25821E11B1E237A00A9168D /* OCProgramCell.m in Sources */,
 				A25821C61B1D0E3500A9168D /* pngwrite.c in Sources */,
+				A25821DE1B1E059D00A9168D /* OCCustomTableViewCell.m in Sources */,
 				A25821C21B1D0E3500A9168D /* pngrutil.c in Sources */,
 				A25821DA1B1D151D00A9168D /* OCProfileViewController.m in Sources */,
 				A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */,

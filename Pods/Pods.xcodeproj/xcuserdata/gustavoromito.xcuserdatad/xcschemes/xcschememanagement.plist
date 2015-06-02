@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-One Community-CBZSplashView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-One Community-CocoaSecurity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-One Community-HexColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,7 +29,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-One Community-ObjectiveSugar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-One Community-ZBarSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-One Community-ZFRippleButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>16F5F7FE0253ADFFF7A7C4FC</key>
+		<key>05FC267691AE399DB69301CB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9F6CAADD55A89D7C46ABC8FD</key>
+		<key>207DA23EE1B6E111F92AC20D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3061252B8C71AA6D3B80B25</key>
+		<key>209B4B3A9AE421AD11CC4747</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA906543EE5151E0F351DD48</key>
+		<key>4EBC872A6208378763441369</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE9EEE43D0189DB5F7D4C6C5</key>
+		<key>558843A2F9A078F89214CCA1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>71454DAAA638E3FBB0686418</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B71AE61C4E1B8B7BDE554594</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BD5CFBFB016574F272FD23BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E986918B8DE7AB7859750EB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

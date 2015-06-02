@@ -1,0 +1,6 @@
+framework module ZFRippleButton {
+  umbrella header "Pods-One Community-ZFRippleButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

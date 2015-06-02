@@ -5,6 +5,11 @@ target 'One Community' do
 	pod 'ZBarSDK'
 	pod 'MBProgressHUD'
 	pod 'NSUserDefaults-AESEncryptor'
+	pod 'ZFRippleButton'
+	pod 'HexColors'
+	pod 'ObjectiveSugar'
+	pod 'CBZSplashView'
+	use_frameworks!
 end
 
 target 'One CommunityTests' do

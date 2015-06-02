@@ -1,0 +1,6 @@
+framework module CocoaSecurity {
+  umbrella header "Pods-One Community-CocoaSecurity-umbrella.h"
+
+  export *
+  module * { export * }
+}

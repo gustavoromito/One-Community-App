@@ -1,0 +1,6 @@
+framework module ObjectiveSugar {
+  umbrella header "Pods-One Community-ObjectiveSugar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,6 +8,9 @@
 
 #import "OCBaseViewController.h"
 
-@interface OCActivitiesViewController : OCBaseViewController
+@interface OCActivitiesViewController : OCBaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UISegmentedControl *segControl;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

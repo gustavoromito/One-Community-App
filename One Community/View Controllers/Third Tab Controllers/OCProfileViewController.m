@@ -11,20 +11,43 @@
 #import <CocoaSecurity/CocoaSecurity.h>
 #import "Barcode.h"
 
+#import "OCCustomTableViewCell.h"
+
 #define USER_ID_KEY @"userID"
 #define AES_KEY [[NSBundle mainBundle] objectForInfoDictionaryKey:@"AESKey"]
+#define OPTION_CELL_IDENTIFIER @"optionCell"
+#define HEADER_CELL_IDENTIFIER @"headerCell"
+#define FOOTER_CELL_IDENTIFIER @"footerCell"
+#define HEADER_HEIGHT 25.0f
+#define FOOTER_HEIGHT 80.0f
+
+@interface OCProfileViewController (){
+   NSArray *sections;
+   NSArray *options;
+   NSArray *reports;
+}
+
+@end
 
 @implementation OCProfileViewController
 
 - (void)viewDidLoad {
    [super viewDidLoad];
+   [self qrcodeSetup];
+   options = @[@"Public", @"Private"];
+   reports = @[@"Report 1", @"Report 2", @"Report 3"];
+   sections = @[options, reports];
+   // Do any additional setup after loading the view.
+}
+
+- (void)qrcodeSetup {
    NSString *code = @"gustavoromito";
    [[NSUserDefaults standardUserDefaults] removeObjectForAESKey:USER_ID_KEY];
    [[NSUserDefaults standardUserDefaults] setAESKey:AES_KEY];
    [[NSUserDefaults standardUserDefaults] encryptValue:code withKey:USER_ID_KEY];
    
    NSString *encryptedkey = [CocoaSecurity aesEncrypt:USER_ID_KEY
-                                         key:[[NSUserDefaults standardUserDefaults] AESKey]].base64;
+                                                  key:[[NSUserDefaults standardUserDefaults] AESKey]].base64;
    
    NSString *encryptedValue = [[NSUserDefaults standardUserDefaults] objectForKey:encryptedkey];
    
@@ -36,12 +59,86 @@
    
    [barcode setupQRCode:encryptedValue];
    _qrcodeImageView.image = barcode.qRBarcode;
-   // Do any additional setup after loading the view.
 }
-
 - (void)didReceiveMemoryWarning {
    [super didReceiveMemoryWarning];
    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+#pragma mark Cell Initialization
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+   OCCustomTableViewCell *cell;
+   cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:OPTION_CELL_IDENTIFIER andAction:nil];
+   [cell.mainText setText:[[sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row]];
+   switch (indexPath.section) {
+      case 0:
+         if ([indexPath compare:_lastIndex] == NSOrderedSame) { cell.accessoryType = UITableViewCellAccessoryCheckmark;
+         } else { cell.accessoryType = UITableViewCellAccessoryNone; }
+         break;
+      case 1:
+         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+         break;
+      default:
+         break;
+   }
+   
+   return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+   return [[sections objectAtIndex:section] count];
+}
+
+#pragma mark Header Initialization
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+   OCCustomTableViewCell *cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:HEADER_CELL_IDENTIFIER andAction:nil];
+   switch (section) {
+      case 0:
+         [cell.mainText setText:@"Public Mode"];
+         break;
+      case 1:
+         [cell.mainText setText:@"Reports"];
+         break;
+      default:
+         break;
+   }
+   return cell;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+   return [sections count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+   return HEADER_HEIGHT;
+}
+
+#pragma mark Footer Initialization
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+   if (section == 0) {
+         OCCustomTableViewCell *cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:FOOTER_CELL_IDENTIFIER andAction:nil];
+      return cell;
+   } else {
+      return nil;
+   }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+   return section == 0 ? FOOTER_HEIGHT : 5.0f;
+}
+
+#pragma mark Header/Footer Helpers
+- (UITableViewCell *)buildCellWithIdentifier:(NSString *)identifier andAction:(SEL)action {
+   OCCustomTableViewCell *cell = (OCCustomTableViewCell *)[_tableView dequeueReusableCellWithIdentifier:identifier];
+   if (cell == nil) cell = [[OCCustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+   return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+   _lastIndex = indexPath.section == 0 ?  indexPath : _lastIndex;
+   [_tableView reloadData];
+   [_tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
