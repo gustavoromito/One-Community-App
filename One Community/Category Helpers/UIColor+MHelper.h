@@ -11,5 +11,6 @@
 @interface UIColor (MHelper)
 
 - (UIColor *)inverseColor;
+- (UIColor *)grayscale;
 
 @end

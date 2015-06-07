@@ -8,7 +8,10 @@ target 'One Community' do
 	pod 'ZFRippleButton'
 	pod 'HexColors'
 	pod 'ObjectiveSugar'
-	pod 'CBZSplashView'
+	pod 'SKSplashView'
+	pod 'ASProgressPopUpView'
+	pod 'iOS-Slide-Menu'
+	pod 'ParallaxBlur'
 	use_frameworks!
 end
 

@@ -6,17 +6,23 @@
 // project.
 
 
-// CBZSplashView
-#define COCOAPODS_POD_AVAILABLE_CBZSplashView
-#define COCOAPODS_VERSION_MAJOR_CBZSplashView 1
-#define COCOAPODS_VERSION_MINOR_CBZSplashView 0
-#define COCOAPODS_VERSION_PATCH_CBZSplashView 0
+// ASProgressPopUpView
+#define COCOAPODS_POD_AVAILABLE_ASProgressPopUpView
+#define COCOAPODS_VERSION_MAJOR_ASProgressPopUpView 0
+#define COCOAPODS_VERSION_MINOR_ASProgressPopUpView 8
+#define COCOAPODS_VERSION_PATCH_ASProgressPopUpView 0
 
 // CocoaSecurity
 #define COCOAPODS_POD_AVAILABLE_CocoaSecurity
 #define COCOAPODS_VERSION_MAJOR_CocoaSecurity 1
 #define COCOAPODS_VERSION_MINOR_CocoaSecurity 2
 #define COCOAPODS_VERSION_PATCH_CocoaSecurity 4
+
+// FXBlurView
+#define COCOAPODS_POD_AVAILABLE_FXBlurView
+#define COCOAPODS_VERSION_MAJOR_FXBlurView 1
+#define COCOAPODS_VERSION_MINOR_FXBlurView 6
+#define COCOAPODS_VERSION_PATCH_FXBlurView 3
 
 // HexColors
 #define COCOAPODS_POD_AVAILABLE_HexColors
@@ -42,6 +48,18 @@
 #define COCOAPODS_VERSION_MINOR_ObjectiveSugar 1
 #define COCOAPODS_VERSION_PATCH_ObjectiveSugar 0
 
+// ParallaxBlur
+#define COCOAPODS_POD_AVAILABLE_ParallaxBlur
+#define COCOAPODS_VERSION_MAJOR_ParallaxBlur 0
+#define COCOAPODS_VERSION_MINOR_ParallaxBlur 1
+#define COCOAPODS_VERSION_PATCH_ParallaxBlur 4
+
+// SKSplashView
+#define COCOAPODS_POD_AVAILABLE_SKSplashView
+#define COCOAPODS_VERSION_MAJOR_SKSplashView 0
+#define COCOAPODS_VERSION_MINOR_SKSplashView 1
+#define COCOAPODS_VERSION_PATCH_SKSplashView 0
+
 // ZBarSDK
 #define COCOAPODS_POD_AVAILABLE_ZBarSDK
 #define COCOAPODS_VERSION_MAJOR_ZBarSDK 1
@@ -53,4 +71,10 @@
 #define COCOAPODS_VERSION_MAJOR_ZFRippleButton 0
 #define COCOAPODS_VERSION_MINOR_ZFRippleButton 2
 #define COCOAPODS_VERSION_PATCH_ZFRippleButton 0
+
+// iOS-Slide-Menu
+#define COCOAPODS_POD_AVAILABLE_iOS_Slide_Menu
+#define COCOAPODS_VERSION_MAJOR_iOS_Slide_Menu 1
+#define COCOAPODS_VERSION_MINOR_iOS_Slide_Menu 4
+#define COCOAPODS_VERSION_PATCH_iOS_Slide_Menu 6
 

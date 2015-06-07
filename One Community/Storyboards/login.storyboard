@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mHm-UW-3Fk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jOU-bZ-9SS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="LAA-I3-2WL">
-            <objects>
-                <navigationController id="mHm-UW-3Fk" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="tND-gA-Czf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="jOU-bZ-9SS" kind="relationship" relationship="rootViewController" id="bUs-ue-8Jj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6C-5i-U89" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1278" y="-275.25"/>
-        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="hgR-ir-gSE">
             <objects>
@@ -407,22 +391,22 @@
                                 <exclude reference="8lC-5p-0W0"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="KOw-mG-JTm"/>
+                                <exclude reference="hMl-7u-kcp"/>
+                                <exclude reference="F7d-XB-v8W"/>
+                                <exclude reference="GaS-pp-D6K"/>
+                                <exclude reference="KnB-mz-7B4"/>
+                                <exclude reference="580-sv-nqt"/>
+                                <exclude reference="ZP9-IF-Nj4"/>
                                 <exclude reference="3gZ-PS-MxS"/>
                                 <exclude reference="4DJ-fw-CBd"/>
                                 <exclude reference="Dpu-b6-XCB"/>
                                 <exclude reference="GX6-iW-okd"/>
                                 <exclude reference="wel-IZ-RaG"/>
-                                <exclude reference="580-sv-nqt"/>
-                                <exclude reference="ZP9-IF-Nj4"/>
                                 <exclude reference="Jjk-5N-jEv"/>
                                 <exclude reference="h3y-0H-LR2"/>
                                 <exclude reference="nOv-XA-1ey"/>
                                 <exclude reference="tfk-EA-MbX"/>
-                                <exclude reference="F7d-XB-v8W"/>
-                                <exclude reference="GaS-pp-D6K"/>
-                                <exclude reference="KnB-mz-7B4"/>
-                                <exclude reference="KOw-mG-JTm"/>
-                                <exclude reference="hMl-7u-kcp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -433,22 +417,22 @@
                                 <include reference="8lC-5p-0W0"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="KOw-mG-JTm"/>
+                                <include reference="hMl-7u-kcp"/>
+                                <include reference="F7d-XB-v8W"/>
+                                <include reference="GaS-pp-D6K"/>
+                                <include reference="KnB-mz-7B4"/>
+                                <include reference="580-sv-nqt"/>
+                                <include reference="ZP9-IF-Nj4"/>
                                 <exclude reference="3gZ-PS-MxS"/>
                                 <include reference="4DJ-fw-CBd"/>
                                 <include reference="Dpu-b6-XCB"/>
                                 <include reference="GX6-iW-okd"/>
                                 <include reference="wel-IZ-RaG"/>
-                                <include reference="580-sv-nqt"/>
-                                <include reference="ZP9-IF-Nj4"/>
                                 <include reference="Jjk-5N-jEv"/>
                                 <include reference="h3y-0H-LR2"/>
                                 <include reference="nOv-XA-1ey"/>
                                 <include reference="tfk-EA-MbX"/>
-                                <include reference="F7d-XB-v8W"/>
-                                <include reference="GaS-pp-D6K"/>
-                                <include reference="KnB-mz-7B4"/>
-                                <include reference="KOw-mG-JTm"/>
-                                <include reference="hMl-7u-kcp"/>
                             </mask>
                         </variation>
                     </view>

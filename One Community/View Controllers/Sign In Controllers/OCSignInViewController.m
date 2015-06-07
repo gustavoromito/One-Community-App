@@ -23,7 +23,7 @@
 
 - (IBAction)SignInTapped:(id)sender {
    //TOD: Validate login
-   [self pushUserStoryboard];
+   [self pushUserStoryboardAnimated:YES];
 }
 
 - (IBAction)forgotPasswordTapped:(id)sender {

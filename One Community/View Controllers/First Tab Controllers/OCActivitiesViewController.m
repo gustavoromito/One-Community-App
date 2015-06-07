@@ -8,11 +8,15 @@
 
 #import "OCActivitiesViewController.h"
 #import "OCProgramCell.h"
+#import "OCProgramDetailsViewController.h"
+
+#import <HexColors/HexColor.h>
 
 #define PROGRAM_CELL_IDENTIFIER @"programCell"
 @interface OCActivitiesViewController() {
    NSArray *programs;
    NSArray *colors;
+   UIColor *selectedColor;
 }
 @end
 
@@ -38,7 +42,10 @@
    OCProgramCell *cell;
    cell = (OCProgramCell *)[self buildCellWithIdentifier:PROGRAM_CELL_IDENTIFIER andAction:nil];
    int quant = arc4random_uniform(20);
-   [cell setupWithTitle:[programs objectAtIndex:indexPath.row] refreshDate:[NSDate dateWithTimeIntervalSince1970:NSTimeIntervalSince1970] quantity:quant andColor:[colors objectAtIndex:indexPath.row]];
+   [cell setupWithTitle:[programs objectAtIndex:indexPath.row]
+            refreshDate:[NSDate dateWithTimeIntervalSince1970:NSTimeIntervalSince1970]
+               quantity:quant
+               andColor:[colors objectAtIndex:indexPath.row]];
    
    return cell;
 }
@@ -78,6 +85,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
+   selectedColor = [UIColor colorWithHexString:[colors objectAtIndex:indexPath.row]];
+   [self performSegueWithIdentifier:@"goToProgramDetails" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   if ([[segue identifier] isEqualToString:@"goToProgramDetails"]) {
+      OCProgramDetailsViewController *nextViewController = [segue destinationViewController];
+      nextViewController.color = selectedColor;
+   }
 }
 
 

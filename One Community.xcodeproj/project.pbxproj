@@ -44,6 +44,9 @@
 		A25821DA1B1D151D00A9168D /* OCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821D91B1D151D00A9168D /* OCProfileViewController.m */; };
 		A25821DE1B1E059D00A9168D /* OCCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821DD1B1E059D00A9168D /* OCCustomTableViewCell.m */; };
 		A25821E11B1E237A00A9168D /* OCProgramCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821E01B1E237A00A9168D /* OCProgramCell.m */; };
+		A25821E31B1E70CF00A9168D /* loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25821E21B1E70CF00A9168D /* loading.storyboard */; };
+		A25821E81B1E715D00A9168D /* OCLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821E71B1E715D00A9168D /* OCLoadingViewController.m */; };
+		A25821EB1B1F98F400A9168D /* OCProgramDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,11 @@
 		A25821DD1B1E059D00A9168D /* OCCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCCustomTableViewCell.m; path = "Custom Components/UITableViewCell/OCCustomTableViewCell.m"; sourceTree = "<group>"; };
 		A25821DF1B1E237A00A9168D /* OCProgramCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProgramCell.h; path = "Custom Components/UITableViewCell/OCProgramCell.h"; sourceTree = "<group>"; };
 		A25821E01B1E237A00A9168D /* OCProgramCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProgramCell.m; path = "Custom Components/UITableViewCell/OCProgramCell.m"; sourceTree = "<group>"; };
+		A25821E21B1E70CF00A9168D /* loading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = loading.storyboard; path = Storyboards/loading.storyboard; sourceTree = "<group>"; };
+		A25821E61B1E715D00A9168D /* OCLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCLoadingViewController.h; path = "View Controllers/Loading Controllers/OCLoadingViewController.h"; sourceTree = "<group>"; };
+		A25821E71B1E715D00A9168D /* OCLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCLoadingViewController.m; path = "View Controllers/Loading Controllers/OCLoadingViewController.m"; sourceTree = "<group>"; };
+		A25821E91B1F98F400A9168D /* OCProgramDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProgramDetailsViewController.h; path = "View Controllers/First Tab Controllers/OCProgramDetailsViewController.h"; sourceTree = "<group>"; };
+		A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProgramDetailsViewController.m; path = "View Controllers/First Tab Controllers/OCProgramDetailsViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +234,7 @@
 			children = (
 				A25821411B1CC73500A9168D /* main.storyboard */,
 				A25821431B1CC74900A9168D /* login.storyboard */,
+				A25821E21B1E70CF00A9168D /* loading.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 		A258213C1B1CC6C000A9168D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A25821E51B1E713A00A9168D /* Loading Controllers */,
 				A25821641B1D0C5900A9168D /* Barcode Generator */,
 				A25821561B1CD69400A9168D /* Reusable Controllers */,
 				A25821551B1CD66E00A9168D /* Sign In Controllers */,
@@ -248,6 +258,8 @@
 			children = (
 				A25821611B1CFB9300A9168D /* OCActivitiesViewController.h */,
 				A25821621B1CFB9300A9168D /* OCActivitiesViewController.m */,
+				A25821E91B1F98F400A9168D /* OCProgramDetailsViewController.h */,
+				A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */,
 			);
 			name = "First Tab Controllers";
 			sourceTree = "<group>";
@@ -381,6 +393,15 @@
 			name = UITableViewCell;
 			sourceTree = "<group>";
 		};
+		A25821E51B1E713A00A9168D /* Loading Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A25821E61B1E715D00A9168D /* OCLoadingViewController.h */,
+				A25821E71B1E715D00A9168D /* OCLoadingViewController.m */,
+			);
+			name = "Loading Controllers";
+			sourceTree = "<group>";
+		};
 		E0D935DFD5FCF8A266AD9A0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +497,7 @@
 				A258211F1B1CC13300A9168D /* LaunchScreen.xib in Resources */,
 				A258211C1B1CC13300A9168D /* Images.xcassets in Resources */,
 				A25821391B1CC66100A9168D /* Info.plist in Resources */,
+				A25821E31B1E70CF00A9168D /* loading.storyboard in Resources */,
 				A25821441B1CC74900A9168D /* login.storyboard in Resources */,
 				A25821421B1CC73500A9168D /* main.storyboard in Resources */,
 			);
@@ -568,7 +590,9 @@
 				A25821C61B1D0E3500A9168D /* pngwrite.c in Sources */,
 				A25821DE1B1E059D00A9168D /* OCCustomTableViewCell.m in Sources */,
 				A25821C21B1D0E3500A9168D /* pngrutil.c in Sources */,
+				A25821E81B1E715D00A9168D /* OCLoadingViewController.m in Sources */,
 				A25821DA1B1D151D00A9168D /* OCProfileViewController.m in Sources */,
+				A25821EB1B1F98F400A9168D /* OCProgramDetailsViewController.m in Sources */,
 				A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */,
 				A25821CA1B1D0E3500A9168D /* QR_Encode.mm in Sources */,
 				A258215C1B1CD87C00A9168D /* OCBaseViewController.m in Sources */,

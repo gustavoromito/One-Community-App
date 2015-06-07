@@ -25,7 +25,7 @@
 - (void)showGenericErrorWarning;
 
 #pragma mark - Navigation Helpers
-- (void)pushUserStoryboard;
-- (void)pushSignInSignUpStoryboard;
+- (void)pushUserStoryboardAnimated:(BOOL)animated;
+- (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated;
 
 @end

@@ -57,18 +57,18 @@
 
 #pragma mark - Navigation Helpers
 
-- (void)genericStoryboardPushWithName:(NSString *)storyboardName {
+- (void)genericStoryboardPushWithName:(NSString *)storyboardName animated:(BOOL)animated{
    UIStoryboard *story = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
    UIViewController *viewController = [story instantiateInitialViewController];
-   [self.navigationController pushViewController:viewController animated:YES];
+   [self.navigationController pushViewController:viewController animated:animated];
 }
 
-- (void)pushUserStoryboard {
-   [self genericStoryboardPushWithName:@"main"];
+- (void)pushUserStoryboardAnimated:(BOOL)animated{
+   [self genericStoryboardPushWithName:@"main" animated:animated];
 }
 
-- (void)pushSignInSignUpStoryboard {
-   [self genericStoryboardPushWithName:@"MSignInSignUp"];
+- (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated {
+   [self genericStoryboardPushWithName:@"login" animated:animated];
 }
 
 #pragma mark - Placeholder Warnings & Alert View Helpers

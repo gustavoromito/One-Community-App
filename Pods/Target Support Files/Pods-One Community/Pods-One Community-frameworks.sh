@@ -48,22 +48,30 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework 'CBZSplashView.framework'
+  install_framework 'ASProgressPopUpView.framework'
   install_framework 'CocoaSecurity.framework'
+  install_framework 'FXBlurView.framework'
   install_framework 'HexColors.framework'
   install_framework 'MBProgressHUD.framework'
   install_framework 'NSUserDefaults_AESEncryptor.framework'
   install_framework 'ObjectiveSugar.framework'
+  install_framework 'ParallaxBlur.framework'
+  install_framework 'SKSplashView.framework'
   install_framework 'ZBarSDK.framework'
   install_framework 'ZFRippleButton.framework'
+  install_framework 'iOS_Slide_Menu.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework 'CBZSplashView.framework'
+  install_framework 'ASProgressPopUpView.framework'
   install_framework 'CocoaSecurity.framework'
+  install_framework 'FXBlurView.framework'
   install_framework 'HexColors.framework'
   install_framework 'MBProgressHUD.framework'
   install_framework 'NSUserDefaults_AESEncryptor.framework'
   install_framework 'ObjectiveSugar.framework'
+  install_framework 'ParallaxBlur.framework'
+  install_framework 'SKSplashView.framework'
   install_framework 'ZBarSDK.framework'
   install_framework 'ZFRippleButton.framework'
+  install_framework 'iOS_Slide_Menu.framework'
 fi

@@ -20,6 +20,7 @@
 #define FOOTER_CELL_IDENTIFIER @"footerCell"
 #define HEADER_HEIGHT 25.0f
 #define FOOTER_HEIGHT 80.0f
+#define QRCODE_IMAGE_INSET 50.0f
 
 @interface OCProfileViewController (){
    NSArray *sections;
@@ -33,6 +34,7 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
+   self.navigationController.navigationBar.hidden = YES;
    [self qrcodeSetup];
    options = @[@"Public", @"Private"];
    reports = @[@"Report 1", @"Report 2", @"Report 3"];
@@ -58,8 +60,42 @@
    Barcode *barcode = [[Barcode alloc] init];
    
    [barcode setupQRCode:encryptedValue];
-   _qrcodeImageView.image = barcode.qRBarcode;
+//   _qrcodeImageView.image = barcode.qRBarcode;
+   [self.view setBackgroundColor:[UIColor whiteColor]];
+   
+   [self setHeaderImage:[self paddedImageFrom:barcode.qRBarcode]];
+   [self setLabelBackgroundGradientColor:[UIColor colorWithRed:0.0f green:0.0f blue:0.0f alpha:0.3f]];
+   [self setTitleText:@"gustavoromito"];
+   [self setSubtitleText:@"is logged in!"];
 }
+
+- (UIImage *)paddedImageFrom:(UIImage *)imageName {
+   CGFloat deviceWidth = [[UIScreen mainScreen] bounds].size.width;
+   CGSize size = CGSizeMake(imageName.size.width + QRCODE_IMAGE_INSET, imageName.size.height + QRCODE_IMAGE_INSET);
+   UIGraphicsBeginImageContextWithOptions(size, YES, 0);
+   [[UIColor whiteColor] setFill];
+   UIRectFill(CGRectMake(0, 0, size.width, size.height));
+   UIImage *blankBackImage = UIGraphicsGetImageFromCurrentImageContext();
+   UIGraphicsEndImageContext();
+   
+   CGSize newSize = CGSizeMake(deviceWidth, self.headerHeight);
+   UIGraphicsBeginImageContext( newSize );
+   
+   // Use existing opacity as is
+   [blankBackImage drawInRect:CGRectMake(0,0,newSize.width,newSize.height) blendMode:kCGBlendModeNormal alpha:0.0];
+   
+   CGSize qrcodeSize = CGSizeMake(imageName.size.width, imageName.size.height);
+   [imageName drawInRect:CGRectMake(deviceWidth / 2 - qrcodeSize.width / 2,
+                                    0.0f,
+                                    qrcodeSize.width,
+                                    qrcodeSize.height)];
+   
+   UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+   
+   UIGraphicsEndImageContext();
+   return newImage;
+}
+
 - (void)didReceiveMemoryWarning {
    [super didReceiveMemoryWarning];
    // Dispose of any resources that can be recreated.
@@ -130,15 +166,15 @@
 
 #pragma mark Header/Footer Helpers
 - (UITableViewCell *)buildCellWithIdentifier:(NSString *)identifier andAction:(SEL)action {
-   OCCustomTableViewCell *cell = (OCCustomTableViewCell *)[_tableView dequeueReusableCellWithIdentifier:identifier];
+   OCCustomTableViewCell *cell = (OCCustomTableViewCell *)[_optionsTableView dequeueReusableCellWithIdentifier:identifier];
    if (cell == nil) cell = [[OCCustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    _lastIndex = indexPath.section == 0 ?  indexPath : _lastIndex;
-   [_tableView reloadData];
-   [_tableView deselectRowAtIndexPath:indexPath animated:YES];
+   [tableView reloadData];
+   [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
