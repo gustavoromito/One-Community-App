@@ -137,63 +137,53 @@
                                                                 </mask>
                                                             </variation>
                                                         </view>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcP-VX-8jO" userLabel="Lower Right Container">
-                                                            <rect key="frame" x="60" y="15" width="220" height="55"/>
-                                                            <subviews>
-                                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Program Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBV-mU-ND5" userLabel="Value Label">
-                                                                    <rect key="frame" x="5" y="5" width="210" height="45"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="45" id="avt-bS-p8U"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                                    <color key="textColor" red="0.0" green="0.59607845540000004" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="51" y="5" width="108" height="45"/>
-                                                                    </variation>
-                                                                </label>
-                                                            </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Program Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBV-mU-ND5" userLabel="Value Label">
+                                                            <rect key="frame" x="5" y="5" width="210" height="45"/>
                                                             <constraints>
-                                                                <constraint firstItem="ZBV-mU-ND5" firstAttribute="leading" secondItem="mcP-VX-8jO" secondAttribute="leading" constant="5" id="2BC-mV-1sn">
-                                                                    <variation key="heightClass=regular-widthClass=compact" constant="51"/>
-                                                                </constraint>
-                                                                <constraint firstAttribute="height" constant="55" id="7eh-dQ-c9B"/>
-                                                                <constraint firstAttribute="centerY" secondItem="ZBV-mU-ND5" secondAttribute="centerY" id="A0C-Yp-G68"/>
-                                                                <constraint firstAttribute="trailing" secondItem="ZBV-mU-ND5" secondAttribute="trailing" constant="5" id="BPJ-MJ-lpi">
-                                                                    <variation key="heightClass=regular-widthClass=compact" constant="-41"/>
-                                                                </constraint>
-                                                                <constraint firstAttribute="bottom" secondItem="ZBV-mU-ND5" secondAttribute="bottom" constant="5" id="MPE-c5-Sdd"/>
-                                                                <constraint firstItem="ZBV-mU-ND5" firstAttribute="top" secondItem="mcP-VX-8jO" secondAttribute="top" constant="5" id="N2m-rR-jgx"/>
-                                                                <constraint firstAttribute="centerX" secondItem="ZBV-mU-ND5" secondAttribute="centerX" id="iz6-bQ-n0H">
-                                                                    <variation key="heightClass=regular-widthClass=compact" constant="-46"/>
-                                                                </constraint>
+                                                                <constraint firstAttribute="height" constant="45" id="avt-bS-p8U"/>
                                                             </constraints>
-                                                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="60" y="15" width="118" height="55"/>
-                                                            </variation>
-                                                        </view>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <color key="textColor" red="0.0" green="0.59607845540000004" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.047058824450000002" green="0.74901962280000001" blue="0.68627452850000004" alpha="0.20000000300000001" colorSpace="deviceRGB"/>
                                                     <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="ZBV-mU-ND5" secondAttribute="trailing" constant="58" id="0om-Jw-F7F"/>
                                                         <constraint firstAttribute="bottom" secondItem="mLS-PQ-wbg" secondAttribute="bottom" id="AQo-Lc-DcC"/>
                                                         <constraint firstAttribute="trailing" secondItem="Tes-4J-Xz9" secondAttribute="trailing" id="BmM-pG-Of8">
                                                             <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                                                         </constraint>
+                                                        <constraint firstAttribute="bottom" secondItem="ZBV-mU-ND5" secondAttribute="bottom" constant="2" id="WEa-x9-aQT"/>
                                                         <constraint firstItem="Tes-4J-Xz9" firstAttribute="top" secondItem="aM7-gG-DQW" secondAttribute="top" id="a8o-Am-egj"/>
                                                         <constraint firstAttribute="height" constant="70" id="akY-aT-68o"/>
                                                         <constraint firstItem="Tes-4J-Xz9" firstAttribute="leading" secondItem="mLS-PQ-wbg" secondAttribute="trailing" id="cMX-Ey-lbJ"/>
                                                         <constraint firstItem="mLS-PQ-wbg" firstAttribute="top" secondItem="aM7-gG-DQW" secondAttribute="top" id="cQL-Ya-pAv"/>
-                                                        <constraint firstAttribute="trailing" secondItem="mcP-VX-8jO" secondAttribute="trailing" id="g5y-dM-Cle">
-                                                            <variation key="heightClass=regular-widthClass=compact" constant="102"/>
-                                                        </constraint>
-                                                        <constraint firstItem="mcP-VX-8jO" firstAttribute="top" secondItem="Tes-4J-Xz9" secondAttribute="bottom" id="hgX-0n-VKQ"/>
                                                         <constraint firstItem="mLS-PQ-wbg" firstAttribute="leading" secondItem="aM7-gG-DQW" secondAttribute="leading" id="iEm-hp-3vt"/>
-                                                        <constraint firstItem="mcP-VX-8jO" firstAttribute="leading" secondItem="mLS-PQ-wbg" secondAttribute="trailing" id="iIl-5w-frJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="mcP-VX-8jO" secondAttribute="bottom" id="ziJ-Nh-wSb"/>
+                                                        <constraint firstAttribute="centerX" secondItem="ZBV-mU-ND5" secondAttribute="centerX" constant="-30" id="kKz-JH-Upe"/>
+                                                        <constraint firstItem="ZBV-mU-ND5" firstAttribute="top" secondItem="aM7-gG-DQW" secondAttribute="top" constant="23" id="zvU-59-ITi"/>
                                                     </constraints>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="10" y="8" width="280" height="70"/>
+                                                    <variation key="default">
+                                                        <mask key="subviews">
+                                                            <exclude reference="ZBV-mU-ND5"/>
+                                                        </mask>
+                                                        <mask key="constraints">
+                                                            <exclude reference="0om-Jw-F7F"/>
+                                                            <exclude reference="WEa-x9-aQT"/>
+                                                            <exclude reference="kKz-JH-Upe"/>
+                                                            <exclude reference="zvU-59-ITi"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="subviews">
+                                                            <include reference="ZBV-mU-ND5"/>
+                                                        </mask>
+                                                        <mask key="constraints">
+                                                            <include reference="0om-Jw-F7F"/>
+                                                            <include reference="WEa-x9-aQT"/>
+                                                            <include reference="kKz-JH-Upe"/>
+                                                            <include reference="zvU-59-ITi"/>
+                                                        </mask>
                                                     </variation>
                                                 </view>
                                             </subviews>
@@ -549,11 +539,12 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
         <!--Programs-->
         <scene sceneID="7d1-TC-hFc">
             <objects>
-                <navigationController id="Pfq-y9-M0R" sceneMemberID="viewController">
+                <navigationController id="Pfq-y9-M0R" customClass="SlideNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Programs" image="first_tab_icon" id="2pX-CP-0dz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1CJ-rU-aKr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.52448331780000002" green="0.70937003070000004" blue="0.1015238505" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="lkL-dN-dm7"/>
@@ -579,13 +570,13 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <rect key="frame" x="195" y="247" width="209.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
                                 <rect key="frame" x="192" y="297" width="215.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -609,8 +600,9 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Sc-ln-FVg"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -683,7 +675,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                     <constraint firstAttribute="height" constant="21" id="XGj-U5-urO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -703,7 +695,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                     <constraint firstAttribute="width" constant="147" id="HX3-y2-ROo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -740,7 +732,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                     <constraint firstAttribute="height" constant="29" id="uhO-Ny-1ZH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">

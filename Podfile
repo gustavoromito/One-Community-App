@@ -12,6 +12,7 @@ target 'One Community' do
 	pod 'ASProgressPopUpView'
 	pod 'iOS-Slide-Menu'
 	pod 'ParallaxBlur'
+	pod 'BlockRSSParser'
 	use_frameworks!
 end
 

@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    [self addSplashScreen];
+   [self.navigationController.navigationBar setHidden:YES];
    // Do any additional setup after loading the view.
 }
 
@@ -71,17 +72,14 @@
 
 #pragma mark - Delegate methods
 
-- (void) splashView:(SKSplashView *)splashView didBeginAnimatingWithDuration:(float)duration
-{
-   NSLog(@"Started animating from delegate");
+- (void) splashView:(SKSplashView *)splashView didBeginAnimatingWithDuration:(float)duration {
    [spinner setHidden:YES];
    //To start activity animation when splash animation starts
 }
 
 - (void) splashViewDidEndAnimating:(SKSplashView *)splashView
 {
-   NSLog(@"Stopped animating from delegate");
-   [self pushSignInSignUpStoryboardAnimated:NO];
+   [self pushNewsAndUpdatesAnimated:NO];
    //To stop activity animation when splash animation ends
 }
 

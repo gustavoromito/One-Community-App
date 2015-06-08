@@ -1,0 +1,6 @@
+framework module BlockRSSParser {
+  umbrella header "Pods-One Community-BlockRSSParser-umbrella.h"
+
+  export *
+  module * { export * }
+}

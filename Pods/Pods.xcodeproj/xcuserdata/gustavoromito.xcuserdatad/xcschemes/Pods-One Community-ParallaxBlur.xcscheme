@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D78B650A4F70EBE112682124"
+               BlueprintIdentifier = "165E2150397A601F6C94CDF4"
                BuildableName = "ParallaxBlur.framework"
                BlueprintName = "Pods-One Community-ParallaxBlur"
                ReferencedContainer = "container:Pods.xcodeproj">

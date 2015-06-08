@@ -1,5 +1,28 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - ASProgressPopUpView (0.8)
+  - BlockRSSParser (2.1):
+    - AFNetworking (~> 2.0)
   - CocoaSecurity (1.2.4)
   - FXBlurView (1.6.3)
   - HexColors (2.2.1)
@@ -16,6 +39,7 @@ PODS:
 
 DEPENDENCIES:
   - ASProgressPopUpView
+  - BlockRSSParser
   - HexColors
   - iOS-Slide-Menu
   - MBProgressHUD
@@ -27,7 +51,9 @@ DEPENDENCIES:
   - ZFRippleButton
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   ASProgressPopUpView: 945c19297da09a625db48a5a37cabd7756916b9b
+  BlockRSSParser: aedf3ab9a6c92f8d0881b9415fe88b5e136ab174
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
   HexColors: abfd172e329dab59888614ccba6f216cec59289d

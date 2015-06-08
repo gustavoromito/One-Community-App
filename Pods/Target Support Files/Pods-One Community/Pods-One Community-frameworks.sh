@@ -48,7 +48,9 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'AFNetworking.framework'
   install_framework 'ASProgressPopUpView.framework'
+  install_framework 'BlockRSSParser.framework'
   install_framework 'CocoaSecurity.framework'
   install_framework 'FXBlurView.framework'
   install_framework 'HexColors.framework'
@@ -62,7 +64,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'iOS_Slide_Menu.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'AFNetworking.framework'
   install_framework 'ASProgressPopUpView.framework'
+  install_framework 'BlockRSSParser.framework'
   install_framework 'CocoaSecurity.framework'
   install_framework 'FXBlurView.framework'
   install_framework 'HexColors.framework'

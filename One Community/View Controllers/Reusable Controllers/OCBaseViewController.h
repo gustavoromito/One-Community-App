@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <iOS-Slide-Menu/SlideNavigationController.h>
 
-@interface OCBaseViewController : UIViewController
+@interface OCBaseViewController : UIViewController <SlideNavigationControllerDelegate>
 
 #pragma mark - MBProgressHUD Helpers
 - (void(^)(void))showHUDWithMessage:(NSString *)message andCancellableRequestPath:(NSString *)requestPath;
@@ -27,5 +28,10 @@
 #pragma mark - Navigation Helpers
 - (void)pushUserStoryboardAnimated:(BOOL)animated;
 - (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated;
+- (void)pushNewsAndUpdatesAnimated:(BOOL)animated;
+- (void)sideMenuSetup;
+
+#pragma mark - Image Helper
+- (UIImage *)getImageFromURL:(NSString*)path;
 
 @end

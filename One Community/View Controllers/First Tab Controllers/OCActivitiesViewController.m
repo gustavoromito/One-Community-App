@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    [self.navigationController.navigationItem setHidesBackButton: YES];
+   [self sideMenuSetup];
+   
    programs = @[@"Hiking", @"Code Class", @"Painting", @"Yoga Class", @"Cooking",
                 @"Acting", @"Cycling", @"Football", @"Soccer", @"Basketball"];
    colors = @[@"437D8F", @"4F8767", @"BABA8F", @"085E85", @"D7222C", @"BABA2B", @"7D5F54", @"6B696A", @"6A7FC1", @"BCA6A0"];
@@ -34,6 +36,10 @@
 - (void)didReceiveMemoryWarning {
    [super didReceiveMemoryWarning];
    // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+   [super viewDidAppear:animated];
 }
 
 #pragma mark - Table view data source

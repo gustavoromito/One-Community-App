@@ -13,7 +13,7 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    [self.navigationController.navigationBar setHidden: YES];
-   // Do any additional setup after loading the view.
+//    Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,3 +31,4 @@
    [self showPendingWarningWithDescription:@"Add Forgot password Function."];
 }
 @end
+

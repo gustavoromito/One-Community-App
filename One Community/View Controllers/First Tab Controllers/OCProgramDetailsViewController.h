@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Gustavo Romito. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "OCBaseWithouMenuViewController.h"
 #import <ASProgressPopUpView/ASProgressPopUpView.h>
 
-@interface OCProgramDetailsViewController : OCBaseViewController
+@interface OCProgramDetailsViewController : OCBaseWithouMenuViewController
 
 @property (strong, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) IBOutlet ASProgressPopUpView *progressBar;

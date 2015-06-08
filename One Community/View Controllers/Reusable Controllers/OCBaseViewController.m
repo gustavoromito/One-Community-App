@@ -7,6 +7,9 @@
 //
 
 #import "OCBaseViewController.h"
+#import "OCLeftMenuTableViewController.h"
+#import <iOS-Slide-Menu/SlideNavigationController.h>
+#import <iOS-Slide-Menu/SlideNavigationContorllerAnimatorSlide.h>
 
 @interface OCBaseViewController ()
 
@@ -71,6 +74,10 @@
    [self genericStoryboardPushWithName:@"login" animated:animated];
 }
 
+- (void)pushNewsAndUpdatesAnimated:(BOOL)animated {
+   [self genericStoryboardPushWithName:@"informative" animated:animated];
+}
+
 #pragma mark - Placeholder Warnings & Alert View Helpers
 - (void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message {
    [[[UIAlertView alloc] initWithTitle:title
@@ -81,38 +88,67 @@
 }
 
 - (void)showErrorWarningWithDescription:(NSString *)description {
-   [[[UIAlertView alloc] initWithTitle:@"Erro encontrado!"
+   [[[UIAlertView alloc] initWithTitle:@"Error founded!"
                                message:description
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
 }
 
 - (void)showConnectionErrorAlert {
-   [[[UIAlertView alloc] initWithTitle:@"Falha de conexão!"
-                               message:@"Não foi possível estabelecer uma conexão com o servidor."
+   [[[UIAlertView alloc] initWithTitle:@"Connection Problem!"
+                               message:@"We could not reach our servers."
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
 }
 
 - (void)showCancelledOperationAlert {
    [[[UIAlertView alloc] initWithTitle:nil
-                               message:@"Operação cancelada com sucesso."
+                               message:@"Successfuly canceled operation."
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
 }
 
 - (void)showPendingWarningWithDescription:(NSString *)description {
-   [[[UIAlertView alloc] initWithTitle:@"Funcionalidade pendente!"
+   [[[UIAlertView alloc] initWithTitle:@"Pending feature!"
                                message:description
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
 }
 
 - (void)showGenericErrorWarning {
-   [[[UIAlertView alloc] initWithTitle:@"Erro inesperado encontrado!"
-                               message:@"Por favor, reporte este erro para a equipe de desenvolvimento!"
+   [[[UIAlertView alloc] initWithTitle:@"Unexpected Error Founded!"
+                               message:@"Please, report this to the develop team."
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
+}
+
+#pragma mark - IOS Slide Menu Delegate
+- (void)sideMenuSetup {
+   UIStoryboard *sideMenusStoryboard = [UIStoryboard storyboardWithName:@"sideMenu" bundle:nil];
+   
+   OCLeftMenuTableViewController *leftMenu = [sideMenusStoryboard
+                                              instantiateViewControllerWithIdentifier:@"leftMenu"];
+   
+   SlideNavigationContorllerAnimatorSlide *slide = [[SlideNavigationContorllerAnimatorSlide alloc] initWithSlideMovement:100.0f];
+   [[SlideNavigationController sharedInstance] setEnableShadow:NO];
+   [[SlideNavigationController sharedInstance] setEnableSwipeGesture:NO];
+   [SlideNavigationController sharedInstance].menuRevealAnimator = slide;
+   [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu {
+   return NO;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
+   return YES;
+}
+
+#pragma mark - Image Helper
+- (UIImage *)getImageFromURL:(NSString*)path {
+   NSURL *url = [NSURL URLWithString:path];
+   NSData *data = [NSData dataWithContentsOfURL:url];
+   return [[UIImage alloc] initWithData:data];
 }
 
 @end

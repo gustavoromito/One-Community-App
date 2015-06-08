@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B53A8ADB26DDF3FD6081223E"
+               BlueprintIdentifier = "853DCFCBB0FEB15857970EF6"
                BuildableName = "NSUserDefaults_AESEncryptor.framework"
                BlueprintName = "Pods-One Community-NSUserDefaults-AESEncryptor"
                ReferencedContainer = "container:Pods.xcodeproj">
