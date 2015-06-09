@@ -49,6 +49,7 @@ code_sign() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'AFNetworking.framework'
+  install_framework 'ALThreeCircleSpinner.framework'
   install_framework 'ASProgressPopUpView.framework'
   install_framework 'BlockRSSParser.framework'
   install_framework 'CocoaSecurity.framework'
@@ -65,6 +66,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'AFNetworking.framework'
+  install_framework 'ALThreeCircleSpinner.framework'
   install_framework 'ASProgressPopUpView.framework'
   install_framework 'BlockRSSParser.framework'
   install_framework 'CocoaSecurity.framework'

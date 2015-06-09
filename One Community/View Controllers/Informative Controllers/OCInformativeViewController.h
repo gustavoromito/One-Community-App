@@ -7,6 +7,7 @@
 //
 
 #import "OCBaseWithouMenuViewController.h"
+#import <ALThreeCircleSpinner/ALThreeCircleSpinner-Swift.h>
 
 @interface OCInformativeViewController : OCBaseWithouMenuViewController <UITableViewDataSource, UITableViewDelegate>
 

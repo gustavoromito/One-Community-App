@@ -13,6 +13,7 @@ target 'One Community' do
 	pod 'iOS-Slide-Menu'
 	pod 'ParallaxBlur'
 	pod 'BlockRSSParser'
+	pod 'ALThreeCircleSpinner'
 	use_frameworks!
 end
 
