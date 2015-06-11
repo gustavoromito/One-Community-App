@@ -190,6 +190,9 @@
                     <navigationItem key="navigationItem" title="News" id="oJU-pa-JWd">
                         <barButtonItem key="rightBarButtonItem" image="login" id="R8C-T6-9bB">
                             <color key="tintColor" red="0.59607843137254901" green="0.80784313725490198" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="goToSignIn:" destination="lGk-C0-PBc" id="3Ko-UG-VEo"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

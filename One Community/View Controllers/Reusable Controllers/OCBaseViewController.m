@@ -71,7 +71,11 @@
 }
 
 - (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated {
-   [self genericStoryboardPushWithName:@"login" animated:animated];
+//   [self genericStoryboardPushWithName:@"login" animated:animated];
+   UIStoryboard *story = [UIStoryboard storyboardWithName:@"login" bundle:nil];
+   UIViewController *viewController = [story instantiateInitialViewController];
+   [self presentViewController:viewController animated:YES completion:nil];
+   
 }
 
 - (void)pushNewsAndUpdatesAnimated:(BOOL)animated {
@@ -134,6 +138,11 @@
    [[SlideNavigationController sharedInstance] setEnableSwipeGesture:NO];
    [SlideNavigationController sharedInstance].menuRevealAnimator = slide;
    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+   UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button"]
+                                                                  style:UIBarButtonItemStylePlain
+                                                                 target:self
+                                                                 action:@selector(toggleLeftMenu)];
+   [SlideNavigationController sharedInstance].navigationItem.leftBarButtonItem = leftButton;
 }
 
 - (BOOL)slideNavigationControllerShouldDisplayRightMenu {

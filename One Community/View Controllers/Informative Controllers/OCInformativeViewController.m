@@ -156,4 +156,7 @@
 }
 
 
+- (IBAction)goToSignIn:(id)sender {
+   [self pushSignInSignUpStoryboardAnimated:YES];
+}
 @end

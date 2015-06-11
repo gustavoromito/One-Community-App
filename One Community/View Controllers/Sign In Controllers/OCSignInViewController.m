@@ -22,7 +22,7 @@
 }
 
 - (IBAction)SignInTapped:(id)sender {
-   //TOD: Validate login
+   //TODO: Validate login
    [self pushUserStoryboardAnimated:YES];
 }
 
@@ -30,5 +30,10 @@
    //TODO
    [self showPendingWarningWithDescription:@"Add Forgot password Function."];
 }
+
+- (IBAction)cancelTapped:(id)sender {
+   [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
 

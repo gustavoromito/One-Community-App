@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   self.navigationController.navigationBar.hidden = YES;
+   [self.navigationController.navigationBar setHidden:YES];
    [self qrcodeSetup];
    options = @[@"Public", @"Private"];
    reports = @[@"Report 1", @"Report 2", @"Report 3"];

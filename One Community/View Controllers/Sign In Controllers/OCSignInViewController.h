@@ -9,9 +9,12 @@
 #import "OCBaseViewController.h"
 
 @interface OCSignInViewController : OCBaseViewController
+
 @property (strong, nonatomic) IBOutlet UITextField *userIdTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 
 - (IBAction)SignInTapped:(id)sender;
 - (IBAction)forgotPasswordTapped:(id)sender;
+- (IBAction)cancelTapped:(id)sender;
+
 @end

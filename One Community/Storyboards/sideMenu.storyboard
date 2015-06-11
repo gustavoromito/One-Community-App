@@ -117,18 +117,18 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="PNc-iJ-DrS"/>
                                 <exclude reference="5hR-iU-24b"/>
                                 <exclude reference="krv-pS-3kv"/>
                                 <exclude reference="vk0-rU-jp1"/>
+                                <exclude reference="PNc-iJ-DrS"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="PNc-iJ-DrS"/>
                                 <include reference="5hR-iU-24b"/>
                                 <include reference="krv-pS-3kv"/>
                                 <include reference="vk0-rU-jp1"/>
+                                <include reference="PNc-iJ-DrS"/>
                             </mask>
                         </variation>
                     </view>

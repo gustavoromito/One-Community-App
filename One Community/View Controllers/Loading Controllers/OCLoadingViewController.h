@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Gustavo Romito. All rights reserved.
 //
 
-#import "OCBaseViewController.h"
+#import "OCBaseWithouMenuViewController.h"
 
 #import <SKSplashView/SKSplashView.h>
 
-@interface OCLoadingViewController : OCBaseViewController <SKSplashDelegate>
+@interface OCLoadingViewController : OCBaseWithouMenuViewController <SKSplashDelegate>
 
 
 @end

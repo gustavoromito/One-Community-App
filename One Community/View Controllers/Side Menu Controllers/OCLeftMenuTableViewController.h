@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "OCBaseViewController.h"
+#import "OCBaseWithouMenuViewController.h"
 
-@interface OCLeftMenuTableViewController : OCBaseViewController <UITableViewDataSource, UITableViewDelegate>
+@interface OCLeftMenuTableViewController : OCBaseWithouMenuViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *optionsTableView;
 

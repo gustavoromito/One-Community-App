@@ -12,4 +12,7 @@
 @interface OCInformativeViewController : OCBaseWithouMenuViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+- (IBAction)goToSignIn:(id)sender;
+
 @end
