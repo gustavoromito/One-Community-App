@@ -660,15 +660,14 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="38" y="8" width="125" height="21"/>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="bTo-UR-15C" secondAttribute="bottom" constant="0.5" id="6QB-l2-bDW"/>
                                                 <constraint firstItem="bTo-UR-15C" firstAttribute="top" secondItem="Nqe-vW-tWc" secondAttribute="topMargin" id="EIL-ip-Zjb"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bTo-UR-15C" secondAttribute="trailing" constant="149" id="WXS-b0-m1F"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bTo-UR-15C" secondAttribute="trailing" constant="149" id="WXS-b0-m1F">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="213"/>
+                                                </constraint>
                                                 <constraint firstItem="bTo-UR-15C" firstAttribute="leading" secondItem="Nqe-vW-tWc" secondAttribute="leadingMargin" constant="30" id="htl-Sc-Z7U"/>
                                                 <constraint firstAttribute="centerY" secondItem="bTo-UR-15C" secondAttribute="centerY" constant="0.25" id="lYM-Ei-5LS"/>
                                             </constraints>
@@ -811,20 +810,32 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="b0F-cz-jLu" secondAttribute="trailing" constant="-16" id="DD2-W4-cvK"/>
-                            <constraint firstAttribute="centerX" secondItem="b0F-cz-jLu" secondAttribute="centerX" constant="3" id="Eo1-kx-fqR"/>
-                            <constraint firstItem="7xF-gj-tjz" firstAttribute="top" secondItem="b0F-cz-jLu" secondAttribute="bottom" id="PM8-bs-P0j"/>
-                            <constraint firstItem="b0F-cz-jLu" firstAttribute="leading" secondItem="z7d-k6-0dA" secondAttribute="leadingMargin" constant="-22" id="oFg-0P-FIv"/>
+                            <constraint firstItem="b0F-cz-jLu" firstAttribute="top" secondItem="lHj-vC-RdC" secondAttribute="bottom" id="1DZ-uR-SmB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="b0F-cz-jLu" secondAttribute="trailing" constant="-16" id="DD2-W4-cvK">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-8"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="b0F-cz-jLu" secondAttribute="centerX" constant="3" id="Eo1-kx-fqR">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="7xF-gj-tjz" firstAttribute="top" secondItem="b0F-cz-jLu" secondAttribute="bottom" id="PM8-bs-P0j">
+                                <variation key="heightClass=regular-widthClass=compact" constant="119"/>
+                            </constraint>
+                            <constraint firstItem="7xF-gj-tjz" firstAttribute="top" secondItem="b0F-cz-jLu" secondAttribute="bottom" constant="119" id="gAT-qB-oSC"/>
+                            <constraint firstItem="b0F-cz-jLu" firstAttribute="leading" secondItem="z7d-k6-0dA" secondAttribute="leadingMargin" constant="-22" id="oFg-0P-FIv">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-8"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="b0F-cz-jLu"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="PM8-bs-P0j"/>
+                                <exclude reference="1DZ-uR-SmB"/>
                                 <exclude reference="DD2-W4-cvK"/>
                                 <exclude reference="Eo1-kx-fqR"/>
                                 <exclude reference="oFg-0P-FIv"/>
+                                <exclude reference="PM8-bs-P0j"/>
+                                <exclude reference="gAT-qB-oSC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -832,10 +843,12 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <include reference="b0F-cz-jLu"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="PM8-bs-P0j"/>
+                                <include reference="1DZ-uR-SmB"/>
                                 <include reference="DD2-W4-cvK"/>
                                 <include reference="Eo1-kx-fqR"/>
                                 <include reference="oFg-0P-FIv"/>
+                                <include reference="PM8-bs-P0j"/>
+                                <include reference="gAT-qB-oSC"/>
                             </mask>
                         </variation>
                     </view>

@@ -421,7 +421,7 @@
                             <constraint firstAttribute="centerX" secondItem="H3T-wX-56g" secondAttribute="centerX" id="ZP9-IF-Nj4"/>
                             <constraint firstItem="IbO-8A-h2c" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="-1" id="bqf-j1-7Qi"/>
                             <constraint firstItem="IbO-8A-h2c" firstAttribute="top" secondItem="LTh-Bp-DQY" secondAttribute="bottom" constant="-8" id="gFC-2m-52s">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-5"/>
                             </constraint>
                             <constraint firstItem="q9c-h0-ryP" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="-1" id="h3y-0H-LR2"/>
                             <constraint firstItem="ohG-QF-NK7" firstAttribute="top" secondItem="iYU-NW-Mwg" secondAttribute="bottom" id="hMl-7u-kcp"/>
@@ -438,24 +438,24 @@
                                 <exclude reference="IbO-8A-h2c"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="KOw-mG-JTm"/>
+                                <exclude reference="hMl-7u-kcp"/>
+                                <exclude reference="F7d-XB-v8W"/>
+                                <exclude reference="GaS-pp-D6K"/>
+                                <exclude reference="KnB-mz-7B4"/>
+                                <exclude reference="bqf-j1-7Qi"/>
+                                <exclude reference="gFC-2m-52s"/>
+                                <exclude reference="580-sv-nqt"/>
+                                <exclude reference="ZP9-IF-Nj4"/>
                                 <exclude reference="3gZ-PS-MxS"/>
                                 <exclude reference="4DJ-fw-CBd"/>
                                 <exclude reference="Dpu-b6-XCB"/>
                                 <exclude reference="GX6-iW-okd"/>
                                 <exclude reference="wel-IZ-RaG"/>
-                                <exclude reference="bqf-j1-7Qi"/>
-                                <exclude reference="gFC-2m-52s"/>
-                                <exclude reference="580-sv-nqt"/>
-                                <exclude reference="ZP9-IF-Nj4"/>
                                 <exclude reference="Jjk-5N-jEv"/>
                                 <exclude reference="h3y-0H-LR2"/>
                                 <exclude reference="nOv-XA-1ey"/>
                                 <exclude reference="tfk-EA-MbX"/>
-                                <exclude reference="F7d-XB-v8W"/>
-                                <exclude reference="GaS-pp-D6K"/>
-                                <exclude reference="KnB-mz-7B4"/>
-                                <exclude reference="KOw-mG-JTm"/>
-                                <exclude reference="hMl-7u-kcp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -467,24 +467,24 @@
                                 <include reference="IbO-8A-h2c"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="KOw-mG-JTm"/>
+                                <include reference="hMl-7u-kcp"/>
+                                <include reference="F7d-XB-v8W"/>
+                                <include reference="GaS-pp-D6K"/>
+                                <include reference="KnB-mz-7B4"/>
+                                <include reference="bqf-j1-7Qi"/>
+                                <include reference="gFC-2m-52s"/>
+                                <include reference="580-sv-nqt"/>
+                                <include reference="ZP9-IF-Nj4"/>
                                 <exclude reference="3gZ-PS-MxS"/>
                                 <include reference="4DJ-fw-CBd"/>
                                 <include reference="Dpu-b6-XCB"/>
                                 <include reference="GX6-iW-okd"/>
                                 <include reference="wel-IZ-RaG"/>
-                                <include reference="bqf-j1-7Qi"/>
-                                <include reference="gFC-2m-52s"/>
-                                <include reference="580-sv-nqt"/>
-                                <include reference="ZP9-IF-Nj4"/>
                                 <include reference="Jjk-5N-jEv"/>
                                 <include reference="h3y-0H-LR2"/>
                                 <include reference="nOv-XA-1ey"/>
                                 <include reference="tfk-EA-MbX"/>
-                                <include reference="F7d-XB-v8W"/>
-                                <include reference="GaS-pp-D6K"/>
-                                <include reference="KnB-mz-7B4"/>
-                                <include reference="KOw-mG-JTm"/>
-                                <include reference="hMl-7u-kcp"/>
                             </mask>
                         </variation>
                     </view>
