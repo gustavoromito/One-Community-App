@@ -358,7 +358,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lC-5p-0W0">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="X8B-tK-84z"/>
+                                    <constraint firstAttribute="height" constant="30" id="X8B-tK-84z">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                    </constraint>
                                 </constraints>
                                 <state key="normal" title="Do not have a Log In? Click here to Sign up!">
                                     <color key="titleColor" red="0.59607843140000005" green="0.80784313730000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
@@ -409,14 +411,14 @@
                             <constraint firstItem="H3T-wX-56g" firstAttribute="top" secondItem="LTh-Bp-DQY" secondAttribute="bottom" constant="66" id="580-sv-nqt"/>
                             <constraint firstItem="iYU-NW-Mwg" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="-16" id="Dpu-b6-XCB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8lC-5p-0W0" secondAttribute="trailing" constant="32" id="F7d-XB-v8W">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-16"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="iYU-NW-Mwg" secondAttribute="centerX" id="GX6-iW-okd"/>
-                            <constraint firstAttribute="centerX" secondItem="8lC-5p-0W0" secondAttribute="centerX" constant="-0.5" id="GaS-pp-D6K"/>
+                            <constraint firstAttribute="centerX" secondItem="8lC-5p-0W0" secondAttribute="centerX" id="GaS-pp-D6K"/>
                             <constraint firstAttribute="centerX" secondItem="q9c-h0-ryP" secondAttribute="centerX" constant="-0.5" id="Jjk-5N-jEv"/>
                             <constraint firstItem="ohG-QF-NK7" firstAttribute="top" secondItem="8lC-5p-0W0" secondAttribute="bottom" constant="8" id="KOw-mG-JTm"/>
                             <constraint firstItem="8lC-5p-0W0" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="33" id="KnB-mz-7B4">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="-16"/>
                             </constraint>
                             <constraint firstAttribute="centerX" secondItem="H3T-wX-56g" secondAttribute="centerX" id="ZP9-IF-Nj4"/>
                             <constraint firstItem="IbO-8A-h2c" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="-1" id="bqf-j1-7Qi"/>
@@ -476,7 +478,7 @@
                                 <include reference="gFC-2m-52s"/>
                                 <include reference="580-sv-nqt"/>
                                 <include reference="ZP9-IF-Nj4"/>
-                                <exclude reference="3gZ-PS-MxS"/>
+                                <include reference="3gZ-PS-MxS"/>
                                 <include reference="4DJ-fw-CBd"/>
                                 <include reference="Dpu-b6-XCB"/>
                                 <include reference="GX6-iW-okd"/>
