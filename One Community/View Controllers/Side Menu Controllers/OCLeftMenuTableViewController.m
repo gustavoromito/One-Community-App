@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   _menuList = @[@"Admin Option 1", @"Admin Option 2", @"Admin Option 3"];
+   _menuList = @[@"People", @"Projects", @"Editing"];
    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -83,6 +83,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    [_optionsTableView deselectRowAtIndexPath:indexPath animated:YES];
+   [self pushAdminDashboards];
 }
 
 @end

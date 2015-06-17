@@ -14,6 +14,8 @@ target 'One Community' do
 	pod 'ParallaxBlur'
 	pod 'BlockRSSParser'
 	pod 'ALThreeCircleSpinner'
+	pod 'YLProgressBar'
+	
 	use_frameworks!
 end
 

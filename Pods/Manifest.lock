@@ -35,6 +35,7 @@ PODS:
   - ParallaxBlur (0.1.4):
     - FXBlurView (~> 1.6.2)
   - SKSplashView (0.1.0)
+  - YLProgressBar (3.6.1)
   - ZBarSDK (1.3.1)
   - ZFRippleButton (0.2)
 
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - ObjectiveSugar
   - ParallaxBlur
   - SKSplashView
+  - YLProgressBar
   - ZBarSDK
   - ZFRippleButton
 
@@ -66,6 +68,7 @@ SPEC CHECKSUMS:
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
   ParallaxBlur: 352a49c2319b41f3b334456815089afb1220b799
   SKSplashView: 8cdb1bfccb5857cb141751d01b03cf132b110168
+  YLProgressBar: 72095a2570e8d191975d8c11d7f24fff99b6adec
   ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
   ZFRippleButton: 22118e02b6dd0cbe1dc85aa666579c30fc817021
 

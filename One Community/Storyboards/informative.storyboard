@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lGk-C0-PBc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -98,6 +99,11 @@
                                                     <exclude reference="4eW-xt-3f6"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <exclude reference="0ro-BJ-Llc"/>
+                                                    <exclude reference="ARC-Jv-5Mr"/>
+                                                    <exclude reference="Oq1-vB-IQ8"/>
+                                                    <exclude reference="ujp-V7-njI"/>
+                                                    <exclude reference="yxB-dQ-kFj"/>
                                                     <exclude reference="cmT-t1-5TN"/>
                                                     <exclude reference="cq1-wO-gGN"/>
                                                     <exclude reference="flQ-37-Dxa"/>
@@ -106,11 +112,6 @@
                                                     <exclude reference="RqY-DO-wXI"/>
                                                     <exclude reference="bHc-b3-ynj"/>
                                                     <exclude reference="fI8-7y-aDp"/>
-                                                    <exclude reference="0ro-BJ-Llc"/>
-                                                    <exclude reference="ARC-Jv-5Mr"/>
-                                                    <exclude reference="Oq1-vB-IQ8"/>
-                                                    <exclude reference="ujp-V7-njI"/>
-                                                    <exclude reference="yxB-dQ-kFj"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -120,6 +121,11 @@
                                                     <include reference="4eW-xt-3f6"/>
                                                 </mask>
                                                 <mask key="constraints">
+                                                    <include reference="0ro-BJ-Llc"/>
+                                                    <include reference="ARC-Jv-5Mr"/>
+                                                    <include reference="Oq1-vB-IQ8"/>
+                                                    <include reference="ujp-V7-njI"/>
+                                                    <include reference="yxB-dQ-kFj"/>
                                                     <include reference="cmT-t1-5TN"/>
                                                     <include reference="cq1-wO-gGN"/>
                                                     <include reference="flQ-37-Dxa"/>
@@ -128,11 +134,6 @@
                                                     <include reference="RqY-DO-wXI"/>
                                                     <include reference="bHc-b3-ynj"/>
                                                     <include reference="fI8-7y-aDp"/>
-                                                    <include reference="0ro-BJ-Llc"/>
-                                                    <include reference="ARC-Jv-5Mr"/>
-                                                    <include reference="Oq1-vB-IQ8"/>
-                                                    <include reference="ujp-V7-njI"/>
-                                                    <include reference="yxB-dQ-kFj"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -154,7 +155,7 @@
                             <constraint firstAttribute="centerX" secondItem="080-Am-VVe" secondAttribute="centerX" id="CgY-7Q-nlB"/>
                             <constraint firstItem="080-Am-VVe" firstAttribute="leading" secondItem="5v4-l2-ZGI" secondAttribute="leadingMargin" id="Edc-SE-P2W"/>
                             <constraint firstItem="080-Am-VVe" firstAttribute="top" secondItem="0WU-9k-JmX" secondAttribute="bottom" id="Pza-Nu-cGl">
-                                <variation key="heightClass=regular-widthClass=compact" constant="-64"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="xHC-9S-mIL" firstAttribute="top" secondItem="080-Am-VVe" secondAttribute="bottom" id="ZCo-wN-zAQ"/>
                             <constraint firstItem="080-Am-VVe" firstAttribute="trailing" secondItem="5v4-l2-ZGI" secondAttribute="trailingMargin" id="b7l-Ix-tkL"/>

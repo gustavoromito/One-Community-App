@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDV-0l-4TU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jOU-bZ-9SS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="OWi-8Z-rcb">
-            <objects>
-                <navigationController id="wDV-0l-4TU" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HKY-iT-SNN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="jOU-bZ-9SS" kind="relationship" relationship="rootViewController" id="TFl-W9-jEW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mzR-d7-4Vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1251" y="-275.25"/>
-        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="hgR-ir-gSE">
             <objects>
@@ -423,7 +407,7 @@
                             <constraint firstAttribute="centerX" secondItem="H3T-wX-56g" secondAttribute="centerX" id="ZP9-IF-Nj4"/>
                             <constraint firstItem="IbO-8A-h2c" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="-1" id="bqf-j1-7Qi"/>
                             <constraint firstItem="IbO-8A-h2c" firstAttribute="top" secondItem="LTh-Bp-DQY" secondAttribute="bottom" constant="-8" id="gFC-2m-52s">
-                                <variation key="heightClass=regular-widthClass=compact" constant="-5"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="6"/>
                             </constraint>
                             <constraint firstItem="q9c-h0-ryP" firstAttribute="leading" secondItem="qci-xO-7lh" secondAttribute="leadingMargin" constant="-1" id="h3y-0H-LR2"/>
                             <constraint firstItem="ohG-QF-NK7" firstAttribute="top" secondItem="iYU-NW-Mwg" secondAttribute="bottom" id="hMl-7u-kcp"/>

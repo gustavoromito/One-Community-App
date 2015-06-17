@@ -23,7 +23,8 @@
 
 - (IBAction)SignInTapped:(id)sender {
    //TODO: Validate login
-   [self pushUserStoryboardAnimated:YES];
+   [[NSNotificationCenter defaultCenter] postNotificationName:@"userSignedIn" object:nil];
+   [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)forgotPasswordTapped:(id)sender {

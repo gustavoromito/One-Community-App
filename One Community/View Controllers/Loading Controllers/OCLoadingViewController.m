@@ -11,7 +11,6 @@
 
 #import <SKSplashView/SKSplashIcon.h>
 
-#define COLOR_HEX @"98CE1E"
 #define LOADING_TIME 2.0f
 
 @interface OCLoadingViewController () {

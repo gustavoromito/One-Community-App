@@ -1,9 +1,7 @@
 //
-//  MLDashboardCell.h
-//  tokio-corretores-ios
 //
-//  Created by Iuri Chiba on 2/17/14.
-//  Copyright (c) 2014 MoWA Labs. All rights reserved.
+//  Created by Gustavo Romito on 06/03/15.
+//  Copyright (c) 2014 One Community Global. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

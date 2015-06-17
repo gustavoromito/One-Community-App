@@ -19,6 +19,7 @@
    NSArray *news;
    NSMutableArray *images;
    ALThreeCircleSpinner *spin;
+   UIBarButtonItem *leftItem;
 }
 
 @end
@@ -29,7 +30,7 @@
    [super viewDidLoad];
    images = [[NSMutableArray alloc] init];
    [self.navigationController.navigationBar setHidden:NO];
-   [self.navigationItem setHidesBackButton:YES];
+   self.navigationItem.hidesBackButton = YES;
    [self readRSSFromWeb];
    
    CGPoint superCenter = CGPointMake(CGRectGetMidX([self.view bounds]), CGRectGetMidY([self.view bounds]));
@@ -53,6 +54,10 @@
 //              @"coverImageUrl" : @"http://www.onecommunityglobal.org/wp-content/uploads/2015/06/Renata-Maehara-640-size.jpg"},
 //            ];
    // Do any additional setup after loading the view.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+   [super viewDidAppear:animated];
 }
 
 - (void)readRSSFromWeb {
@@ -157,6 +162,27 @@
 
 
 - (IBAction)goToSignIn:(id)sender {
+   [[NSNotificationCenter defaultCenter] addObserver:self
+                                            selector:@selector(userSignedIn)
+                                                name:@"userSignedIn"
+                                              object:nil];
    [self pushSignInSignUpStoryboardAnimated:YES];
 }
+
+- (void)userSignedIn {
+   [self exchangeBackButtonForCustomMenuButton];
+}
+
+- (void)exchangeBackButtonForCustomMenuButton {
+   UIBarButtonItem *menuBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button"]
+                                                                     style:UIBarButtonItemStylePlain
+                                                                    target:[SlideNavigationController sharedInstance]
+                                                                    action:@selector(toggleLeftMenu)];
+   self.navigationItem.leftBarButtonItem = menuBarButton;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
+   return NO;
+}
+
 @end

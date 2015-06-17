@@ -4,13 +4,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Slide Navigation Controller-->
         <scene sceneID="EWa-yv-RYh">
             <objects>
-                <navigationController id="7Mb-SM-F8D" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7p-cJ-0c3">
+                <navigationController id="7Mb-SM-F8D" customClass="SlideNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="b7p-cJ-0c3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.52448331780000002" green="0.70937003070000004" blue="0.1015238505" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="007-bJ-bfz" kind="relationship" relationship="rootViewController" id="Ric-9h-Vwj"/>

@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Gustavo Romito. All rights reserved.
 //
 
-#import "OCBaseWithouMenuViewController.h"
+#import "OCBaseViewController.h"
 #import <ALThreeCircleSpinner/ALThreeCircleSpinner-Swift.h>
 
-@interface OCInformativeViewController : OCBaseWithouMenuViewController <UITableViewDataSource, UITableViewDelegate>
+@interface OCInformativeViewController : OCBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 

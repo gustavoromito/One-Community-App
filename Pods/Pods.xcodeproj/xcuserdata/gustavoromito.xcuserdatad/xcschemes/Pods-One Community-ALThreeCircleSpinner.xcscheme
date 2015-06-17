@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "553BEFE9365D0061CD9F3019"
+               BlueprintIdentifier = "964896EF320C5E8B6DC9CBE8"
                BuildableName = "ALThreeCircleSpinner.framework"
                BlueprintName = "Pods-One Community-ALThreeCircleSpinner"
                ReferencedContainer = "container:Pods.xcodeproj">

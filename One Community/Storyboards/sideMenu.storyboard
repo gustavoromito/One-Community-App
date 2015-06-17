@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Left Menu Table View Controller-->
@@ -17,123 +16,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="43" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="I94-qG-wvy" userLabel="Table View (Menu)">
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.050980392159999999" green="0.26053503789999999" blue="0.63399621210000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="separatorInset" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="43" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1RQ-7d-CFy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headerCell" rowHeight="30" id="WY5-hO-BCf" userLabel="Common Cell" customClass="OCCustomTableViewCell">
-                                        <rect key="frame" x="0.0" y="94" width="320" height="53"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuItemCell" rowHeight="43" id="GVA-XG-mhE" customClass="OCCustomTableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WY5-hO-BCf" id="kHl-XN-C3A">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="52"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GVA-XG-mhE" id="rZT-WN-AUF">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Title" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Xa-FM-Mtu">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-8I-9xb">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="8" y="5" width="354" height="18"/>
+                                                        <rect key="frame" x="44" y="11" width="316" height="21"/>
                                                     </variation>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCq-MJ-Vhb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="0.0" y="29" width="400" height="1"/>
-                                                    </variation>
-                                                </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="3Xa-FM-Mtu"/>
-                                                    <exclude reference="hCq-MJ-Vhb"/>
+                                                    <exclude reference="gxd-8I-9xb"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="3Xa-FM-Mtu"/>
-                                                    <include reference="hCq-MJ-Vhb"/>
+                                                    <include reference="gxd-8I-9xb"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="mainText" destination="3Xa-FM-Mtu" id="nxa-FU-1an"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuItemCell" rowHeight="43" id="On3-K9-hId" userLabel="Common Cell" customClass="OCCustomTableViewCell">
-                                        <rect key="frame" x="0.0" y="94" width="320" height="53"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="On3-K9-hId" id="r85-G8-Kit">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="52"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Histórico de Chamados" lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="f2d-7r-6Kb">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="38" y="4" width="354" height="31"/>
-                                                    </variation>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="f2d-7r-6Kb"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <mask key="subviews">
-                                                    <include reference="f2d-7r-6Kb"/>
-                                                </mask>
-                                            </variation>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <outlet property="mainText" destination="f2d-7r-6Kb" id="NVV-dh-O23"/>
+                                            <outlet property="mainText" destination="gxd-8I-9xb" id="gpX-tD-2r1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="400" height="780"/>
+                                </variation>
                                 <connections>
-                                    <outlet property="dataSource" destination="5Zw-N5-mux" id="I2w-Fh-c4Y"/>
-                                    <outlet property="delegate" destination="5Zw-N5-mux" id="RrE-zz-WNm"/>
+                                    <outlet property="dataSource" destination="5Zw-N5-mux" id="H8A-7X-im9"/>
+                                    <outlet property="delegate" destination="5Zw-N5-mux" id="WsE-4e-RjD"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="I94-qG-wvy" firstAttribute="leading" secondItem="iWr-Nn-4Lx" secondAttribute="leadingMargin" constant="-16" id="5hR-iU-24b"/>
-                            <constraint firstItem="xCv-Ay-9V3" firstAttribute="top" secondItem="I94-qG-wvy" secondAttribute="bottom" id="PNc-iJ-DrS"/>
-                            <constraint firstItem="I94-qG-wvy" firstAttribute="top" secondItem="IDr-8x-t2Y" secondAttribute="bottom" constant="-20" id="krv-pS-3kv">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstAttribute="trailingMargin" secondItem="I94-qG-wvy" secondAttribute="trailing" constant="-16" id="vk0-rU-jp1"/>
-                        </constraints>
                         <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="5hR-iU-24b"/>
-                                <exclude reference="krv-pS-3kv"/>
-                                <exclude reference="vk0-rU-jp1"/>
-                                <exclude reference="PNc-iJ-DrS"/>
+                            <mask key="subviews">
+                                <exclude reference="1RQ-7d-CFy"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="5hR-iU-24b"/>
-                                <include reference="krv-pS-3kv"/>
-                                <include reference="vk0-rU-jp1"/>
-                                <include reference="PNc-iJ-DrS"/>
+                            <mask key="subviews">
+                                <include reference="1RQ-7d-CFy"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="optionsTableView" destination="I94-qG-wvy" id="5Pv-2B-QQz"/>
+                        <outlet property="optionsTableView" destination="1RQ-7d-CFy" id="keV-Aj-N1K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdI-l6-Cwz" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -24,23 +24,12 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   [self sideMenuSetup];
    [self.navigationController.navigationBar setHidden:NO];
-   [self exchangeBackButtonForCustomMenuButton];
    
    programs = @[@"Hiking", @"Code Class", @"Painting", @"Yoga Class", @"Cooking",
                 @"Acting", @"Cycling", @"Football", @"Soccer", @"Basketball"];
    colors = @[@"437D8F", @"4F8767", @"BABA8F", @"085E85", @"D7222C", @"BABA2B", @"7D5F54", @"6B696A", @"6A7FC1", @"BCA6A0"];
    // Do any additional setup after loading the view.
-}
-
-#pragma mark - Side Menu Helpers
-- (void)exchangeBackButtonForCustomMenuButton {
-   UIBarButtonItem *menuBarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button"]
-                                                                     style:UIBarButtonItemStylePlain
-                                                                    target:self
-                                                                    action:@selector(toggleLeftMenu)];
-   self.navigationItem.leftBarButtonItem = menuBarButton;
 }
 
 - (void)didReceiveMemoryWarning {

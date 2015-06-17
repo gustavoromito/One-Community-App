@@ -47,6 +47,8 @@
 		A25821E31B1E70CF00A9168D /* loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25821E21B1E70CF00A9168D /* loading.storyboard */; };
 		A25821E81B1E715D00A9168D /* OCLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821E71B1E715D00A9168D /* OCLoadingViewController.m */; };
 		A25821EB1B1F98F400A9168D /* OCProgramDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */; };
+		A27A58FB1B3075E700D76D67 /* admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27A58FA1B3075E700D76D67 /* admin.storyboard */; };
+		A27A58FF1B30A1E600D76D67 /* OCDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */; };
 		A2AD71331B263B85006158A5 /* UIImage+OCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD71321B263B85006158A5 /* UIImage+OCHelper.m */; };
 		A2B7D44F1B25055E009DE415 /* OCLeftMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7D44E1B25055E009DE415 /* OCLeftMenuTableViewController.m */; };
 		A2B7D4521B2526BA009DE415 /* OCBaseWithouMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7D4511B2526BA009DE415 /* OCBaseWithouMenuViewController.m */; };
@@ -139,6 +141,9 @@
 		A25821E71B1E715D00A9168D /* OCLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCLoadingViewController.m; path = "View Controllers/Loading Controllers/OCLoadingViewController.m"; sourceTree = "<group>"; };
 		A25821E91B1F98F400A9168D /* OCProgramDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProgramDetailsViewController.h; path = "View Controllers/First Tab Controllers/OCProgramDetailsViewController.h"; sourceTree = "<group>"; };
 		A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProgramDetailsViewController.m; path = "View Controllers/First Tab Controllers/OCProgramDetailsViewController.m"; sourceTree = "<group>"; };
+		A27A58FA1B3075E700D76D67 /* admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = admin.storyboard; path = Storyboards/admin.storyboard; sourceTree = "<group>"; };
+		A27A58FD1B30A1E600D76D67 /* OCDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDashboardViewController.h; path = "View Controllers/Admin Controllers/OCDashboardViewController.h"; sourceTree = "<group>"; };
+		A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDashboardViewController.m; path = "View Controllers/Admin Controllers/OCDashboardViewController.m"; sourceTree = "<group>"; };
 		A2AD71311B263B85006158A5 /* UIImage+OCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+OCHelper.h"; path = "Category Helpers/UIImage+OCHelper.h"; sourceTree = "<group>"; };
 		A2AD71321B263B85006158A5 /* UIImage+OCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+OCHelper.m"; path = "Category Helpers/UIImage+OCHelper.m"; sourceTree = "<group>"; };
 		A2B7D44D1B25055E009DE415 /* OCLeftMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCLeftMenuTableViewController.h; path = "View Controllers/Side Menu Controllers/OCLeftMenuTableViewController.h"; sourceTree = "<group>"; };
@@ -253,6 +258,7 @@
 				A25821E21B1E70CF00A9168D /* loading.storyboard */,
 				A2B7D4551B25F35A009DE415 /* sideMenu.storyboard */,
 				A2B7D4531B25F33B009DE415 /* informative.storyboard */,
+				A27A58FA1B3075E700D76D67 /* admin.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 		A258213C1B1CC6C000A9168D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A27A58FC1B30A1AF00D76D67 /* Admin Controllers */,
 				A2B7D4571B261E6F009DE415 /* Informative Controllers */,
 				A2B7D44C1B250550009DE415 /* Side Menu Controllers */,
 				A25821E51B1E713A00A9168D /* Loading Controllers */,
@@ -426,6 +433,15 @@
 			name = "Loading Controllers";
 			sourceTree = "<group>";
 		};
+		A27A58FC1B30A1AF00D76D67 /* Admin Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A27A58FD1B30A1E600D76D67 /* OCDashboardViewController.h */,
+				A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */,
+			);
+			name = "Admin Controllers";
+			sourceTree = "<group>";
+		};
 		A2B7D44C1B250550009DE415 /* Side Menu Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -538,6 +554,7 @@
 			files = (
 				A258211F1B1CC13300A9168D /* LaunchScreen.xib in Resources */,
 				A2B7D4541B25F33B009DE415 /* informative.storyboard in Resources */,
+				A27A58FB1B3075E700D76D67 /* admin.storyboard in Resources */,
 				A258211C1B1CC13300A9168D /* Images.xcassets in Resources */,
 				A25821391B1CC66100A9168D /* Info.plist in Resources */,
 				A2B7D4561B25F35A009DE415 /* sideMenu.storyboard in Resources */,
@@ -624,6 +641,7 @@
 				A25821C41B1D0E3500A9168D /* pngtrans.c in Sources */,
 				A25821CE1B1D0E6800A9168D /* UIColor+MHelper.m in Sources */,
 				A25821631B1CFB9300A9168D /* OCActivitiesViewController.m in Sources */,
+				A27A58FF1B30A1E600D76D67 /* OCDashboardViewController.m in Sources */,
 				A25821C01B1D0E3500A9168D /* pngrio.c in Sources */,
 				A25821C81B1D0E3500A9168D /* pngwutil.c in Sources */,
 				A25821BB1B1D0E3500A9168D /* pngerror.c in Sources */,

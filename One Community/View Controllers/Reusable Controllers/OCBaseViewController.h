@@ -10,6 +10,8 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <iOS-Slide-Menu/SlideNavigationController.h>
 
+#define COLOR_HEX @"98CE1E"
+
 @interface OCBaseViewController : UIViewController <SlideNavigationControllerDelegate>
 
 #pragma mark - MBProgressHUD Helpers
@@ -29,7 +31,7 @@
 - (void)pushUserStoryboardAnimated:(BOOL)animated;
 - (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated;
 - (void)pushNewsAndUpdatesAnimated:(BOOL)animated;
-- (void)sideMenuSetup;
+- (void)pushAdminDashboards;
 
 #pragma mark - Image Helper
 - (UIImage *)getImageFromURL:(NSString*)path;

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "OCLeftMenuTableViewController.h"
+#import <iOS_Slide_Menu/SlideNavigationContorllerAnimatorSlide.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    // Override point for customization after application launch.
+   [self sideMenuSetup];
    return YES;
 }
 
@@ -41,6 +43,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)sideMenuSetup {
+   UIStoryboard *sideMenusStoryboard = [UIStoryboard storyboardWithName:@"sideMenu" bundle:nil];
+   
+   OCLeftMenuTableViewController *leftMenu = [sideMenusStoryboard
+                                              instantiateViewControllerWithIdentifier:@"leftMenu"];
+   
+   SlideNavigationContorllerAnimatorSlide *slide = [[SlideNavigationContorllerAnimatorSlide alloc] initWithSlideMovement:100.0f];
+   [[SlideNavigationController sharedInstance] setEnableShadow:NO];
+   [[SlideNavigationController sharedInstance] setEnableSwipeGesture:NO];
+   [SlideNavigationController sharedInstance].menuRevealAnimator = slide;
+   [SlideNavigationController sharedInstance].leftMenu = leftMenu;
 }
 
 @end

@@ -82,6 +82,16 @@
    [self genericStoryboardPushWithName:@"informative" animated:animated];
 }
 
+- (void)pushAdminStoryboardWithViewController:(NSString *)identifier {
+   UIStoryboard *story = [UIStoryboard storyboardWithName:@"admin" bundle:nil];
+   UIViewController *vc = [story instantiateViewControllerWithIdentifier:identifier];
+   [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc withCompletion:nil];
+}
+
+- (void)pushAdminDashboards {
+   [self pushAdminStoryboardWithViewController:@"adminDashboards"];
+}
+
 #pragma mark - Placeholder Warnings & Alert View Helpers
 - (void)showAlertWithTitle:(NSString *)title andMessage:(NSString *)message {
    [[[UIAlertView alloc] initWithTitle:title
@@ -127,24 +137,6 @@
 }
 
 #pragma mark - IOS Slide Menu Delegate
-- (void)sideMenuSetup {
-   UIStoryboard *sideMenusStoryboard = [UIStoryboard storyboardWithName:@"sideMenu" bundle:nil];
-   
-   OCLeftMenuTableViewController *leftMenu = [sideMenusStoryboard
-                                              instantiateViewControllerWithIdentifier:@"leftMenu"];
-   
-   SlideNavigationContorllerAnimatorSlide *slide = [[SlideNavigationContorllerAnimatorSlide alloc] initWithSlideMovement:100.0f];
-   [[SlideNavigationController sharedInstance] setEnableShadow:NO];
-   [[SlideNavigationController sharedInstance] setEnableSwipeGesture:NO];
-   [SlideNavigationController sharedInstance].menuRevealAnimator = slide;
-   [SlideNavigationController sharedInstance].leftMenu = leftMenu;
-   UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu-button"]
-                                                                  style:UIBarButtonItemStylePlain
-                                                                 target:self
-                                                                 action:@selector(toggleLeftMenu)];
-   [SlideNavigationController sharedInstance].navigationItem.leftBarButtonItem = leftButton;
-}
-
 - (BOOL)slideNavigationControllerShouldDisplayRightMenu {
    return NO;
 }
