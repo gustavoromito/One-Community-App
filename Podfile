@@ -15,6 +15,9 @@ target 'One Community' do
 	pod 'BlockRSSParser'
 	pod 'ALThreeCircleSpinner'
 	pod 'YLProgressBar'
+	pod 'UITableView+FDTemplateLayoutCell'
+	pod 'MGSwipeTableCell'
+	pod 'ActionSheetPicker'
 	
 	use_frameworks!
 end

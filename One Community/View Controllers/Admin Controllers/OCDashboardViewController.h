@@ -11,4 +11,5 @@
 @interface OCDashboardViewController : OCBaseViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+- (IBAction)addRowToSection:(id)sender;
 @end

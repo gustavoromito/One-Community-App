@@ -41,7 +41,7 @@
 - (void)viewDidAppear:(BOOL)animated {
    [super viewDidAppear:animated];
    [_progressBar showPopUpViewAnimated:YES];
-   double val = ((double)arc4random() / ARC4RANDOM_MAX) * (0.2f);
+   double val = [self randomDoubleForMax:0.2f];
    [_progressBar setProgress:val animated:YES];
 }
 

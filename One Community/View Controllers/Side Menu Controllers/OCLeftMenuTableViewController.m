@@ -9,12 +9,13 @@
 #import "OCLeftMenuTableViewController.h"
 #import "OCCustomTableViewCell.h"
 
-#define MENU_CELL_HEIGHT 43.0f
+#define MENU_CELL_HEIGHT 102.0f
 #define HEADER_CELL_HEIGHT 37.0f
 
 @interface OCLeftMenuTableViewController ()
 {
    NSArray *_menuList;
+   NSArray *_imageList;
 }
 @end
 
@@ -22,8 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   _menuList = @[@"People", @"Projects", @"Editing"];
-   
+   _menuList = @[@"Dashboard", @"People", @"Project"];
+   _imageList = @[[UIImage imageNamed:@"dashboardIcon"], [UIImage imageNamed:@"peopleIcon"], [[UIImage alloc] init]];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -42,6 +43,7 @@
    OCCustomTableViewCell *cell;
    cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:@"menuItemCell" andAction:nil];
    cell.mainText.text = [_menuList objectAtIndex:indexPath.row];
+   cell.leftIcon.image = [_imageList objectAtIndex:indexPath.row];
    return cell;
 }
 
@@ -83,7 +85,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    [_optionsTableView deselectRowAtIndexPath:indexPath animated:YES];
-   [self pushAdminDashboards];
+   indexPath.row == 0 ? [self pushAdminDashboards] : [self pushPeopleViewController];
 }
 
 @end

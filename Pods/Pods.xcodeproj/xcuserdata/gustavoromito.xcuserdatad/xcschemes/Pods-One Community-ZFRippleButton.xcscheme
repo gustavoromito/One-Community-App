@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2C92AB03DDF8772FF91D7BB"
+               BlueprintIdentifier = "042FA3B5862A4270CCBEE369"
                BuildableName = "ZFRippleButton.framework"
                BlueprintName = "Pods-One Community-ZFRippleButton"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -49,6 +49,7 @@
 		A25821EB1B1F98F400A9168D /* OCProgramDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */; };
 		A27A58FB1B3075E700D76D67 /* admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27A58FA1B3075E700D76D67 /* admin.storyboard */; };
 		A27A58FF1B30A1E600D76D67 /* OCDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */; };
+		A299DEF61B34C0A800F44FD4 /* OCPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A299DEF51B34C0A800F44FD4 /* OCPeopleViewController.m */; };
 		A2AD71331B263B85006158A5 /* UIImage+OCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A2AD71321B263B85006158A5 /* UIImage+OCHelper.m */; };
 		A2B7D44F1B25055E009DE415 /* OCLeftMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7D44E1B25055E009DE415 /* OCLeftMenuTableViewController.m */; };
 		A2B7D4521B2526BA009DE415 /* OCBaseWithouMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B7D4511B2526BA009DE415 /* OCBaseWithouMenuViewController.m */; };
@@ -144,6 +145,8 @@
 		A27A58FA1B3075E700D76D67 /* admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = admin.storyboard; path = Storyboards/admin.storyboard; sourceTree = "<group>"; };
 		A27A58FD1B30A1E600D76D67 /* OCDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDashboardViewController.h; path = "View Controllers/Admin Controllers/OCDashboardViewController.h"; sourceTree = "<group>"; };
 		A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDashboardViewController.m; path = "View Controllers/Admin Controllers/OCDashboardViewController.m"; sourceTree = "<group>"; };
+		A299DEF41B34C0A800F44FD4 /* OCPeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCPeopleViewController.h; path = "View Controllers/Admin Controllers/OCPeopleViewController.h"; sourceTree = "<group>"; };
+		A299DEF51B34C0A800F44FD4 /* OCPeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCPeopleViewController.m; path = "View Controllers/Admin Controllers/OCPeopleViewController.m"; sourceTree = "<group>"; };
 		A2AD71311B263B85006158A5 /* UIImage+OCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+OCHelper.h"; path = "Category Helpers/UIImage+OCHelper.h"; sourceTree = "<group>"; };
 		A2AD71321B263B85006158A5 /* UIImage+OCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+OCHelper.m"; path = "Category Helpers/UIImage+OCHelper.m"; sourceTree = "<group>"; };
 		A2B7D44D1B25055E009DE415 /* OCLeftMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCLeftMenuTableViewController.h; path = "View Controllers/Side Menu Controllers/OCLeftMenuTableViewController.h"; sourceTree = "<group>"; };
@@ -438,6 +441,8 @@
 			children = (
 				A27A58FD1B30A1E600D76D67 /* OCDashboardViewController.h */,
 				A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */,
+				A299DEF41B34C0A800F44FD4 /* OCPeopleViewController.h */,
+				A299DEF51B34C0A800F44FD4 /* OCPeopleViewController.m */,
 			);
 			name = "Admin Controllers";
 			sourceTree = "<group>";
@@ -652,6 +657,7 @@
 				A25821BF1B1D0E3500A9168D /* pngread.c in Sources */,
 				A25821BD1B1D0E3500A9168D /* pngmem.c in Sources */,
 				A25821E11B1E237A00A9168D /* OCProgramCell.m in Sources */,
+				A299DEF61B34C0A800F44FD4 /* OCPeopleViewController.m in Sources */,
 				A25821C61B1D0E3500A9168D /* pngwrite.c in Sources */,
 				A25821DE1B1E059D00A9168D /* OCCustomTableViewCell.m in Sources */,
 				A25821C21B1D0E3500A9168D /* pngrutil.c in Sources */,

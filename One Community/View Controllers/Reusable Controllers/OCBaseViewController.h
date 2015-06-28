@@ -32,8 +32,17 @@
 - (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated;
 - (void)pushNewsAndUpdatesAnimated:(BOOL)animated;
 - (void)pushAdminDashboards;
+- (void)pushPeopleViewController;
 
 #pragma mark - Image Helper
 - (UIImage *)getImageFromURL:(NSString*)path;
+
+#pragma mark - Progress Bar Builder Helper
+- (NSArray *)colorForHoursMade:(double)hours;
+- (double)percentageRelatedToWorkedHours:(double)hours;
+- (NSRange)rangeForWorkedHours:(double)hours;
+   
+#pragma mark - Number Generator
+- (double)randomDoubleForMax:(double)maxValue;
 
 @end

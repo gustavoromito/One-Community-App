@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_ASProgressPopUpView 8
 #define COCOAPODS_VERSION_PATCH_ASProgressPopUpView 0
 
+// ActionSheetPicker
+#define COCOAPODS_POD_AVAILABLE_ActionSheetPicker
+#define COCOAPODS_VERSION_MAJOR_ActionSheetPicker 1
+#define COCOAPODS_VERSION_MINOR_ActionSheetPicker 5
+#define COCOAPODS_VERSION_PATCH_ActionSheetPicker 0
+
 // BlockRSSParser
 #define COCOAPODS_POD_AVAILABLE_BlockRSSParser
 #define COCOAPODS_VERSION_MAJOR_BlockRSSParser 2
@@ -90,6 +96,12 @@
 #define COCOAPODS_VERSION_MINOR_MBProgressHUD 9
 #define COCOAPODS_VERSION_PATCH_MBProgressHUD 1
 
+// MGSwipeTableCell
+#define COCOAPODS_POD_AVAILABLE_MGSwipeTableCell
+#define COCOAPODS_VERSION_MAJOR_MGSwipeTableCell 1
+#define COCOAPODS_VERSION_MINOR_MGSwipeTableCell 4
+#define COCOAPODS_VERSION_PATCH_MGSwipeTableCell 3
+
 // NSUserDefaults-AESEncryptor
 #define COCOAPODS_POD_AVAILABLE_NSUserDefaults_AESEncryptor
 #define COCOAPODS_VERSION_MAJOR_NSUserDefaults_AESEncryptor 0
@@ -113,6 +125,12 @@
 #define COCOAPODS_VERSION_MAJOR_SKSplashView 0
 #define COCOAPODS_VERSION_MINOR_SKSplashView 1
 #define COCOAPODS_VERSION_PATCH_SKSplashView 0
+
+// UITableView+FDTemplateLayoutCell
+#define COCOAPODS_POD_AVAILABLE_UITableView_FDTemplateLayoutCell
+#define COCOAPODS_VERSION_MAJOR_UITableView_FDTemplateLayoutCell 1
+#define COCOAPODS_VERSION_MINOR_UITableView_FDTemplateLayoutCell 3
+#define COCOAPODS_VERSION_PATCH_UITableView_FDTemplateLayoutCell 0
 
 // YLProgressBar
 #define COCOAPODS_POD_AVAILABLE_YLProgressBar

@@ -1,0 +1,6 @@
+framework module ActionSheetPicker {
+  umbrella header "Pods-One Community-ActionSheetPicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

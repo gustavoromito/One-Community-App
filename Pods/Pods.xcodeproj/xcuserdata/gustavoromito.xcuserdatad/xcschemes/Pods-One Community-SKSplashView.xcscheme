@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C14A9B28CD7D5E3717D05CF"
+               BlueprintIdentifier = "72E7670E7EC16FB9A7F25B62"
                BuildableName = "SKSplashView.framework"
                BlueprintName = "Pods-One Community-SKSplashView"
                ReferencedContainer = "container:Pods.xcodeproj">

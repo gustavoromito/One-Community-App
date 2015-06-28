@@ -13,4 +13,11 @@
 - (UIColor *)inverseColor;
 - (UIColor *)grayscale;
 
++ (NSArray *)gradientRedColors;
++ (NSArray *)gradientOrangeColors;
++ (NSArray *)gradientGreenColors;
++ (NSArray *)gradientBlueColors;
++ (NSArray *)gradientPurpleColors;
++ (NSArray *)gradientMagentaColors;
+
 @end

@@ -11,6 +11,10 @@
 #import <iOS-Slide-Menu/SlideNavigationController.h>
 #import <iOS-Slide-Menu/SlideNavigationContorllerAnimatorSlide.h>
 
+#import "UIColor+MHelper.h"
+
+#define ARC4RANDOM_MAX 0x100000000
+
 @interface OCBaseViewController ()
 
 @end
@@ -19,12 +23,12 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+   [super didReceiveMemoryWarning];
+   // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - MBProgressHUD Helpers
@@ -71,7 +75,7 @@
 }
 
 - (void)pushSignInSignUpStoryboardAnimated:(BOOL)animated {
-//   [self genericStoryboardPushWithName:@"login" animated:animated];
+   //   [self genericStoryboardPushWithName:@"login" animated:animated];
    UIStoryboard *story = [UIStoryboard storyboardWithName:@"login" bundle:nil];
    UIViewController *viewController = [story instantiateInitialViewController];
    [self presentViewController:viewController animated:YES completion:nil];
@@ -85,11 +89,15 @@
 - (void)pushAdminStoryboardWithViewController:(NSString *)identifier {
    UIStoryboard *story = [UIStoryboard storyboardWithName:@"admin" bundle:nil];
    UIViewController *vc = [story instantiateViewControllerWithIdentifier:identifier];
-   [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:vc withCompletion:nil];
+   [[SlideNavigationController sharedInstance] switchToViewController:vc withCompletion:nil];
 }
 
 - (void)pushAdminDashboards {
    [self pushAdminStoryboardWithViewController:@"adminDashboards"];
+}
+
+- (void)pushPeopleViewController {
+   [self pushAdminStoryboardWithViewController:@"peopleViewController"];
 }
 
 #pragma mark - Placeholder Warnings & Alert View Helpers
@@ -150,6 +158,60 @@
    NSURL *url = [NSURL URLWithString:path];
    NSData *data = [NSData dataWithContentsOfURL:url];
    return [[UIImage alloc] initWithData:data];
+}
+
+#pragma mark - Progress Bar Builder Helper
+- (NSArray *)colorForHoursMade:(double)hours {
+   if (hours < 5) {
+      return [UIColor gradientRedColors];
+   } else if (hours < 10) {
+      return [UIColor gradientOrangeColors];
+   } else if (hours < 20) {
+      return [UIColor gradientGreenColors];
+   } else if (hours < 40) {
+      return [UIColor gradientBlueColors];
+   } else if (hours < 70) {
+      return [UIColor gradientPurpleColors];
+   } else {
+      return [UIColor gradientMagentaColors];
+   }
+}
+
+- (double)percentageRelatedToWorkedHours:(double)hours {
+   if (hours < 5) {
+      return hours / 4.999999999999;
+   } else if (hours < 10) {
+      return hours / 9.999999999999;
+   } else if (hours < 20) {
+      return hours / 19.999999999999;
+   } else if (hours < 40) {
+      return hours / 39.999999999999;
+   } else if (hours < 70) {
+      return hours / 69.999999999999;
+   } else {
+      return hours / 100.0;
+   }
+}
+
+- (NSRange)rangeForWorkedHours:(double)hours {
+   if (hours < 5) {
+      return NSMakeRange(0, 5);
+   } else if (hours < 10) {
+      return NSMakeRange(5, 5);
+   } else if (hours < 20) {
+      return NSMakeRange(10, 10);
+   } else if (hours < 40) {
+      return NSMakeRange(20, 20);
+   } else if (hours < 70) {
+      return NSMakeRange(40, 30);
+   } else {
+      return NSMakeRange(70, 30);
+   }
+}
+
+#pragma mark - Number Generator
+- (double)randomDoubleForMax:(double)maxValue {
+   return ((double)arc4random() / ARC4RANDOM_MAX) * maxValue;
 }
 
 @end

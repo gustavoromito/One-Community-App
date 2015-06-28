@@ -51,11 +51,14 @@
    OCLeftMenuTableViewController *leftMenu = [sideMenusStoryboard
                                               instantiateViewControllerWithIdentifier:@"leftMenu"];
    
-   SlideNavigationContorllerAnimatorSlide *slide = [[SlideNavigationContorllerAnimatorSlide alloc] initWithSlideMovement:100.0f];
+   SlideNavigationContorllerAnimatorSlide *slide = [[SlideNavigationContorllerAnimatorSlide alloc] initWithSlideMovement:300.0f];
    [[SlideNavigationController sharedInstance] setEnableShadow:NO];
-   [[SlideNavigationController sharedInstance] setEnableSwipeGesture:NO];
+   [[SlideNavigationController sharedInstance] setEnableSwipeGesture:YES];
    [SlideNavigationController sharedInstance].menuRevealAnimator = slide;
    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
+   
+   [SlideNavigationController sharedInstance].portraitSlideOffset = [[UIScreen mainScreen] bounds].size.width * 0.74;
+
 }
 
 @end

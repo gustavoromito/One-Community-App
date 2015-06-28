@@ -1,0 +1,6 @@
+framework module MGSwipeTableCell {
+  umbrella header "Pods-One Community-MGSwipeTableCell-umbrella.h"
+
+  export *
+  module * { export * }
+}
