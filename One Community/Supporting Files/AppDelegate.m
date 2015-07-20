@@ -57,7 +57,7 @@
    [SlideNavigationController sharedInstance].menuRevealAnimator = slide;
    [SlideNavigationController sharedInstance].leftMenu = leftMenu;
    
-   [SlideNavigationController sharedInstance].portraitSlideOffset = [[UIScreen mainScreen] bounds].size.width * 0.74;
+   [SlideNavigationController sharedInstance].portraitSlideOffset = [[UIScreen mainScreen] bounds].size.width * 0.78;
 
 }
 

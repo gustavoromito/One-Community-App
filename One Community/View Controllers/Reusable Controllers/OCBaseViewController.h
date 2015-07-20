@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <iOS-Slide-Menu/SlideNavigationController.h>
+#import "User.h"
 
 #define COLOR_HEX @"98CE1E"
 
@@ -26,6 +27,7 @@
 - (void)showCancelledOperationAlert;
 - (void)showPendingWarningWithDescription:(NSString *)description;
 - (void)showGenericErrorWarning;
+- (void)showAppropriateFailureMessageWithResponseObject:(id)responseObject;
 
 #pragma mark - Navigation Helpers
 - (void)pushUserStoryboardAnimated:(BOOL)animated;
@@ -33,6 +35,10 @@
 - (void)pushNewsAndUpdatesAnimated:(BOOL)animated;
 - (void)pushAdminDashboards;
 - (void)pushPeopleViewController;
+- (void)pushNewsViewController;
+- (void)pushProgramsViewController;
+- (void)pushProfileViewController;
+- (void)pushScanViewController;
 
 #pragma mark - Image Helper
 - (UIImage *)getImageFromURL:(NSString*)path;
@@ -44,5 +50,10 @@
    
 #pragma mark - Number Generator
 - (double)randomDoubleForMax:(double)maxValue;
+
+#pragma mark - User Logged
+- (BOOL)isUserLoggedIn;
+- (User *)getLoggedUser;
+- (void)saveUserToDefaults:(User*)newUser;
 
 @end

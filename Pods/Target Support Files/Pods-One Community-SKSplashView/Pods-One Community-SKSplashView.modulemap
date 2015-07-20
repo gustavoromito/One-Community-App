@@ -1,6 +1,0 @@
-framework module SKSplashView {
-  umbrella header "Pods-One Community-SKSplashView-umbrella.h"
-
-  export *
-  module * { export * }
-}

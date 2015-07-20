@@ -9,8 +9,7 @@
 #import "OCActivitiesViewController.h"
 #import "OCProgramCell.h"
 #import "OCProgramDetailsViewController.h"
-
-#import <HexColors/HexColor.h>
+#import <HexColors/HexColors.h>
 
 #define PROGRAM_CELL_IDENTIFIER @"programCell"
 @interface OCActivitiesViewController() {

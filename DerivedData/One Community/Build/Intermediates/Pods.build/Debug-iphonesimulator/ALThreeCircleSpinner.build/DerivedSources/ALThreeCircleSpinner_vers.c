@@ -1,0 +1,1 @@
+ const unsigned char ALThreeCircleSpinnerVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:ALThreeCircleSpinner  PROJECT:Pods-1" "\n"; const double ALThreeCircleSpinnerVersionNumber __attribute__ ((used)) = (double)1.;

@@ -1,6 +1,0 @@
-framework module Pods_One_Community {
-  umbrella header "Pods-One Community-umbrella.h"
-
-  export *
-  module * { export * }
-}

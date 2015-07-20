@@ -1,6 +1,0 @@
-framework module UITableView_FDTemplateLayoutCell {
-  umbrella header "Pods-One Community-UITableView+FDTemplateLayoutCell-umbrella.h"
-
-  export *
-  module * { export * }
-}

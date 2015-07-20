@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphonesimulator/ZFRippleButton.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphonesimulator/ZFRippleButton.build/unextended-module.modulemap',
+    }]
+  }]
+}

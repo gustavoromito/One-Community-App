@@ -5,7 +5,7 @@
 //
 
 #import "OCProgramCell.h"
-#import <HexColors/HexColor.h>
+#import <HexColors/HexColors.h>
 
 @implementation OCProgramCell
 
@@ -43,7 +43,7 @@
 }
 
 - (void)setRefreshDateWithUnformattedDate:(NSDate *)date {
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
+//    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
 //    _refreshDate.text = NSStringWithFormat(_refreshDate.text,
 //                                           components.day,
 //                                           components.month,

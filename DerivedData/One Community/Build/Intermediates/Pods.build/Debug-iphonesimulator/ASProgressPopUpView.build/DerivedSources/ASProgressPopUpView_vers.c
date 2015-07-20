@@ -1,0 +1,1 @@
+ const unsigned char ASProgressPopUpViewVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:ASProgressPopUpView  PROJECT:Pods-1" "\n"; const double ASProgressPopUpViewVersionNumber __attribute__ ((used)) = (double)1.;

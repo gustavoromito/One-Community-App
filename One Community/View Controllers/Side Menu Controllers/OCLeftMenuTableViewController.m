@@ -9,7 +9,7 @@
 #import "OCLeftMenuTableViewController.h"
 #import "OCCustomTableViewCell.h"
 
-#define MENU_CELL_HEIGHT 102.0f
+#define MENU_CELL_HEIGHT 82.0f
 #define HEADER_CELL_HEIGHT 37.0f
 
 @interface OCLeftMenuTableViewController ()
@@ -23,8 +23,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   _menuList = @[@"Dashboard", @"People", @"Project"];
-   _imageList = @[[UIImage imageNamed:@"dashboardIcon"], [UIImage imageNamed:@"peopleIcon"], [[UIImage alloc] init]];
+   _menuList = @[@[@"News", @"Programs", @"Scan", @"Profile"], @[@"Dashboard", @"People"]];
+   _imageList = @[@[[UIImage imageNamed:@"news_icon"], [UIImage imageNamed:@"programs_icon"], [UIImage imageNamed:@"scan_icon"], [UIImage imageNamed:@"profile_icon"]], @[[UIImage imageNamed:@"dashboardIcon"], [UIImage imageNamed:@"peopleIcon"]]];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -42,8 +42,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    OCCustomTableViewCell *cell;
    cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:@"menuItemCell" andAction:nil];
-   cell.mainText.text = [_menuList objectAtIndex:indexPath.row];
-   cell.leftIcon.image = [_imageList objectAtIndex:indexPath.row];
+   cell.mainText.text = [[_menuList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
+   cell.leftIcon.image = [[_imageList objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
    return cell;
 }
 
@@ -52,6 +52,10 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+   return [[_menuList objectAtIndex:section] count];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
    return [_menuList count];
 }
 
@@ -59,7 +63,7 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
    OCCustomTableViewCell *cell;
    cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:@"headerCell" andAction:nil];
-   cell.mainText.text = @"Admin";
+   cell.mainText.text = section == 0 ? @"Features" : @"Admin";
    return cell;
 }
 
@@ -85,7 +89,40 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    [_optionsTableView deselectRowAtIndexPath:indexPath animated:YES];
-   indexPath.row == 0 ? [self pushAdminDashboards] : [self pushPeopleViewController];
+   switch (indexPath.section) {
+      case 0:
+         switch (indexPath.row) {
+            case 0:
+               [self pushNewsViewController];
+               break;
+            case 1:
+               [self pushProgramsViewController];
+               break;
+            case 2:
+               [self pushScanViewController];
+               break;
+            case 3:
+               [self pushProfileViewController];
+               break;
+            default:
+               break;
+         }
+         break;
+      case 1:
+         switch (indexPath.row) {
+            case 0:
+               [self pushAdminDashboards];
+               break;
+            case 1:
+               [self pushPeopleViewController];
+               break;
+            default:
+               break;
+         }
+         break;
+      default:
+         break;
+   }
 }
 
 @end

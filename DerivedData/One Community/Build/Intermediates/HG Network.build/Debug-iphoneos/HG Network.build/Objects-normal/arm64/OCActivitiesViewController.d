@@ -1,0 +1,13 @@
+dependencies: \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/First\ Tab\ Controllers/OCActivitiesViewController.m \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/First\ Tab\ Controllers/OCActivitiesViewController.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/Reusable\ Controllers/OCBaseViewController.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/MBProgressHUD/MBProgressHUD.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/iOS-Slide-Menu/SlideNavigationController.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/Custom\ Components/Models/User.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/RMMapper/NSObject+RMArchivable.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/Custom\ Components/UITableViewCell/OCProgramCell.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/First\ Tab\ Controllers/OCProgramDetailsViewController.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/Reusable\ Controllers/OCBaseWithouMenuViewController.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/ASProgressPopUpView/ASProgressPopUpView.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/HexColors/HexColors.h

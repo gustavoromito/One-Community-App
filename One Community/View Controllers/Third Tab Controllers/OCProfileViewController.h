@@ -8,10 +8,11 @@
 
 #import "OCBaseViewController.h"
 #import <ParallaxBlur/JPBFloatingTextViewController.h>
+#import <iOS_Slide_Menu/SlideNavigationController.h>
 
-@interface OCProfileViewController : JPBFloatingTextViewController <UITableViewDataSource, UITableViewDelegate>
+@interface OCProfileViewController : JPBFloatingTextViewController <UITableViewDataSource, UITableViewDelegate, SlideNavigationControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *optionsTableView;
-@property (strong, nonatomic) IBOutlet UIImageView *qrcodeImageView;
 @property (nonatomic) NSIndexPath *lastIndex;
+
 @end

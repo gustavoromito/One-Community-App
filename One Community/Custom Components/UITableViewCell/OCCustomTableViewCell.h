@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <YLProgressBar/YLProgressBar.h>
 #import <MGSwipeTableCell/MGSwipeTableCell.h>
+#import <FRDLivelyButton/FRDLivelyButton.h>
 
 @interface OCCustomTableViewCell : MGSwipeTableCell
 
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *extraText;
 @property (strong, nonatomic) IBOutlet UILabel *extraText2;
 @property (strong, nonatomic) IBOutlet YLProgressBar *progressBar;
+@property (strong, nonatomic) IBOutlet FRDLivelyButton *disclosureButton;
 
 - (void)setProgressBarColor:(NSArray *)colors;
 

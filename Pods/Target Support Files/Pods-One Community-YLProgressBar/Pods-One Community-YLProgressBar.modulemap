@@ -1,6 +1,0 @@
-framework module YLProgressBar {
-  umbrella header "Pods-One Community-YLProgressBar-umbrella.h"
-
-  export *
-  module * { export * }
-}

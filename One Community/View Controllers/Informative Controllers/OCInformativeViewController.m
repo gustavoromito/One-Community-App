@@ -11,7 +11,9 @@
 #import "UIImage+OCHelper.h"
 #import <BlockRSSParser/RSSParser.h>
 #import <ObjectiveSugar/ObjectiveSugar.h>
-#import <HexColors/HexColor.h>
+#import <HexColors/HexColors.h>
+
+#import "OCNewsDetailsViewController.h"
 
 #define UPDATE_CELL_IDENTIFIER @"updateCell"
 
@@ -58,6 +60,16 @@
 
 - (void)viewDidAppear:(BOOL)animated {
    [super viewDidAppear:animated];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+   [super viewWillAppear:animated];
+   if ([self isUserLoggedIn]) {
+      [self exchangeBackButtonForCustomMenuButton];
+      self.navigationItem.rightBarButtonItems = nil;
+   } else {
+      
+   }
 }
 
 - (void)readRSSFromWeb {
@@ -158,6 +170,18 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
+   [self performSegueWithIdentifier:@"goToNewsDetails" sender:indexPath];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   if ([[segue identifier] isEqualToString:@"goToNewsDetails"]) {
+      NSIndexPath *indexPath = sender;
+      OCNewsDetailsViewController *vc = [segue destinationViewController];
+      if ([vc respondsToSelector:@selector(setOutsideUrl:)]) {
+         [segue.destinationViewController performSelector:@selector(setOutsideUrl:)
+                                               withObject:((RSSItem*)[news objectAtIndex:indexPath.section]).link];
+      }
+   }
 }
 
 

@@ -34,7 +34,7 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   [self.navigationController.navigationBar setHidden:YES];
+//   [self.navigationController.navigationBar setHidden:YES];
    [self qrcodeSetup];
    options = @[@"Public", @"Private"];
    reports = @[@"Report 1", @"Report 2", @"Report 3"];
@@ -175,6 +175,15 @@
    _lastIndex = indexPath.section == 0 ?  indexPath : _lastIndex;
    [tableView reloadData];
    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - IOS Slide Menu Delegate
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu {
+   return NO;
+}
+
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
+   return YES;
 }
 
 @end

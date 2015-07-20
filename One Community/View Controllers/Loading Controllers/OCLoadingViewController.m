@@ -7,7 +7,7 @@
 //
 
 #import "OCLoadingViewController.h"
-#import <HexColors/HexColor.h>
+#import <HexColors/HexColors.h>
 
 #import <SKSplashView/SKSplashIcon.h>
 

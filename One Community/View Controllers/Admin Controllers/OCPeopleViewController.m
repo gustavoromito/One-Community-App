@@ -8,6 +8,10 @@
 
 #import "OCPeopleViewController.h"
 #import "OCCustomTableViewCell.h"
+#import "OCDashboardViewController.h"
+#import <HexColors/HexColors.h>
+
+#import "OCHTTPClient.h"
 
 #define USER_CELL_IDENTIFIER @"userCell"
 
@@ -21,54 +25,74 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   people = @[@{@"userid": @1,
-                @"name": @"Gustavo Romito",
-                @"totalHours":[NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Fernando Bitencourt",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Gabriel Freitas",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Beatriz Rocha",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Rodrigo Nobre",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Antonio Zambianco",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Maurilio Souza",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Tomas Lagon",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Mateus Baba",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Roberto Mito",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                },
-              @{@"userid": @1,
-                @"name": @"Eddie Zorro",
-                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
-                }];
-   
-   NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"totalHours"  ascending:NO];
-   people=[people sortedArrayUsingDescriptors:[NSArray arrayWithObjects:descriptor,nil]];
+//   people = @[@{@"userid": @1,
+//                @"name": @"Gustavo Romito",
+//                @"totalHours":[NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Fernando Bitencourt",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Gabriel Freitas",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Beatriz Rocha",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Rodrigo Nobre",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Antonio Zambianco",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Maurilio Souza",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Tomas Lagon",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Mateus Baba",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Roberto Mito",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                },
+//              @{@"userid": @1,
+//                @"name": @"Eddie Zorro",
+//                @"totalHours": [NSNumber numberWithDouble:[self randomDoubleForMax:80]]
+//                }];
+   [self fetchAPIData];
    // Do any additional setup after loading the view.
+}
+
+- (void)fetchAPIData {
+   NSString *requestPath = @"users/collaborators";
+   MBProgressHUD *hud = [self showHUDwithTitle:@"Please, wait..." andDetail:@"loading collaborators."];
+   OCHTTPClient *client = [OCHTTPClient privateClient];
+   [client GET:requestPath
+    parameters:@{}
+       success:^(AFHTTPRequestOperation *operation, id responseObject) {
+          if ([[responseObject valueForKey:@"success"] intValue] == 0) {
+             [self showAlertWithTitle:@"Alert:" andMessage:[responseObject valueForKey:@"message"]];
+          }else{
+             people = [responseObject objectForKey:@"users"];
+             NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"totalHours"  ascending:NO];
+             people=[people sortedArrayUsingDescriptors:[NSArray arrayWithObjects:descriptor,nil]];
+             [_tableView reloadData];
+          }
+          [hud hide:YES];
+       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+          [hud hide:YES];
+          [self showAppropriateFailureMessageWithResponseObject:operation.responseObject];
+       }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -86,14 +110,27 @@
    double percentage = [self percentageRelatedToWorkedHours:hoursMade];
    cell.progressBar.progress = percentage;
    [cell setProgressBarColor:[self colorForHoursMade:hoursMade]];
-
+//   cell.backgroundColor = [self backgroundColorForIndexPath:indexPath];
+   
    NSRange range = [self rangeForWorkedHours:hoursMade];
    
    cell.extraText.text = [NSString stringWithFormat:@"%lu", (unsigned long)range.location];
    cell.extraText2.text = [NSString stringWithFormat:@"%lu", (unsigned long)(range.location + range.length)];
-   cell.mainText.text = [person valueForKey:@"name"];
+   cell.mainText.text = [NSString stringWithFormat:@"%ldº %@",(long)indexPath.row+1, [person valueForKey:@"name"]];
    cell.subText.text = [NSString stringWithFormat:@"%.2f hours made", [[person valueForKey:@"totalHours"] doubleValue]];
+   
    return cell;
+}
+
+- (UIColor *)backgroundColorForIndexPath:(NSIndexPath*)indexPath {
+   if (indexPath.row == 0) {
+      return [UIColor colorWithHexString:@"#FFDF00"];
+   } else if (indexPath.row == 1) {
+      return [UIColor colorWithHexString:@"#C0C0C0"];
+   } else if (indexPath.row == 2) {
+      return [UIColor colorWithHexString:@"#cd7f32"];
+   }
+   return [UIColor groupTableViewBackgroundColor];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -131,6 +168,17 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
+   [self performSegueWithIdentifier:@"goToDashboard" sender:indexPath];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   if ([[segue identifier] isEqualToString:@"goToDashboard"]) {
+      NSIndexPath *indexPath = (NSIndexPath*)sender;
+      NSDictionary *dic = [people objectAtIndex:indexPath.row];
+      OCDashboardViewController *vc = [segue destinationViewController];
+      User *user = [[User alloc] initWithUserId:[dic valueForKey:@"user_id"] andUserName:[dic valueForKey:@"name"]];
+      vc.outsideUser = user;
+   }
 }
 
 @end

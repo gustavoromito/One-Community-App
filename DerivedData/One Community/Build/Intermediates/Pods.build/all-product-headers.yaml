@@ -1,0 +1,1255 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AFHTTPRequestOperation.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFHTTPRequestOperationManager.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFHTTPSessionManager.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworkActivityIndicatorManager.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworkReachabilityManager.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/AFNetworking.framework/Headers/AFNetworking-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFSecurityPolicy.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLConnectionOperation.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLRequestSerialization.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLResponseSerialization.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLSessionManager.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIActivityIndicatorView+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIAlertView+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIKit+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIProgressView+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIRefreshControl+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIWebView+AFNetworking.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/AFNetworking.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/AFNetworking.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ALThreeCircleSpinner.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ALThreeCircleSpinner-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ALThreeCircleSpinner.framework/Headers/ALThreeCircleSpinner-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ALThreeCircleSpinner-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/ALThreeCircleSpinner/ALThreeCircleSpinner-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ALThreeCircleSpinner.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/ALThreeCircleSpinner.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ASProgressPopUpView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ASPopUpView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ASProgressPopUpView/ASProgressPopUpView/ASPopUpView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASProgressPopUpView-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ASProgressPopUpView.framework/Headers/ASProgressPopUpView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASProgressPopUpView-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/ASProgressPopUpView/ASProgressPopUpView-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "ASProgressPopUpView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ASProgressPopUpView/ASProgressPopUpView/ASProgressPopUpView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ASProgressPopUpView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/ASProgressPopUpView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ActionSheetPicker.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AbstractActionSheetPicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/AbstractActionSheetPicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetCustomPicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetCustomPicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetCustomPickerDelegate.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetCustomPickerDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetDatePicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetDatePicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetDistancePicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetDistancePicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetLocalePicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetLocalePicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetPicker-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ActionSheetPicker.framework/Headers/ActionSheetPicker-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetPicker-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/ActionSheetPicker/ActionSheetPicker-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetPicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetPicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "ActionSheetStringPicker.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/ActionSheetStringPicker.h"
+        },
+        {
+          'type': 'file',
+          'name': "DistancePickerView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/DistancePickerView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SWActionSheet.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ActionSheetPicker/Pickers/SWActionSheet.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ActionSheetPicker.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/ActionSheetPicker.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/BlockRSSParser.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "BlockRSSParser-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/BlockRSSParser.framework/Headers/BlockRSSParser-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "BlockRSSParser-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/BlockRSSParser/BlockRSSParser-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSSItem.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/BlockRSSParser/RSSParser/RSSItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "RSSParser.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/BlockRSSParser/RSSParser/RSSParser.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/BlockRSSParser.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/BlockRSSParser.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/CocoaSecurity.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Base64.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/CocoaSecurity/submodules/Base64/Base64/Base64.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaSecurity-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/CocoaSecurity.framework/Headers/CocoaSecurity-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaSecurity-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/CocoaSecurity/CocoaSecurity-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaSecurity.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/CocoaSecurity/CocoaSecurity/CocoaSecurity.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/CocoaSecurity.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/CocoaSecurity.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FRDLivelyButton.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FRDLivelyButton-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FRDLivelyButton.framework/Headers/FRDLivelyButton-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FRDLivelyButton-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/FRDLivelyButton/FRDLivelyButton-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FRDLivelyButton.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FRDLivelyButton/FRDLivelyButton/FRDLivelyButton.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FRDLivelyButton.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/FRDLivelyButton.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FXBlurView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FXBlurView-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FXBlurView.framework/Headers/FXBlurView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FXBlurView-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/FXBlurView/FXBlurView-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FXBlurView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FXBlurView/FXBlurView/FXBlurView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FXBlurView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/FXBlurView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FlatUIKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FUIAlertView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUIAlertView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FUIButton.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUIButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "FUICellBackgroundView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUICellBackgroundView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FUIPopoverBackgroundView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUIPopoverBackgroundView.h"
+        },
+        {
+          'type': 'file',
+          'name': "FUISegmentedControl.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUISegmentedControl.h"
+        },
+        {
+          'type': 'file',
+          'name': "FUISwitch.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUISwitch.h"
+        },
+        {
+          'type': 'file',
+          'name': "FUITextField.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FUITextField.h"
+        },
+        {
+          'type': 'file',
+          'name': "FlatUIKit-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FlatUIKit.framework/Headers/FlatUIKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FlatUIKit-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/FlatUIKit/FlatUIKit-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "FlatUIKit.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/FlatUIKit.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+Icons.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/NSString+Icons.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIBarButtonItem+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIBarButtonItem+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIColor+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIFont+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIFont+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIImage+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UINavigationBar+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UINavigationBar+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIPopoverController+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIPopoverController+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIProgressView+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIProgressView+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISlider+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UISlider+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIStepper+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIStepper+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITabBar+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UITabBar+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITableViewCell+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UITableViewCell+FlatUI.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIToolbar+FlatUI.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/FlatUIKit/Classes/ios/UIToolbar+FlatUI.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/FlatUIKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/FlatUIKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/HexColors.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "HexColors-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/HexColors.framework/Headers/HexColors-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "HexColors-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/HexColors/HexColors-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "HexColors.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/HexColors/Classes/HexColors.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/HexColors.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/HexColors.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/MBProgressHUD.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MBProgressHUD-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/MBProgressHUD.framework/Headers/MBProgressHUD-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MBProgressHUD-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/MBProgressHUD/MBProgressHUD-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MBProgressHUD.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/MBProgressHUD/MBProgressHUD.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/MBProgressHUD.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/MBProgressHUD.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/MGSwipeTableCell.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MGSwipeButton.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "MGSwipeTableCell-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/MGSwipeTableCell.framework/Headers/MGSwipeTableCell-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MGSwipeTableCell-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/MGSwipeTableCell/MGSwipeTableCell-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MGSwipeTableCell.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/MGSwipeTableCell/MGSwipeTableCell/MGSwipeTableCell.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/MGSwipeTableCell.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/MGSwipeTableCell.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/NSUserDefaults_AESEncryptor.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSUserDefaults+AESEncryptor.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/NSUserDefaults-AESEncryptor/NSUserDefaults-AESEncryptor/NSUserDefaults+AESEncryptor.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSUserDefaults-AESEncryptor-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/NSUserDefaults-AESEncryptor/NSUserDefaults-AESEncryptor-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSUserDefaults_AESEncryptor-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/NSUserDefaults_AESEncryptor.framework/Headers/NSUserDefaults_AESEncryptor-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/NSUserDefaults_AESEncryptor.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/NSUserDefaults-AESEncryptor.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/OHActionSheet.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "OHActionSheet-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/OHActionSheet.framework/Headers/OHActionSheet-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "OHActionSheet-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/OHActionSheet/OHActionSheet-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "OHActionSheet.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/OHActionSheet/OHActionSheet/OHActionSheet.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/OHActionSheet.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/OHActionSheet.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ObjectiveSugar.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSArray+ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/NSArray+ObjectiveSugar.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSDictionary+ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/NSDictionary+ObjectiveSugar.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSMutableArray+ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/NSMutableArray+ObjectiveSugar.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSNumber+ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/NSNumber+ObjectiveSugar.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSSet+ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/NSSet+ObjectiveSugar.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/NSString+ObjectiveSugar.h"
+        },
+        {
+          'type': 'file',
+          'name': "ObjectiveSugar-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ObjectiveSugar.framework/Headers/ObjectiveSugar-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ObjectiveSugar-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/ObjectiveSugar/ObjectiveSugar-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "ObjectiveSugar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ObjectiveSugar/Classes/ObjectiveSugar.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ObjectiveSugar.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/ObjectiveSugar.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ParallaxBlur.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "JPBFloatingTextViewController.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ParallaxBlur/Pod/Classes/JPBFloatingTextViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "JPBParallaxBlurViewController.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ParallaxBlur/Pod/Classes/JPBParallaxBlurViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "JPBParallaxTableViewController.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/ParallaxBlur/Pod/Classes/JPBParallaxTableViewController.h"
+        },
+        {
+          'type': 'file',
+          'name': "ParallaxBlur-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ParallaxBlur.framework/Headers/ParallaxBlur-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ParallaxBlur-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/ParallaxBlur/ParallaxBlur-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ParallaxBlur.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/ParallaxBlur.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/Pods_HG_Network.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-HG Network-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/Pods-HG Network/Pods-HG Network-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_HG_Network-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/Pods_HG_Network.framework/Headers/Pods_HG_Network-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/Pods_HG_Network.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-HG Network.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/QRCodeReaderViewController.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "QRCameraSwitchButton.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/QRCodeReaderViewController/QRCodeReaderViewController/QRCameraSwitchButton.h"
+        },
+        {
+          'type': 'file',
+          'name': "QRCodeReader.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/QRCodeReaderViewController/QRCodeReaderViewController/QRCodeReader.h"
+        },
+        {
+          'type': 'file',
+          'name': "QRCodeReaderDelegate.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/QRCodeReaderViewController/QRCodeReaderViewController/QRCodeReaderDelegate.h"
+        },
+        {
+          'type': 'file',
+          'name': "QRCodeReaderView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/QRCodeReaderViewController/QRCodeReaderViewController/QRCodeReaderView.h"
+        },
+        {
+          'type': 'file',
+          'name': "QRCodeReaderViewController-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/QRCodeReaderViewController.framework/Headers/QRCodeReaderViewController-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "QRCodeReaderViewController-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "QRCodeReaderViewController.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/QRCodeReaderViewController/QRCodeReaderViewController/QRCodeReaderViewController.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/QRCodeReaderViewController.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/QRCodeReaderViewController.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/REComposeViewController.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DEComposeRuledView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/REComposeViewController/REComposeViewController/DEComposeRuledView.h"
+        },
+        {
+          'type': 'file',
+          'name': "DEComposeTextView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/REComposeViewController/REComposeViewController/DEComposeTextView.h"
+        },
+        {
+          'type': 'file',
+          'name': "RECommonFunctions.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/REComposeViewController/REComposeViewController/RECommonFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "REComposeBackgroundView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/REComposeViewController/REComposeViewController/REComposeBackgroundView.h"
+        },
+        {
+          'type': 'file',
+          'name': "REComposeSheetView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/REComposeViewController/REComposeViewController/REComposeSheetView.h"
+        },
+        {
+          'type': 'file',
+          'name': "REComposeViewController-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/REComposeViewController.framework/Headers/REComposeViewController-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "REComposeViewController-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/REComposeViewController/REComposeViewController-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "REComposeViewController.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/REComposeViewController/REComposeViewController/REComposeViewController.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/REComposeViewController.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/REComposeViewController.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/RMMapper.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSObject+RMArchivable.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/RMMapper/RMMapper/NSObject+RMArchivable.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+RMCopyable.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/RMMapper/RMMapper/NSObject+RMCopyable.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSUserDefaults+RMSaveCustomObject.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/RMMapper/RMMapper/NSUserDefaults+RMSaveCustomObject.h"
+        },
+        {
+          'type': 'file',
+          'name': "RMMapper-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/RMMapper.framework/Headers/RMMapper-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "RMMapper-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/RMMapper/RMMapper-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "RMMapper.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/RMMapper/RMMapper/RMMapper.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/RMMapper.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/RMMapper.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/SKSplashView.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SKSplashIcon.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/SKSplashView/SKSplashView/SKSplashIcon.h"
+        },
+        {
+          'type': 'file',
+          'name': "SKSplashView-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/SKSplashView.framework/Headers/SKSplashView-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SKSplashView-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/SKSplashView/SKSplashView-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SKSplashView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/SKSplashView/SKSplashView/SKSplashView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/SKSplashView.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/SKSplashView.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/TPKeyboardAvoiding.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TPKeyboardAvoiding-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/TPKeyboardAvoiding.framework/Headers/TPKeyboardAvoiding-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TPKeyboardAvoiding-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "TPKeyboardAvoidingCollectionView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/TPKeyboardAvoiding/TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h"
+        },
+        {
+          'type': 'file',
+          'name': "TPKeyboardAvoidingScrollView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/TPKeyboardAvoiding/TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h"
+        },
+        {
+          'type': 'file',
+          'name': "TPKeyboardAvoidingTableView.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/TPKeyboardAvoiding/TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIScrollView+TPKeyboardAvoidingAdditions.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/TPKeyboardAvoiding/TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/TPKeyboardAvoiding.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/TPKeyboardAvoiding.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/TextFieldEffects.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TextFieldEffects-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TextFieldEffects-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/TextFieldEffects.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/TextFieldEffects.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/UITableView_FDTemplateLayoutCell.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "UITableView+FDTemplateLayoutCell-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITableView+FDTemplateLayoutCell.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/UITableView+FDTemplateLayoutCell/Classes/UITableView+FDTemplateLayoutCell.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITableView_FDTemplateLayoutCell-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/UITableView_FDTemplateLayoutCell.framework/Headers/UITableView_FDTemplateLayoutCell-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/UITableView_FDTemplateLayoutCell.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/UITableView+FDTemplateLayoutCell.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/YLProgressBar.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "YLProgressBar-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/YLProgressBar.framework/Headers/YLProgressBar-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "YLProgressBar-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/YLProgressBar/YLProgressBar-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "YLProgressBar.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/YLProgressBar/YLProgressBar/YLProgressBar.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/YLProgressBar.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/YLProgressBar.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ZFRippleButton.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "ZFRippleButton-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ZFRippleButton.framework/Headers/ZFRippleButton-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFRippleButton-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/ZFRippleButton/ZFRippleButton-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/ZFRippleButton.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/ZFRippleButton.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/iOS_Slide_Menu.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SlideNavigationContorllerAnimator.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/Animations/SlideNavigationContorllerAnimator.h"
+        },
+        {
+          'type': 'file',
+          'name': "SlideNavigationContorllerAnimatorFade.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorFade.h"
+        },
+        {
+          'type': 'file',
+          'name': "SlideNavigationContorllerAnimatorScale.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorScale.h"
+        },
+        {
+          'type': 'file',
+          'name': "SlideNavigationContorllerAnimatorScaleAndFade.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorScaleAndFade.h"
+        },
+        {
+          'type': 'file',
+          'name': "SlideNavigationContorllerAnimatorSlide.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlide.h"
+        },
+        {
+          'type': 'file',
+          'name': "SlideNavigationContorllerAnimatorSlideAndFade.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/Animations/SlideNavigationContorllerAnimatorSlideAndFade.h"
+        },
+        {
+          'type': 'file',
+          'name': "SlideNavigationController.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/iOS-Slide-Menu/SlideMenu/Source/SlideNavigationController.h"
+        },
+        {
+          'type': 'file',
+          'name': "iOS-Slide-Menu-umbrella.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/Pods/Target Support Files/iOS-Slide-Menu/iOS-Slide-Menu-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "iOS_Slide_Menu-Swift.h",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/iOS_Slide_Menu.framework/Headers/iOS_Slide_Menu-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Products/Debug-iphoneos/iOS_Slide_Menu.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/gustavoromito/Desktop/One Community/One Community/DerivedData/One Community/Build/Intermediates/Pods.build/Debug-iphoneos/iOS-Slide-Menu.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

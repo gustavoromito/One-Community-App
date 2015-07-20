@@ -1,0 +1,1 @@
+ const unsigned char REComposeViewControllerVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:REComposeViewController  PROJECT:Pods-1" "\n"; const double REComposeViewControllerVersionNumber __attribute__ ((used)) = (double)1.;

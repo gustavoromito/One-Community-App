@@ -1,0 +1,1 @@
+ const unsigned char BlockRSSParserVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:BlockRSSParser  PROJECT:Pods-1" "\n"; const double BlockRSSParserVersionNumber __attribute__ ((used)) = (double)1.;

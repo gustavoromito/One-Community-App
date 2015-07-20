@@ -1,0 +1,1 @@
+ const unsigned char QRCodeReaderViewControllerVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:QRCodeReaderViewController  PROJECT:Pods-1" "\n"; const double QRCodeReaderViewControllerVersionNumber __attribute__ ((used)) = (double)1.;

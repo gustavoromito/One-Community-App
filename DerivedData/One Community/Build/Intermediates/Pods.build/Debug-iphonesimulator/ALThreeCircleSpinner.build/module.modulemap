@@ -1,0 +1,10 @@
+framework module ALThreeCircleSpinner {
+  umbrella header "ALThreeCircleSpinner-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ALThreeCircleSpinner.Swift {
+    header "ALThreeCircleSpinner-Swift.h"
+}

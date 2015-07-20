@@ -10,10 +10,12 @@
 #import "OCLeftMenuTableViewController.h"
 #import <iOS-Slide-Menu/SlideNavigationController.h>
 #import <iOS-Slide-Menu/SlideNavigationContorllerAnimatorSlide.h>
+#import <RMMapper/NSUserDefaults+RMSaveCustomObject.h>
 
 #import "UIColor+MHelper.h"
 
 #define ARC4RANDOM_MAX 0x100000000
+#define LOGGED_USER_KEY @"loggedUser"
 
 @interface OCBaseViewController ()
 
@@ -67,7 +69,8 @@
 - (void)genericStoryboardPushWithName:(NSString *)storyboardName animated:(BOOL)animated{
    UIStoryboard *story = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
    UIViewController *viewController = [story instantiateInitialViewController];
-   [self.navigationController pushViewController:viewController animated:animated];
+//   [[SlideNavigationController sharedInstance] switchToViewController:viewController withCompletion:nil];
+   [[SlideNavigationController sharedInstance] popAllAndSwitchToViewController:viewController withCompletion:nil];
 }
 
 - (void)pushUserStoryboardAnimated:(BOOL)animated{
@@ -89,7 +92,7 @@
 - (void)pushAdminStoryboardWithViewController:(NSString *)identifier {
    UIStoryboard *story = [UIStoryboard storyboardWithName:@"admin" bundle:nil];
    UIViewController *vc = [story instantiateViewControllerWithIdentifier:identifier];
-   [[SlideNavigationController sharedInstance] switchToViewController:vc withCompletion:nil];
+   [[SlideNavigationController sharedInstance] popAllAndSwitchToViewController:vc withCompletion:nil];
 }
 
 - (void)pushAdminDashboards {
@@ -98,6 +101,28 @@
 
 - (void)pushPeopleViewController {
    [self pushAdminStoryboardWithViewController:@"peopleViewController"];
+}
+
+- (void)pushMainStoryboardWithViewController:(NSString *)identifier {
+   UIStoryboard *story = [UIStoryboard storyboardWithName:@"main" bundle:nil];
+   UIViewController *vc = [story instantiateViewControllerWithIdentifier:identifier];
+   [[SlideNavigationController sharedInstance] popAllAndSwitchToViewController:vc withCompletion:nil];
+}
+
+- (void)pushProgramsViewController {
+   [self pushMainStoryboardWithViewController:@"programsViewController"];
+}
+
+- (void)pushScanViewController {
+   [self pushMainStoryboardWithViewController:@"scanViewController"];
+}
+
+- (void)pushProfileViewController {
+   [self pushMainStoryboardWithViewController:@"profileViewController"];
+}
+
+- (void)pushNewsViewController {
+   [self genericStoryboardPushWithName:@"informative" animated:YES];
 }
 
 #pragma mark - Placeholder Warnings & Alert View Helpers
@@ -142,6 +167,18 @@
                                message:@"Please, report this to the develop team."
                               delegate:nil cancelButtonTitle:@"OK"
                      otherButtonTitles:nil] show];
+}
+
+- (void)showAppropriateFailureMessageWithResponseObject:(id)responseObject{
+   if (!responseObject) {
+      [self showConnectionErrorAlert];
+   }else{
+      if ([responseObject valueForKey:@"message"]) {
+         [self showAlertWithTitle:@"" andMessage:[NSString stringWithFormat:@"%@",[responseObject valueForKey:@"message"]]];
+      }else{
+         [self showGenericErrorWarning];
+      }
+   }
 }
 
 #pragma mark - IOS Slide Menu Delegate
@@ -212,6 +249,22 @@
 #pragma mark - Number Generator
 - (double)randomDoubleForMax:(double)maxValue {
    return ((double)arc4random() / ARC4RANDOM_MAX) * maxValue;
+}
+
+#pragma mark - User Logged
+- (BOOL)isUserLoggedIn {
+   NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+   return [defaults rm_customObjectForKey:LOGGED_USER_KEY];
+}
+
+- (User *)getLoggedUser {
+   NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+   return [defaults rm_customObjectForKey:LOGGED_USER_KEY];
+}
+
+- (void)saveUserToDefaults:(User*)newUser {
+   NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+   [defaults rm_setCustomObject:newUser forKey:LOGGED_USER_KEY];
 }
 
 @end

@@ -1,0 +1,1 @@
+ const unsigned char CocoaSecurityVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:CocoaSecurity  PROJECT:Pods-1" "\n"; const double CocoaSecurityVersionNumber __attribute__ ((used)) = (double)1.;

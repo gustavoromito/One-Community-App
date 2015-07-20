@@ -8,28 +8,35 @@
 
 #import "OCDashboardViewController.h"
 #import "OCCustomTableViewCell.h"
-#import <HexColors/HexColor.h>
+#import <HexColors/HexColors.h>
 #import <UITableView_FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
 #import <MGSwipeTableCell/MGSwipeButton.h>
+#import "OCNewActivityViewController.h"
+
+#import "OCHTTPClient.h"
+#import "Task.h"
+#import "Subtask.h"
+#import "Week.h"
 
 #import "UIColor+MHelper.h"
 #import <ObjectiveSugar/ObjectiveSugar.h>
+#import <REComposeViewController/REComposeViewController.h>
 
 #define HEADER_SIZE 20.0f
 #define FOOTER_SIZE 42.0f
 #define RECORD_CELL_SIZE 66.0f
 #define PROGRESS_CELL_SIZE 30.0f
-#define NEW_RECORD_CELL_SIZE 150.0f
 
 #define FIRST_CELL_IDENTIFIER @"progressBarCell"
 #define HEADER_CELL_IDENTIFIER @"headerCell"
 #define FOOTER_CELL_IDENTIFIER @"footerCell"
-#define RECORD_CELL_IDENTIFIER @"recordCell"
-#define NEW_RECORD_CELL_IDENTIFIER @"newRecordCell"
+#define TASK_CELL_IDENTIFIER @"taskCell"
+#define SUB_TASK_CELL_IDENTIFIER @"subTaskCell"
 
 @interface OCDashboardViewController () {
-   NSArray *weeks;
-   NSMutableArray *newRowForSection;
+   NSMutableArray *weeks;
+   NSMutableArray *sections;
+   NSNumber *loadDataForUserID;
 }
 
 @end
@@ -38,39 +45,63 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   self.navigationController.navigationItem.title = @"Dashboard";
-   weeks = @[@{@"week": @"06/04",
-               @"logs": @[@{@"hours": @8,
-                            @"categoryName": @"Funding & Partnership Building",
-                            @"description": @"Some sample description"},
-                          @{@"hours": @28,
-                            @"categoryName": @"Marketing & Promotion",
-                            @"description": @"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed dapibus lorem. Sed porta rhoncus libero, in interdum lacus consectetur at. Pellentesque et nibh felis. Sed vitae mauris arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam luctus leo sit amet justo posuere, a cursus dolor sodales. Duis nec turpis et ipsum hendrerit eleifend nec ut nunc. Duis lacus lacus, ornare in erat ut, blandit porta tortor. Vestibulum eu fermentum massa, at fermentum erat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris iaculis mauris ac lectus cursus, sit amet hendrerit nunc venenatis. Nunc sollicitudin dui eget quam faucibus sagittis."}]},
-             @{@"week": @"06/04",
-               @"logs": @[@{@"hours": @8,
-                            @"categoryName": @"Funding & Partnership Building",
-                            @"description": @"Some sample description"},
-                          @{@"hours": @28,
-                            @"categoryName": @"Marketing & Promotion",
-                            @"description": @"Some sample description"}]},
-             @{@"week": @"06/11",
-               @"logs": @[@{@"hours": @10,
-                            @"categoryName": @"Infrastructure & Planning",
-                            @"description": @"Some sample description"},
-                          @{@"hours": @2,
-                            @"categoryName": @"Everything else",
-                            @"description": @"Some sample description"},
-                          @{@"hours": @8,
-                            @"categoryName": @"Funding & Partnership Building",
-                            @"description": @"Some sample description"},
-                          @{@"hours": @28,
-                            @"categoryName": @"Marketing & Promotion",
-                            @"description": @"Some sample description"}]}];
+   [self initialSetup];
+   [self fetchAPIData];
+}
+
+- (void)initialSetup {
+   self.navigationItem.title = (_outsideUser == nil) ? @"Dashboard" : _outsideUser.name;
    // Do any additional setup after loading the view.
-   
-   newRowForSection = [[NSMutableArray alloc] initWithCapacity:weeks.count];
-   [weeks each:^(id object) {
-      [newRowForSection addObject:[NSNumber numberWithBool:NO]];
+   weeks = [[NSMutableArray alloc] init];
+   sections = [[NSMutableArray alloc] init];
+   self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+   loadDataForUserID = (_outsideUser == nil) ?  ((User*)[self getLoggedUser]).user_id : _outsideUser.user_id;
+}
+
+- (void)Back {
+   [[SlideNavigationController sharedInstance] popViewControllerAnimated:YES];
+}
+
+- (void)fetchAPIData {
+   NSString *requestPath = @"users/workedHours?user_id=1";
+   MBProgressHUD *hud = [self showHUDwithTitle:@"Please, wait..." andDetail:@"loading data from API."];
+   [self.view bringSubviewToFront:hud];
+   OCHTTPClient *client = [OCHTTPClient privateClient];
+   [client GET:requestPath
+    parameters:@{@"user_id": loadDataForUserID}
+       success:^(AFHTTPRequestOperation *operation, id responseObject) {
+          [hud hide:YES];
+          if ([[responseObject valueForKey:@"success"] intValue] == 0) {
+             [self showAlertWithTitle:@"Alert:" andMessage:[responseObject valueForKey:@"message"]];
+          }else{
+             [self buildObjects:responseObject];
+             [_tableView reloadData];
+          }
+       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+          [hud hide:YES];
+          [self showAppropriateFailureMessageWithResponseObject:operation.responseObject];
+       }];
+}
+
+- (void)buildObjects:(NSDictionary *)responseObject {
+   NSArray *ws = [responseObject objectForKey:@"weeks"];
+   [ws each:^(id week) {
+      Week *newWeek = [[Week alloc] initWithWeekNumber:[week valueForKey:@"weekNumber"]];
+      __block double totalHours = 0;
+      [[week objectForKey:@"tasks"] each:^(id task) {
+         Task *newTask = [[Task alloc] initWithDictionary:[task firstObject]];
+         [task each:^(id subTask) {
+            Subtask *newSubTask = [[Subtask alloc] initWithDictionary:subTask];
+            totalHours += newSubTask.time.doubleValue;
+            [newTask.subTasks addObject:newSubTask];
+         }];
+         [newWeek.tasks addObject:newTask];
+      }];
+      newWeek.totalHours = [NSNumber numberWithDouble:totalHours];
+      [weeks addObject:newWeek];
+   }];
+   [weeks each:^(Week *week) {
+      [sections addObject:week.tasks];
    }];
 }
 
@@ -85,42 +116,77 @@
    OCCustomTableViewCell *cell;
    cell = (OCCustomTableViewCell *)[self buildCellWithIdentifier:[self getIdentifierForIndexPath:indexPath]
                                                        andAction:nil];
-   NSInteger totalRows = [[[weeks objectAtIndex:indexPath.section] objectForKey:@"logs"] count] + 2;
+   NSInteger totalRows = [[sections objectAtIndex:indexPath.section] count] + 2;
    [cell setProgressBarColor:[self colorForHoursMade:10.5]];
    if (indexPath.row > 0 && indexPath.row < totalRows - 1) {
-      NSArray *logs = [[weeks objectAtIndex:indexPath.section] objectForKey:@"logs"];
-      NSDictionary *tempDic = [logs objectAtIndex:indexPath.row - 1];
-      cell.mainText.text = [NSString stringWithFormat:@"%@hrs", [tempDic valueForKey:@"hours"]];
-      cell.subText.text = [tempDic valueForKey:@"categoryName"];
-      cell.extraText.text = [tempDic valueForKey:@"description"];
+      NSArray *cells = [sections objectAtIndex:indexPath.section];
+      id object = [cells objectAtIndex:indexPath.row - 1];
+      if ([object isKindOfClass:[Task class]]) {
+         __block double totalHours = 0;
+         [((Task *)object).subTasks each:^(Subtask *st) {
+            totalHours += [st.time doubleValue];
+         }];
+         
+         if ([self isAlreadyShowingContent:indexPath]) {
+            [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretDown animated:YES];
+         } else {
+            [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretLeft animated:YES];
+         }
+         cell.mainText.text = [NSString stringWithFormat:@"%2.fhrs", totalHours];
+         cell.subText.text = ((Task *)object).name;
+         cell.extraText.text = ((Task *)object).category_name;
+      } else if ([object isKindOfClass:[Subtask class]]){
+         cell.mainText.text = [NSString stringWithFormat:@"%@hrs", ((Subtask *)object).time];
+         cell.subText.text = ((Subtask *)object).name;
+         cell.extraText.text = ((Subtask *)object).desc;
+      }
       
       cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"Delete"
                                            backgroundColor:[UIColor redColor]
                                                   callback:^BOOL(MGSwipeTableCell *sender) {
-                              NSLog(@"Convenience callback for swipe buttons!");
-                              return true;
-                            }],
+                                                     NSLog(@"Convenience callback for swipe buttons!");
+                                                     return true;
+                                                  }],
                             [MGSwipeButton buttonWithTitle:@"Edit"
                                            backgroundColor:[UIColor lightGrayColor]
                                                   callback:^BOOL(MGSwipeTableCell *sender) {
-                               NSLog(@"Convenience callback for swipe buttons!");
-                               return true;
-                            }]];
+                                                     NSLog(@"Convenience callback for swipe buttons!");
+                                                     return true;
+                                                  }]];
+   } else if (indexPath.row == 0) {
+      Week *week = (Week*)[weeks objectAtIndex:indexPath.section];
+      cell.mainText.text = [NSString stringWithFormat:@"%@ tan", week.totalHours];
+      cell.subText.text = [NSString stringWithFormat:@"%@ total", week.totalHours];
+      double percentage = [self percentageRelatedToWorkedHours:week.totalHours.doubleValue];
+      cell.progressBar.progress = percentage;
+      [cell setProgressBarColor:[self colorForHoursMade:week.totalHours.doubleValue]];
    }
+   
    return cell;
 }
 
 - (NSString *)getIdentifierForIndexPath:(NSIndexPath *)indexPath {
-   NSInteger totalRows = [[[weeks objectAtIndex:indexPath.section] objectForKey:@"logs"] count] + 2;
+   NSInteger totalRows = [[sections objectAtIndex:indexPath.section] count] + 2;
    if (indexPath.row == 0) { return FIRST_CELL_IDENTIFIER;
-   } else if (indexPath.row < totalRows - 1) { return RECORD_CELL_IDENTIFIER;
+   } else if (indexPath.row == totalRows - 1) {
+      return FOOTER_CELL_IDENTIFIER;
    } else {
-      return [[newRowForSection objectAtIndex:indexPath.section] boolValue] == YES ? NEW_RECORD_CELL_IDENTIFIER : FOOTER_CELL_IDENTIFIER;
+      NSArray *cells = [sections objectAtIndex:indexPath.section];
+      if (cells.count > 0) {
+         id object = [cells objectAtIndex:indexPath.row - 1];
+         if ([object isKindOfClass:[Task class]]) {
+            return TASK_CELL_IDENTIFIER;
+         } else if ([object isKindOfClass:[Subtask class]]){
+            return SUB_TASK_CELL_IDENTIFIER;
+         }
+      }
    }
+   return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-   return [[[weeks objectAtIndex:section] objectForKey:@"logs"] count] + 2;
+   NSArray *cells = [sections objectAtIndex:section];
+   return  [cells count] + 2;
 }
 
 #pragma mark Header Initialization
@@ -131,11 +197,13 @@
       cell.backgroundColor = [UIColor darkGrayColor];
       cell.backgroundView.backgroundColor = [UIColor darkGrayColor];
    }
+   NSNumber *weekNumber = ((Week*)[weeks objectAtIndex:section]).weekNumber;
+   cell.mainText.text = [NSString stringWithFormat:@"Week %@", weekNumber];
    return cell;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-   return [weeks count];
+   return [sections count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -143,18 +211,18 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-//   return (indexPath.row == 0) ? PROGRESS_CELL_SIZE : RECORD_CELL_SIZE;
-   NSInteger totalRows = [[[weeks objectAtIndex:indexPath.section] objectForKey:@"logs"] count] + 2;
+   //   return (indexPath.row == 0) ? PROGRESS_CELL_SIZE : RECORD_CELL_SIZE;
+   NSInteger totalRows = [[sections objectAtIndex:indexPath.section] count] + 2;
    if (indexPath.row == 0) {
       return PROGRESS_CELL_SIZE;
    } else if (indexPath.row == totalRows - 1) {
-      return [[newRowForSection objectAtIndex:indexPath.section] boolValue] == YES ? NEW_RECORD_CELL_SIZE : FOOTER_SIZE;
+      return FOOTER_SIZE;
    }
-   return [tableView fd_heightForCellWithIdentifier:RECORD_CELL_IDENTIFIER cacheByIndexPath:indexPath configuration:^(id cell) {
+   return [tableView fd_heightForCellWithIdentifier:TASK_CELL_IDENTIFIER cacheByIndexPath:indexPath configuration:^(id cell) {
       // configurations
-      NSArray *logs = [[weeks objectAtIndex:indexPath.section] objectForKey:@"logs"];
-      NSDictionary *tempDic = [logs objectAtIndex:indexPath.row - 1];
-      ((OCCustomTableViewCell *)cell).extraText.text = [tempDic valueForKey:@"description"];
+      //      NSArray *logs = [[weeks objectAtIndex:indexPath.section] objectForKey:@"logs"];
+      //      NSDictionary *tempDic = [logs objectAtIndex:indexPath.row - 1];
+      //      ((OCCustomTableViewCell *)cell).extraText.text = [tempDic valueForKey:@"description"];
    }];
 }
 
@@ -175,23 +243,102 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+   NSInteger totalRows = [[sections objectAtIndex:indexPath.section] count] + 2;
    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
+   if (indexPath.row != 0 && indexPath.row < totalRows - 1) {
+      if (![self isAlreadyShowingContent:indexPath]) {
+         [self inserRowsWithIndexPath:indexPath];
+         OCCustomTableViewCell *cell = (OCCustomTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+         [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretDown animated:YES];
+      } else {
+         [self removeRowsWithIndexPath:indexPath];
+         OCCustomTableViewCell *cell = (OCCustomTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+         [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretLeft animated:YES];
+      }
+   }
 }
 
-
-- (IBAction)addRowToSection:(id)sender {
-   NSIndexPath *indexPath = [self getButtonIndexPath:sender];
+- (void)inserRowsWithIndexPath:(NSIndexPath *)indexPath {
+   NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+   id object = [[sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row - 1];
+   if ([object isKindOfClass:[Task class]]) {
+      [((Task*)object).subTasks eachWithIndex:^(Subtask *st, NSUInteger index) {
+         NSUInteger arrayIndex =  (indexPath.row-1) + 1;
+         [[sections objectAtIndex:indexPath.section] insertObject:st atIndex:arrayIndex];
+         
+         NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:(indexPath.row + index + 1)
+                                                        inSection:indexPath.section];
+         [indexPaths addObject:newIndexPath];
+      }];
+   }
    [_tableView beginUpdates];
-   [newRowForSection replaceObjectAtIndex:indexPath.section withObject:[NSNumber numberWithBool:YES]];
-   [_tableView deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationAutomatic];
-   [_tableView insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:indexPath.row inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationAutomatic];
+   [_tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationRight];
+   //   [_tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
    [_tableView endUpdates];
-   [_tableView reloadData];
 }
 
--(NSIndexPath *) getButtonIndexPath:(UIButton *) button
+- (void)removeRowsWithIndexPath:(NSIndexPath *)indexPath {
+   NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+   id object = [[sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row - 1];
+   if ([object isKindOfClass:[Task class]]) {
+      [((Task*)object).subTasks eachWithIndex:^(Subtask *st, NSUInteger index) {
+         NSUInteger arrayIndex =  (indexPath.row-1) + 1;
+         [[sections objectAtIndex:indexPath.section] removeObjectAtIndex:arrayIndex];
+         
+         NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:(indexPath.row + index + 1)
+                                                        inSection:indexPath.section];
+         [indexPaths addObject:newIndexPath];
+      }];
+   }
+   [_tableView beginUpdates];
+   [_tableView deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationTop];
+   [_tableView endUpdates];
+}
+
+- (BOOL)isAlreadyShowingContent:(NSIndexPath *)indexPath {
+   if ([[sections objectAtIndex:indexPath.section] count] > 1) {
+      if ([[sections objectAtIndex:indexPath.section] count] - 1 >= (indexPath.row-1) + 1) {
+         id object = [[sections objectAtIndex:indexPath.section] objectAtIndex:(indexPath.row-1) + 1];
+         return [object isKindOfClass:[Subtask class]];
+      }
+   }
+   return NO;
+}
+
+#pragma mark - IBActions
+- (IBAction)addRowToSection:(id)sender {
+   [self performSegueWithIdentifier:@"goToNewActivity" sender:self];
+}
+
+- (IBAction)addComment:(id)sender {
+   REComposeViewController *composeViewController = [[REComposeViewController alloc] init];
+   composeViewController.title = @"New Comment";
+   composeViewController.hasAttachment = YES;
+   composeViewController.placeholderText = @"What do you want to share?";
+   [composeViewController presentFromRootViewController];
+   
+   composeViewController.completionHandler = ^(REComposeViewController *composeViewController, REComposeResult result) {
+      [composeViewController dismissViewControllerAnimated:YES completion:nil];
+      
+      if (result == REComposeResultCancelled) {
+         NSLog(@"Cancelled");
+      }
+      
+      if (result == REComposeResultPosted) {
+         NSLog(@"Text: %@", composeViewController.text);
+      }
+   };
+}
+
+- (NSIndexPath *) getButtonIndexPath:(UIButton *) button
 {
    CGRect buttonFrame = [button convertRect:button.bounds toView:_tableView];
    return [_tableView indexPathForRowAtPoint:buttonFrame.origin];
 }
+
+#pragma mark - IOS Slide Menu Delegate
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
+   return (_outsideUser == nil);
+}
+
 @end

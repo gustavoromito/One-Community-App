@@ -1,0 +1,6 @@
+framework module REComposeViewController {
+  umbrella header "REComposeViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_HG_Network {
+  umbrella header "Pods-HG Network-umbrella.h"
+
+  export *
+  module * { export * }
+}
