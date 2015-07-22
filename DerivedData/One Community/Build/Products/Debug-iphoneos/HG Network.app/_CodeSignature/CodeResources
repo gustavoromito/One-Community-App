@@ -43,7 +43,7 @@
 		</dict>
 		<key>Frameworks/AFNetworking.framework/AFNetworking</key>
 		<data>
-		beYOT2vb2c7ZZl82DRNmqnBmjQw=
+		in9qM4FZdYGjzgNjyfMnQrlrQVo=
 		</data>
 		<key>Frameworks/AFNetworking.framework/Info.plist</key>
 		<data>
@@ -55,7 +55,7 @@
 		</data>
 		<key>Frameworks/ALThreeCircleSpinner.framework/ALThreeCircleSpinner</key>
 		<data>
-		Qy5p9S72IPelopVZcDNz5TmmReA=
+		Qant9LQPWM60h8csTyVkN10PIBE=
 		</data>
 		<key>Frameworks/ALThreeCircleSpinner.framework/Info.plist</key>
 		<data>
@@ -67,7 +67,7 @@
 		</data>
 		<key>Frameworks/ASProgressPopUpView.framework/ASProgressPopUpView</key>
 		<data>
-		rThSG0wyqi3hjexQ/G0n2d+xJFo=
+		lvrL52z89HbCOg9kdLbVL1pSgbM=
 		</data>
 		<key>Frameworks/ASProgressPopUpView.framework/Info.plist</key>
 		<data>
@@ -79,7 +79,7 @@
 		</data>
 		<key>Frameworks/ActionSheetPicker.framework/ActionSheetPicker</key>
 		<data>
-		YzH7suL7aAJAmnz7R3yZv/CZ0bc=
+		PmwKqEVi5Vf9Ok4e3mobVNGlIj8=
 		</data>
 		<key>Frameworks/ActionSheetPicker.framework/Info.plist</key>
 		<data>
@@ -91,7 +91,7 @@
 		</data>
 		<key>Frameworks/BlockRSSParser.framework/BlockRSSParser</key>
 		<data>
-		j0lrd39L755v+g2PUR+4Y1NE5uY=
+		lNDlwk70p1w4PwO4tKseynu4WMk=
 		</data>
 		<key>Frameworks/BlockRSSParser.framework/Info.plist</key>
 		<data>
@@ -103,7 +103,7 @@
 		</data>
 		<key>Frameworks/CocoaSecurity.framework/CocoaSecurity</key>
 		<data>
-		+MoI1Gn7ijiq2366iQoN+6wholU=
+		P2itBLXGabK+00cH3qFWG+7cThI=
 		</data>
 		<key>Frameworks/CocoaSecurity.framework/Info.plist</key>
 		<data>
@@ -115,7 +115,7 @@
 		</data>
 		<key>Frameworks/FRDLivelyButton.framework/FRDLivelyButton</key>
 		<data>
-		nvEwaV7CjTVMNkiipqD7hmKXizk=
+		WyQ+PlVhfcPUmnj42C0OA5t/vEU=
 		</data>
 		<key>Frameworks/FRDLivelyButton.framework/Info.plist</key>
 		<data>
@@ -127,7 +127,7 @@
 		</data>
 		<key>Frameworks/FXBlurView.framework/FXBlurView</key>
 		<data>
-		f6Ga7KkVX5EvJgOswo0m4eOwR9A=
+		gBjh49f+W36j5HgrA8xu0dDd2zo=
 		</data>
 		<key>Frameworks/FXBlurView.framework/Info.plist</key>
 		<data>
@@ -139,7 +139,7 @@
 		</data>
 		<key>Frameworks/FlatUIKit.framework/FlatUIKit</key>
 		<data>
-		0yP5Qq6S3GvVMSD5JYwfEUcaTM0=
+		gR+J33U5UaQcKiRYB5KU5bY1T6E=
 		</data>
 		<key>Frameworks/FlatUIKit.framework/Info.plist</key>
 		<data>
@@ -171,7 +171,7 @@
 		</data>
 		<key>Frameworks/HexColors.framework/HexColors</key>
 		<data>
-		K5DateWOJNFkB3zKCv0tYZKii+k=
+		F7wH8cFguuptA237tjxlEZhiqD0=
 		</data>
 		<key>Frameworks/HexColors.framework/Info.plist</key>
 		<data>
@@ -187,7 +187,7 @@
 		</data>
 		<key>Frameworks/MBProgressHUD.framework/MBProgressHUD</key>
 		<data>
-		Srepp3m6JcNaFoOigLvRClDcolY=
+		fHVHVgL2Jfe5iY8CgYOGI3gOXps=
 		</data>
 		<key>Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -199,7 +199,7 @@
 		</data>
 		<key>Frameworks/MGSwipeTableCell.framework/MGSwipeTableCell</key>
 		<data>
-		/ExD9mL0Gzkl9e0/Ketf4cK28IM=
+		gd731W3h+L2SF3xiX03Mr6Sn55s=
 		</data>
 		<key>Frameworks/MGSwipeTableCell.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -211,11 +211,23 @@
 		</data>
 		<key>Frameworks/NSUserDefaults_AESEncryptor.framework/NSUserDefaults_AESEncryptor</key>
 		<data>
-		oUNyw9/uprJm5Nt2s3AA9Wf2dk0=
+		k26WiOqjS3fsjarQobPykA+bFqc=
 		</data>
 		<key>Frameworks/NSUserDefaults_AESEncryptor.framework/_CodeSignature/CodeResources</key>
 		<data>
 		Jsww5KyLGZ7OU4y4233k60zVKO4=
+		</data>
+		<key>Frameworks/OHActionSheet.framework/Info.plist</key>
+		<data>
+		XZaTuBWsSoF5N5SZEpzZCa1hy5E=
+		</data>
+		<key>Frameworks/OHActionSheet.framework/OHActionSheet</key>
+		<data>
+		JIYSGexz3pA2aS3iWKIuSRT+HMo=
+		</data>
+		<key>Frameworks/OHActionSheet.framework/_CodeSignature/CodeResources</key>
+		<data>
+		6RE+Sec6AETg6VT2/yuvgvkgCDw=
 		</data>
 		<key>Frameworks/ObjectiveSugar.framework/Info.plist</key>
 		<data>
@@ -223,7 +235,7 @@
 		</data>
 		<key>Frameworks/ObjectiveSugar.framework/ObjectiveSugar</key>
 		<data>
-		g99gMw97au9GMN3dXY2D4W6H1es=
+		wxCGu1i9nibuLLJ4Tfz3m+hjQ2U=
 		</data>
 		<key>Frameworks/ObjectiveSugar.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -235,7 +247,7 @@
 		</data>
 		<key>Frameworks/ParallaxBlur.framework/ParallaxBlur</key>
 		<data>
-		fuL7UpMmlmbQMWLW3QaS1Fk6pMo=
+		KNsn4Ny5NeOrTrZFlIHiJcJEJCg=
 		</data>
 		<key>Frameworks/ParallaxBlur.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -247,7 +259,7 @@
 		</data>
 		<key>Frameworks/QRCodeReaderViewController.framework/QRCodeReaderViewController</key>
 		<data>
-		mXiAR2phqXA8uFC865jP2sV7ZME=
+		pizlytvGx8bszhP2YzPtl+lPsVQ=
 		</data>
 		<key>Frameworks/QRCodeReaderViewController.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -259,7 +271,7 @@
 		</data>
 		<key>Frameworks/REComposeViewController.framework/REComposeViewController</key>
 		<data>
-		h0E5Vr45s95GN4zto+e7FmtsBy4=
+		zNR+Ch+u6eqHM0KgM7NuTsQUoXA=
 		</data>
 		<key>Frameworks/REComposeViewController.framework/REComposeViewController.bundle/AttachmentFrame.png</key>
 		<data>
@@ -295,7 +307,7 @@
 		</data>
 		<key>Frameworks/RMMapper.framework/RMMapper</key>
 		<data>
-		dz1BgdidFpsQKKj0OdE8/f3gDUs=
+		KC7vp4ESu+VL4jhAwDENMRGWfFc=
 		</data>
 		<key>Frameworks/RMMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -307,7 +319,7 @@
 		</data>
 		<key>Frameworks/SKSplashView.framework/SKSplashView</key>
 		<data>
-		1tehvhFZ/HJDxV/MPEx175Da5vw=
+		l9Xt63vDgDvqhBqlJ1xdalFXF8c=
 		</data>
 		<key>Frameworks/SKSplashView.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -319,7 +331,7 @@
 		</data>
 		<key>Frameworks/TPKeyboardAvoiding.framework/TPKeyboardAvoiding</key>
 		<data>
-		cSk+CvZ5UP3qmorxuy56UFyLXQs=
+		6XwJEFUD9NHkuj3Sz0AOD+cpMgs=
 		</data>
 		<key>Frameworks/TPKeyboardAvoiding.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -331,7 +343,7 @@
 		</data>
 		<key>Frameworks/TextFieldEffects.framework/TextFieldEffects</key>
 		<data>
-		jSulGVZYnq6TkQT9lqL1G9JF3Ao=
+		YrYlmDbEE3Ino7Uno35qMFSdoys=
 		</data>
 		<key>Frameworks/TextFieldEffects.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -343,7 +355,7 @@
 		</data>
 		<key>Frameworks/UITableView_FDTemplateLayoutCell.framework/UITableView_FDTemplateLayoutCell</key>
 		<data>
-		zCqGLrw239+/bE1gMGdWM8bHOko=
+		zTalzu4R/SEYtBatXA0uk8P24CM=
 		</data>
 		<key>Frameworks/UITableView_FDTemplateLayoutCell.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -355,7 +367,7 @@
 		</data>
 		<key>Frameworks/YLProgressBar.framework/YLProgressBar</key>
 		<data>
-		0bNedG40UfPbbYHEADtJjE3pXew=
+		Hvn5hS7UkTDh/qODJXv6GDcapRw=
 		</data>
 		<key>Frameworks/YLProgressBar.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -367,7 +379,7 @@
 		</data>
 		<key>Frameworks/ZFRippleButton.framework/ZFRippleButton</key>
 		<data>
-		b4fT9eFRNW3ayfdobwYCISlSJWE=
+		GcGxEd2MWFmpZ9gSpGNnaIbZRVw=
 		</data>
 		<key>Frameworks/ZFRippleButton.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -383,7 +395,7 @@
 		</data>
 		<key>Frameworks/iOS_Slide_Menu.framework/iOS_Slide_Menu</key>
 		<data>
-		cRy37+18ylQZ9kN1NH/qaOsg4hk=
+		y2L4+xLg7SkLc6kqAkQ4knhoXq0=
 		</data>
 		<key>Frameworks/iOS_Slide_Menu.framework/menu-button.png</key>
 		<data>
@@ -395,39 +407,39 @@
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		DET//8FDw+Q6l078sJKRZJTbLtU=
+		J0CITlAS0tnxnfRl2qDFf0A+Lf8=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		e3k5qwrOktVWsKhftORG+JOdUmU=
+		W9uK5a/SiM13eUNDz+Fx60batCM=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		fVPXROSakTjHUi39hy8JStd7Gd8=
+		SMbaCKP2PmzPEGxea0GobJOM0Is=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		C52/qjXwOAZVFJJ/Dew+nbbVCs0=
+		FToba0upCxF/HWGdFB6FswPsx+g=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		dgvEZMyzX/Xv+ABek/K6CojVCtM=
+		d9MqYBNVTNNJXzf18cjKiakcLBk=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		9/KuielZztCE+8Qw1tZKsnMVBds=
+		PyiTyOe3P6D+Pr6+1tJUSKN2YGI=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		ozfIKjAFHCCIa+m9sHHOPJY/rOA=
+		5aGyzMBb3x+dAFZc0qccNpTt7b8=
 		</data>
 		<key>Frameworks/libswiftSecurity.dylib</key>
 		<data>
-		mLQMVCyfFB44rulep7VtF8C4cO8=
+		Ge7CsunMMHA72zolIRIP/Olr08c=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		a+6o+YCni+G2i1i4o1Z6AsEt8Jk=
+		l4toA1V9ALBdGydsDxxTTy12kqM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -439,31 +451,39 @@
 		</data>
 		<key>admin.storyboardc/3fO-LO-ibq-view-YhQ-Ca-RoT.nib</key>
 		<data>
-		IL5GKe29tAH//3Xu6Am3pF1/cFs=
+		9ijYUBA5uEWnRZIWCeasmQqmZD8=
 		</data>
 		<key>admin.storyboardc/Info.plist</key>
 		<data>
-		ZcXJWclxi8p9585yhtS00myXp9k=
+		LAUNtnhchlu7wlRSHEwVUrw7oLs=
 		</data>
 		<key>admin.storyboardc/UIViewController-VsM-4y-eng.nib</key>
 		<data>
-		+0P9rvldR/Mx2S3TboZzJ6lgi0I=
+		lfxhFnj9oEO/vztGj1C7P0TQqRA=
+		</data>
+		<key>admin.storyboardc/UIViewController-qm1-k5-Jvl.nib</key>
+		<data>
+		a1kCSEsVqnU8cliZ9khEA66tCOY=
 		</data>
 		<key>admin.storyboardc/VsM-4y-eng-view-raI-gu-m24.nib</key>
 		<data>
-		fhFTNrRobNbjek7mMRHAbpElC/k=
+		ty1F/ObuA2n/fdnNoZSGUK5WfIk=
 		</data>
 		<key>admin.storyboardc/adminDashboards.nib</key>
 		<data>
-		s91ijy2kiLR2MaCDoeU7xcuefaA=
+		+R9mtveHjQEC/NArP9YgiU03AuU=
 		</data>
 		<key>admin.storyboardc/peopleViewController.nib</key>
 		<data>
-		eBPOEkezoyDZBORD+kMSI2jCNrs=
+		LsgnXPQrWy9eNYjqQCxTT8+dqRA=
+		</data>
+		<key>admin.storyboardc/qm1-k5-Jvl-view-vrZ-lJ-NVL.nib</key>
+		<data>
+		y/82rA5xaqcl5fqLGu36US0oN7M=
 		</data>
 		<key>admin.storyboardc/yJd-qg-COR-view-3Qm-do-A7a.nib</key>
 		<data>
-		VLn62aARsgITbKbGB4pCWbKKe/U=
+		qOJHssbScgMN87ByA4k98E5T/7Y=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -471,27 +491,27 @@
 		</data>
 		<key>informative.storyboardc/FVS-hb-SJZ-view-5KE-e9-ksW.nib</key>
 		<data>
-		lnVVN0zCHeo7RUM7ZvzWnLR9g8U=
+		ExBMdfuipKJ0VMGVJBcCI8C6MZc=
 		</data>
 		<key>informative.storyboardc/Info.plist</key>
 		<data>
-		QeZEnN1Mg5dl4VPxdK+q9XFz+a8=
+		dB4+fm35N77kKb/dKv1ns/8ZnOM=
 		</data>
 		<key>informative.storyboardc/UIViewController-FVS-hb-SJZ.nib</key>
 		<data>
-		dxBj5Ry9fdn1AAA3PWwoc2BMHsY=
+		gvD5t8H9YABCysVWsrdjgt369zE=
 		</data>
 		<key>informative.storyboardc/UIViewController-lGk-C0-PBc.nib</key>
 		<data>
-		U7egq2MYdYrQBqzKcN1tLKTobXs=
+		IfWkg/iPFxhGqJK0j5oEvszIWUA=
 		</data>
 		<key>informative.storyboardc/lGk-C0-PBc-view-5v4-l2-ZGI.nib</key>
 		<data>
-		WjyUrGx67LMsD7ULMXjHbBGhi4c=
+		GXApUS0/nQ0uNq3GWLzYUTe6EWc=
 		</data>
 		<key>loading.storyboardc/007-bJ-bfz-view-j6A-wj-Ph2.nib</key>
 		<data>
-		emwhUYAJJ6arXrrjnXtE64/mJk8=
+		7g8Y95WHq+1tUehg/GKhgK9pvG4=
 		</data>
 		<key>loading.storyboardc/Info.plist</key>
 		<data>
@@ -499,7 +519,7 @@
 		</data>
 		<key>loading.storyboardc/UIViewController-7Mb-SM-F8D.nib</key>
 		<data>
-		yGvchUNmYreX4djaPYhdW+b6tE0=
+		LikufY89UWeR3BRPOt47sd5knuM=
 		</data>
 		<key>login.storyboardc/Info.plist</key>
 		<data>
@@ -515,15 +535,15 @@
 		</data>
 		<key>main.storyboardc/4f4-ef-ad2-view-sdW-19-nvP.nib</key>
 		<data>
-		DF2/MYKULzCR045wVmNsxdcqNlo=
+		H+fgQeb6j+4igVD+gppdO/iTbto=
 		</data>
 		<key>main.storyboardc/8rJ-Kc-sve-view-QS5-Rx-YEW.nib</key>
 		<data>
-		VNaFFyS/l6r0d9yrv+kkl2OAFMo=
+		yV77xovxXurXqL+hyDmR8laiJfs=
 		</data>
 		<key>main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<data>
-		TfyXc0Spef7qepBPcWai/ffcDkc=
+		hSZCCHM8hbYkvHFG1f7er1HXYCY=
 		</data>
 		<key>main.storyboardc/Info.plist</key>
 		<data>
@@ -531,23 +551,23 @@
 		</data>
 		<key>main.storyboardc/R3g-HE-t6n-view-z7d-k6-0dA.nib</key>
 		<data>
-		7ENpyYmSdUZ7yqZrFm1MrpPQH0A=
+		8cjGko/jyiIUcEg9KCz9hCeeLhE=
 		</data>
 		<key>main.storyboardc/UIViewController-4f4-ef-ad2.nib</key>
 		<data>
-		+qjStNp1ISE+fi4j0OAvvyq3zJ4=
+		HWF4PyYvmqx+rSS4dPbulo6Qpr8=
 		</data>
 		<key>main.storyboardc/profileViewController.nib</key>
 		<data>
-		wHa4/vI6ADKYH0BqnD2OXv4SKKM=
+		/QqLj8k/lElyb9CLUodOXce+YiA=
 		</data>
 		<key>main.storyboardc/programsViewController.nib</key>
 		<data>
-		z8NL63ZOVNIMu2u/1nwGXML9OFU=
+		qpwsaqWbSWQiTXOFzxgDa4GDSw0=
 		</data>
 		<key>main.storyboardc/scanViewController.nib</key>
 		<data>
-		x8+r/Ltwmxy/yD8XUpfApJBEbZQ=
+		/HqDaVEUy/zX4pKPh/sjc9Jk+ks=
 		</data>
 		<key>sideMenu.storyboardc/5Zw-N5-mux-view-iWr-Nn-4Lx.nib</key>
 		<data>
@@ -603,7 +623,7 @@
 		</dict>
 		<key>Frameworks/AFNetworking.framework/AFNetworking</key>
 		<data>
-		beYOT2vb2c7ZZl82DRNmqnBmjQw=
+		in9qM4FZdYGjzgNjyfMnQrlrQVo=
 		</data>
 		<key>Frameworks/AFNetworking.framework/Info.plist</key>
 		<data>
@@ -615,7 +635,7 @@
 		</data>
 		<key>Frameworks/ALThreeCircleSpinner.framework/ALThreeCircleSpinner</key>
 		<data>
-		Qy5p9S72IPelopVZcDNz5TmmReA=
+		Qant9LQPWM60h8csTyVkN10PIBE=
 		</data>
 		<key>Frameworks/ALThreeCircleSpinner.framework/Info.plist</key>
 		<data>
@@ -627,7 +647,7 @@
 		</data>
 		<key>Frameworks/ASProgressPopUpView.framework/ASProgressPopUpView</key>
 		<data>
-		rThSG0wyqi3hjexQ/G0n2d+xJFo=
+		lvrL52z89HbCOg9kdLbVL1pSgbM=
 		</data>
 		<key>Frameworks/ASProgressPopUpView.framework/Info.plist</key>
 		<data>
@@ -639,7 +659,7 @@
 		</data>
 		<key>Frameworks/ActionSheetPicker.framework/ActionSheetPicker</key>
 		<data>
-		YzH7suL7aAJAmnz7R3yZv/CZ0bc=
+		PmwKqEVi5Vf9Ok4e3mobVNGlIj8=
 		</data>
 		<key>Frameworks/ActionSheetPicker.framework/Info.plist</key>
 		<data>
@@ -651,7 +671,7 @@
 		</data>
 		<key>Frameworks/BlockRSSParser.framework/BlockRSSParser</key>
 		<data>
-		j0lrd39L755v+g2PUR+4Y1NE5uY=
+		lNDlwk70p1w4PwO4tKseynu4WMk=
 		</data>
 		<key>Frameworks/BlockRSSParser.framework/Info.plist</key>
 		<data>
@@ -663,7 +683,7 @@
 		</data>
 		<key>Frameworks/CocoaSecurity.framework/CocoaSecurity</key>
 		<data>
-		+MoI1Gn7ijiq2366iQoN+6wholU=
+		P2itBLXGabK+00cH3qFWG+7cThI=
 		</data>
 		<key>Frameworks/CocoaSecurity.framework/Info.plist</key>
 		<data>
@@ -675,7 +695,7 @@
 		</data>
 		<key>Frameworks/FRDLivelyButton.framework/FRDLivelyButton</key>
 		<data>
-		nvEwaV7CjTVMNkiipqD7hmKXizk=
+		WyQ+PlVhfcPUmnj42C0OA5t/vEU=
 		</data>
 		<key>Frameworks/FRDLivelyButton.framework/Info.plist</key>
 		<data>
@@ -687,7 +707,7 @@
 		</data>
 		<key>Frameworks/FXBlurView.framework/FXBlurView</key>
 		<data>
-		f6Ga7KkVX5EvJgOswo0m4eOwR9A=
+		gBjh49f+W36j5HgrA8xu0dDd2zo=
 		</data>
 		<key>Frameworks/FXBlurView.framework/Info.plist</key>
 		<data>
@@ -699,7 +719,7 @@
 		</data>
 		<key>Frameworks/FlatUIKit.framework/FlatUIKit</key>
 		<data>
-		0yP5Qq6S3GvVMSD5JYwfEUcaTM0=
+		gR+J33U5UaQcKiRYB5KU5bY1T6E=
 		</data>
 		<key>Frameworks/FlatUIKit.framework/Info.plist</key>
 		<data>
@@ -731,7 +751,7 @@
 		</data>
 		<key>Frameworks/HexColors.framework/HexColors</key>
 		<data>
-		K5DateWOJNFkB3zKCv0tYZKii+k=
+		F7wH8cFguuptA237tjxlEZhiqD0=
 		</data>
 		<key>Frameworks/HexColors.framework/Info.plist</key>
 		<data>
@@ -747,7 +767,7 @@
 		</data>
 		<key>Frameworks/MBProgressHUD.framework/MBProgressHUD</key>
 		<data>
-		Srepp3m6JcNaFoOigLvRClDcolY=
+		fHVHVgL2Jfe5iY8CgYOGI3gOXps=
 		</data>
 		<key>Frameworks/MBProgressHUD.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -759,7 +779,7 @@
 		</data>
 		<key>Frameworks/MGSwipeTableCell.framework/MGSwipeTableCell</key>
 		<data>
-		/ExD9mL0Gzkl9e0/Ketf4cK28IM=
+		gd731W3h+L2SF3xiX03Mr6Sn55s=
 		</data>
 		<key>Frameworks/MGSwipeTableCell.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -771,11 +791,23 @@
 		</data>
 		<key>Frameworks/NSUserDefaults_AESEncryptor.framework/NSUserDefaults_AESEncryptor</key>
 		<data>
-		oUNyw9/uprJm5Nt2s3AA9Wf2dk0=
+		k26WiOqjS3fsjarQobPykA+bFqc=
 		</data>
 		<key>Frameworks/NSUserDefaults_AESEncryptor.framework/_CodeSignature/CodeResources</key>
 		<data>
 		Jsww5KyLGZ7OU4y4233k60zVKO4=
+		</data>
+		<key>Frameworks/OHActionSheet.framework/Info.plist</key>
+		<data>
+		XZaTuBWsSoF5N5SZEpzZCa1hy5E=
+		</data>
+		<key>Frameworks/OHActionSheet.framework/OHActionSheet</key>
+		<data>
+		JIYSGexz3pA2aS3iWKIuSRT+HMo=
+		</data>
+		<key>Frameworks/OHActionSheet.framework/_CodeSignature/CodeResources</key>
+		<data>
+		6RE+Sec6AETg6VT2/yuvgvkgCDw=
 		</data>
 		<key>Frameworks/ObjectiveSugar.framework/Info.plist</key>
 		<data>
@@ -783,7 +815,7 @@
 		</data>
 		<key>Frameworks/ObjectiveSugar.framework/ObjectiveSugar</key>
 		<data>
-		g99gMw97au9GMN3dXY2D4W6H1es=
+		wxCGu1i9nibuLLJ4Tfz3m+hjQ2U=
 		</data>
 		<key>Frameworks/ObjectiveSugar.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -795,7 +827,7 @@
 		</data>
 		<key>Frameworks/ParallaxBlur.framework/ParallaxBlur</key>
 		<data>
-		fuL7UpMmlmbQMWLW3QaS1Fk6pMo=
+		KNsn4Ny5NeOrTrZFlIHiJcJEJCg=
 		</data>
 		<key>Frameworks/ParallaxBlur.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -807,7 +839,7 @@
 		</data>
 		<key>Frameworks/QRCodeReaderViewController.framework/QRCodeReaderViewController</key>
 		<data>
-		mXiAR2phqXA8uFC865jP2sV7ZME=
+		pizlytvGx8bszhP2YzPtl+lPsVQ=
 		</data>
 		<key>Frameworks/QRCodeReaderViewController.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -819,7 +851,7 @@
 		</data>
 		<key>Frameworks/REComposeViewController.framework/REComposeViewController</key>
 		<data>
-		h0E5Vr45s95GN4zto+e7FmtsBy4=
+		zNR+Ch+u6eqHM0KgM7NuTsQUoXA=
 		</data>
 		<key>Frameworks/REComposeViewController.framework/REComposeViewController.bundle/AttachmentFrame.png</key>
 		<data>
@@ -855,7 +887,7 @@
 		</data>
 		<key>Frameworks/RMMapper.framework/RMMapper</key>
 		<data>
-		dz1BgdidFpsQKKj0OdE8/f3gDUs=
+		KC7vp4ESu+VL4jhAwDENMRGWfFc=
 		</data>
 		<key>Frameworks/RMMapper.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -867,7 +899,7 @@
 		</data>
 		<key>Frameworks/SKSplashView.framework/SKSplashView</key>
 		<data>
-		1tehvhFZ/HJDxV/MPEx175Da5vw=
+		l9Xt63vDgDvqhBqlJ1xdalFXF8c=
 		</data>
 		<key>Frameworks/SKSplashView.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -879,7 +911,7 @@
 		</data>
 		<key>Frameworks/TPKeyboardAvoiding.framework/TPKeyboardAvoiding</key>
 		<data>
-		cSk+CvZ5UP3qmorxuy56UFyLXQs=
+		6XwJEFUD9NHkuj3Sz0AOD+cpMgs=
 		</data>
 		<key>Frameworks/TPKeyboardAvoiding.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -891,7 +923,7 @@
 		</data>
 		<key>Frameworks/TextFieldEffects.framework/TextFieldEffects</key>
 		<data>
-		jSulGVZYnq6TkQT9lqL1G9JF3Ao=
+		YrYlmDbEE3Ino7Uno35qMFSdoys=
 		</data>
 		<key>Frameworks/TextFieldEffects.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -903,7 +935,7 @@
 		</data>
 		<key>Frameworks/UITableView_FDTemplateLayoutCell.framework/UITableView_FDTemplateLayoutCell</key>
 		<data>
-		zCqGLrw239+/bE1gMGdWM8bHOko=
+		zTalzu4R/SEYtBatXA0uk8P24CM=
 		</data>
 		<key>Frameworks/UITableView_FDTemplateLayoutCell.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -915,7 +947,7 @@
 		</data>
 		<key>Frameworks/YLProgressBar.framework/YLProgressBar</key>
 		<data>
-		0bNedG40UfPbbYHEADtJjE3pXew=
+		Hvn5hS7UkTDh/qODJXv6GDcapRw=
 		</data>
 		<key>Frameworks/YLProgressBar.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -927,7 +959,7 @@
 		</data>
 		<key>Frameworks/ZFRippleButton.framework/ZFRippleButton</key>
 		<data>
-		b4fT9eFRNW3ayfdobwYCISlSJWE=
+		GcGxEd2MWFmpZ9gSpGNnaIbZRVw=
 		</data>
 		<key>Frameworks/ZFRippleButton.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -943,7 +975,7 @@
 		</data>
 		<key>Frameworks/iOS_Slide_Menu.framework/iOS_Slide_Menu</key>
 		<data>
-		cRy37+18ylQZ9kN1NH/qaOsg4hk=
+		y2L4+xLg7SkLc6kqAkQ4knhoXq0=
 		</data>
 		<key>Frameworks/iOS_Slide_Menu.framework/menu-button.png</key>
 		<data>
@@ -955,67 +987,75 @@
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		DET//8FDw+Q6l078sJKRZJTbLtU=
+		J0CITlAS0tnxnfRl2qDFf0A+Lf8=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		e3k5qwrOktVWsKhftORG+JOdUmU=
+		W9uK5a/SiM13eUNDz+Fx60batCM=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		fVPXROSakTjHUi39hy8JStd7Gd8=
+		SMbaCKP2PmzPEGxea0GobJOM0Is=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		C52/qjXwOAZVFJJ/Dew+nbbVCs0=
+		FToba0upCxF/HWGdFB6FswPsx+g=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		dgvEZMyzX/Xv+ABek/K6CojVCtM=
+		d9MqYBNVTNNJXzf18cjKiakcLBk=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		9/KuielZztCE+8Qw1tZKsnMVBds=
+		PyiTyOe3P6D+Pr6+1tJUSKN2YGI=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		ozfIKjAFHCCIa+m9sHHOPJY/rOA=
+		5aGyzMBb3x+dAFZc0qccNpTt7b8=
 		</data>
 		<key>Frameworks/libswiftSecurity.dylib</key>
 		<data>
-		mLQMVCyfFB44rulep7VtF8C4cO8=
+		Ge7CsunMMHA72zolIRIP/Olr08c=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		a+6o+YCni+G2i1i4o1Z6AsEt8Jk=
+		l4toA1V9ALBdGydsDxxTTy12kqM=
 		</data>
 		<key>admin.storyboardc/3fO-LO-ibq-view-YhQ-Ca-RoT.nib</key>
 		<data>
-		IL5GKe29tAH//3Xu6Am3pF1/cFs=
+		9ijYUBA5uEWnRZIWCeasmQqmZD8=
 		</data>
 		<key>admin.storyboardc/Info.plist</key>
 		<data>
-		ZcXJWclxi8p9585yhtS00myXp9k=
+		LAUNtnhchlu7wlRSHEwVUrw7oLs=
 		</data>
 		<key>admin.storyboardc/UIViewController-VsM-4y-eng.nib</key>
 		<data>
-		+0P9rvldR/Mx2S3TboZzJ6lgi0I=
+		lfxhFnj9oEO/vztGj1C7P0TQqRA=
+		</data>
+		<key>admin.storyboardc/UIViewController-qm1-k5-Jvl.nib</key>
+		<data>
+		a1kCSEsVqnU8cliZ9khEA66tCOY=
 		</data>
 		<key>admin.storyboardc/VsM-4y-eng-view-raI-gu-m24.nib</key>
 		<data>
-		fhFTNrRobNbjek7mMRHAbpElC/k=
+		ty1F/ObuA2n/fdnNoZSGUK5WfIk=
 		</data>
 		<key>admin.storyboardc/adminDashboards.nib</key>
 		<data>
-		s91ijy2kiLR2MaCDoeU7xcuefaA=
+		+R9mtveHjQEC/NArP9YgiU03AuU=
 		</data>
 		<key>admin.storyboardc/peopleViewController.nib</key>
 		<data>
-		eBPOEkezoyDZBORD+kMSI2jCNrs=
+		LsgnXPQrWy9eNYjqQCxTT8+dqRA=
+		</data>
+		<key>admin.storyboardc/qm1-k5-Jvl-view-vrZ-lJ-NVL.nib</key>
+		<data>
+		y/82rA5xaqcl5fqLGu36US0oN7M=
 		</data>
 		<key>admin.storyboardc/yJd-qg-COR-view-3Qm-do-A7a.nib</key>
 		<data>
-		VLn62aARsgITbKbGB4pCWbKKe/U=
+		qOJHssbScgMN87ByA4k98E5T/7Y=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -1023,27 +1063,27 @@
 		</data>
 		<key>informative.storyboardc/FVS-hb-SJZ-view-5KE-e9-ksW.nib</key>
 		<data>
-		lnVVN0zCHeo7RUM7ZvzWnLR9g8U=
+		ExBMdfuipKJ0VMGVJBcCI8C6MZc=
 		</data>
 		<key>informative.storyboardc/Info.plist</key>
 		<data>
-		QeZEnN1Mg5dl4VPxdK+q9XFz+a8=
+		dB4+fm35N77kKb/dKv1ns/8ZnOM=
 		</data>
 		<key>informative.storyboardc/UIViewController-FVS-hb-SJZ.nib</key>
 		<data>
-		dxBj5Ry9fdn1AAA3PWwoc2BMHsY=
+		gvD5t8H9YABCysVWsrdjgt369zE=
 		</data>
 		<key>informative.storyboardc/UIViewController-lGk-C0-PBc.nib</key>
 		<data>
-		U7egq2MYdYrQBqzKcN1tLKTobXs=
+		IfWkg/iPFxhGqJK0j5oEvszIWUA=
 		</data>
 		<key>informative.storyboardc/lGk-C0-PBc-view-5v4-l2-ZGI.nib</key>
 		<data>
-		WjyUrGx67LMsD7ULMXjHbBGhi4c=
+		GXApUS0/nQ0uNq3GWLzYUTe6EWc=
 		</data>
 		<key>loading.storyboardc/007-bJ-bfz-view-j6A-wj-Ph2.nib</key>
 		<data>
-		emwhUYAJJ6arXrrjnXtE64/mJk8=
+		7g8Y95WHq+1tUehg/GKhgK9pvG4=
 		</data>
 		<key>loading.storyboardc/Info.plist</key>
 		<data>
@@ -1051,7 +1091,7 @@
 		</data>
 		<key>loading.storyboardc/UIViewController-7Mb-SM-F8D.nib</key>
 		<data>
-		yGvchUNmYreX4djaPYhdW+b6tE0=
+		LikufY89UWeR3BRPOt47sd5knuM=
 		</data>
 		<key>login.storyboardc/Info.plist</key>
 		<data>
@@ -1067,15 +1107,15 @@
 		</data>
 		<key>main.storyboardc/4f4-ef-ad2-view-sdW-19-nvP.nib</key>
 		<data>
-		DF2/MYKULzCR045wVmNsxdcqNlo=
+		H+fgQeb6j+4igVD+gppdO/iTbto=
 		</data>
 		<key>main.storyboardc/8rJ-Kc-sve-view-QS5-Rx-YEW.nib</key>
 		<data>
-		VNaFFyS/l6r0d9yrv+kkl2OAFMo=
+		yV77xovxXurXqL+hyDmR8laiJfs=
 		</data>
 		<key>main.storyboardc/9pv-A4-QxB-view-tsR-hK-woN.nib</key>
 		<data>
-		TfyXc0Spef7qepBPcWai/ffcDkc=
+		hSZCCHM8hbYkvHFG1f7er1HXYCY=
 		</data>
 		<key>main.storyboardc/Info.plist</key>
 		<data>
@@ -1083,23 +1123,23 @@
 		</data>
 		<key>main.storyboardc/R3g-HE-t6n-view-z7d-k6-0dA.nib</key>
 		<data>
-		7ENpyYmSdUZ7yqZrFm1MrpPQH0A=
+		8cjGko/jyiIUcEg9KCz9hCeeLhE=
 		</data>
 		<key>main.storyboardc/UIViewController-4f4-ef-ad2.nib</key>
 		<data>
-		+qjStNp1ISE+fi4j0OAvvyq3zJ4=
+		HWF4PyYvmqx+rSS4dPbulo6Qpr8=
 		</data>
 		<key>main.storyboardc/profileViewController.nib</key>
 		<data>
-		wHa4/vI6ADKYH0BqnD2OXv4SKKM=
+		/QqLj8k/lElyb9CLUodOXce+YiA=
 		</data>
 		<key>main.storyboardc/programsViewController.nib</key>
 		<data>
-		z8NL63ZOVNIMu2u/1nwGXML9OFU=
+		qpwsaqWbSWQiTXOFzxgDa4GDSw0=
 		</data>
 		<key>main.storyboardc/scanViewController.nib</key>
 		<data>
-		x8+r/Ltwmxy/yD8XUpfApJBEbZQ=
+		/HqDaVEUy/zX4pKPh/sjc9Jk+ks=
 		</data>
 		<key>sideMenu.storyboardc/5Zw-N5-mux-view-iWr-Nn-4Lx.nib</key>
 		<data>

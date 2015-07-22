@@ -16,6 +16,7 @@
    self.progressBar.progressBarInset = 0.0f;
    self.progressBar.behavior = YLProgressBarBehaviorIndeterminate;
    self.progressBar.stripesOrientation = YLProgressBarStripesOrientationVertical;
+   [self.subText sizeToFit];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -26,6 +27,7 @@
 
 - (CGSize)sizeThatFits:(CGSize)size
 {
+   [super sizeThatFits:size];
    CGFloat totalHeight = 0;
    totalHeight += [self.subText sizeThatFits:size].height;
    totalHeight += [self.extraText sizeThatFits:size].height;

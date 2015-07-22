@@ -1,0 +1,10 @@
+framework module ZFRippleButton {
+  umbrella header "ZFRippleButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module ZFRippleButton.Swift {
+    header "ZFRippleButton-Swift.h"
+}

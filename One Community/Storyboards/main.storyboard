@@ -551,7 +551,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDQ-Mf-u2C" userLabel="Introduction View">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDQ-Mf-u2C" userLabel="Introduction View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="n3p-0E-Xnd"/>
@@ -578,7 +578,7 @@ A QR Code is a two-dimensional barcode that is readable by smartphones. It allow
                                     <constraint firstAttribute="height" constant="28" id="Boz-H3-tDk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -591,7 +591,7 @@ A QR Code is a two-dimensional barcode that is readable by smartphones. It allow
                                     </mask>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="No QRCode read already, try it by pressing the Scan Button below!" translatesAutoresizingMaskIntoConstraints="NO" id="V9g-6S-tXv" userLabel="Content View">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No QRCode read already, try it by pressing the Scan Button below!" translatesAutoresizingMaskIntoConstraints="NO" id="V9g-6S-tXv" userLabel="Content View">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -634,7 +634,7 @@ A QR Code is a two-dimensional barcode that is readable by smartphones. It allow
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="V9g-6S-tXv" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="Czx-fH-A09"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QDQ-Mf-u2C" secondAttribute="trailing" constant="6" id="GFS-0b-u7X"/>

@@ -1,0 +1,1 @@
+ const unsigned char YLProgressBarVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:YLProgressBar  PROJECT:Pods-1" "\n"; const double YLProgressBarVersionNumber __attribute__ ((used)) = (double)1.;

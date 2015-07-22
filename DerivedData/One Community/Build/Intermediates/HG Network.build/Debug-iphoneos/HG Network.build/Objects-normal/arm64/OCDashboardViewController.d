@@ -16,11 +16,9 @@ dependencies: \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/DerivedData/One\ Community/Build/Products/Debug-iphoneos/UITableView_FDTemplateLayoutCell.framework/Headers/UITableView+FDTemplateLayoutCell-umbrella.h \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/DerivedData/One\ Community/Build/Products/Debug-iphoneos/UITableView_FDTemplateLayoutCell.framework/Modules/module.modulemap \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/MGSwipeTableCell/MGSwipeButton.h \
-  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/Admin\ Controllers/OCNewActivityViewController.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/OHActionSheet/OHActionSheet.h \
+  /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/Admin\ Controllers/OCCommentsViewController.h \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/View\ Controllers/Reusable\ Controllers/OCBaseWithouMenuViewController.h \
-  /Users/gustavoromito/Desktop/One\ Community/One\ Community/DerivedData/One\ Community/Build/Products/Debug-iphoneos/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h \
-  /Users/gustavoromito/Desktop/One\ Community/One\ Community/DerivedData/One\ Community/Build/Products/Debug-iphoneos/TextFieldEffects.framework/Headers/TextFieldEffects-umbrella.h \
-  /Users/gustavoromito/Desktop/One\ Community/One\ Community/DerivedData/One\ Community/Build/Products/Debug-iphoneos/TextFieldEffects.framework/Modules/module.modulemap \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/One\ Community/Helpers/OCHTTPClient.h \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/AFNetworking/AFNetworking.h \
   /Users/gustavoromito/Desktop/One\ Community/One\ Community/Pods/Headers/Public/AFNetworking/AFURLRequestSerialization.h \

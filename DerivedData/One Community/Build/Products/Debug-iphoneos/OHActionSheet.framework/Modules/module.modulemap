@@ -1,0 +1,6 @@
+framework module OHActionSheet {
+  umbrella header "OHActionSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}

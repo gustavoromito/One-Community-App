@@ -1,0 +1,1 @@
+ const unsigned char ZFRippleButtonVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:ZFRippleButton  PROJECT:Pods-1" "\n"; const double ZFRippleButtonVersionNumber __attribute__ ((used)) = (double)1.;

@@ -45,6 +45,7 @@
 		A25821E31B1E70CF00A9168D /* loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25821E21B1E70CF00A9168D /* loading.storyboard */; };
 		A25821E81B1E715D00A9168D /* OCLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821E71B1E715D00A9168D /* OCLoadingViewController.m */; };
 		A25821EB1B1F98F400A9168D /* OCProgramDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */; };
+		A26561F21B5EE678008C6792 /* OCCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26561F11B5EE678008C6792 /* OCCommentsViewController.m */; };
 		A27A58FB1B3075E700D76D67 /* admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27A58FA1B3075E700D76D67 /* admin.storyboard */; };
 		A27A58FF1B30A1E600D76D67 /* OCDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */; };
 		A299DEF61B34C0A800F44FD4 /* OCPeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A299DEF51B34C0A800F44FD4 /* OCPeopleViewController.m */; };
@@ -140,6 +141,8 @@
 		A25821E71B1E715D00A9168D /* OCLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCLoadingViewController.m; path = "View Controllers/Loading Controllers/OCLoadingViewController.m"; sourceTree = "<group>"; };
 		A25821E91B1F98F400A9168D /* OCProgramDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCProgramDetailsViewController.h; path = "View Controllers/First Tab Controllers/OCProgramDetailsViewController.h"; sourceTree = "<group>"; };
 		A25821EA1B1F98F400A9168D /* OCProgramDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCProgramDetailsViewController.m; path = "View Controllers/First Tab Controllers/OCProgramDetailsViewController.m"; sourceTree = "<group>"; };
+		A26561F01B5EE678008C6792 /* OCCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCCommentsViewController.h; path = "View Controllers/Admin Controllers/OCCommentsViewController.h"; sourceTree = "<group>"; };
+		A26561F11B5EE678008C6792 /* OCCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCCommentsViewController.m; path = "View Controllers/Admin Controllers/OCCommentsViewController.m"; sourceTree = "<group>"; };
 		A27A58FA1B3075E700D76D67 /* admin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = admin.storyboard; path = Storyboards/admin.storyboard; sourceTree = "<group>"; };
 		A27A58FD1B30A1E600D76D67 /* OCDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCDashboardViewController.h; path = "View Controllers/Admin Controllers/OCDashboardViewController.h"; sourceTree = "<group>"; };
 		A27A58FE1B30A1E600D76D67 /* OCDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCDashboardViewController.m; path = "View Controllers/Admin Controllers/OCDashboardViewController.m"; sourceTree = "<group>"; };
@@ -464,6 +467,8 @@
 				A299DEF51B34C0A800F44FD4 /* OCPeopleViewController.m */,
 				A2E79EB61B538D1F0019D888 /* OCNewActivityViewController.h */,
 				A2E79EB71B538D1F0019D888 /* OCNewActivityViewController.m */,
+				A26561F01B5EE678008C6792 /* OCCommentsViewController.h */,
+				A26561F11B5EE678008C6792 /* OCCommentsViewController.m */,
 			);
 			name = "Admin Controllers";
 			sourceTree = "<group>";
@@ -720,6 +725,7 @@
 				A25821C91B1D0E3500A9168D /* qr_draw_png.mm in Sources */,
 				A2BB9BDB1B4B32C4003BF33F /* OCUrlHelper.m in Sources */,
 				A25821CA1B1D0E3500A9168D /* QR_Encode.mm in Sources */,
+				A26561F21B5EE678008C6792 /* OCCommentsViewController.m in Sources */,
 				A2BB9BEA1B4DF6DA003BF33F /* OCInputViewController.m in Sources */,
 				A258215C1B1CD87C00A9168D /* OCBaseViewController.m in Sources */,
 				A2B7D45A1B261EA2009DE415 /* OCInformativeViewController.m in Sources */,

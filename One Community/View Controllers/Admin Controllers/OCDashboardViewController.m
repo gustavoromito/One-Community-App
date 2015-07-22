@@ -11,7 +11,8 @@
 #import <HexColors/HexColors.h>
 #import <UITableView_FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
 #import <MGSwipeTableCell/MGSwipeButton.h>
-#import "OCNewActivityViewController.h"
+#import <OHActionSheet/OHActionSheet.h>
+#import "OCCommentsViewController.h"
 
 #import "OCHTTPClient.h"
 #import "Task.h"
@@ -63,12 +64,12 @@
 }
 
 - (void)fetchAPIData {
-   NSString *requestPath = @"users/workedHours?user_id=1";
+   NSString *requestPath = [NSString stringWithFormat:@"users/workedHours?user_id=%@", loadDataForUserID];
    MBProgressHUD *hud = [self showHUDwithTitle:@"Please, wait..." andDetail:@"loading data from API."];
    [self.view bringSubviewToFront:hud];
    OCHTTPClient *client = [OCHTTPClient privateClient];
    [client GET:requestPath
-    parameters:@{@"user_id": loadDataForUserID}
+    parameters:@{}
        success:^(AFHTTPRequestOperation *operation, id responseObject) {
           [hud hide:YES];
           if ([[responseObject valueForKey:@"success"] intValue] == 0) {
@@ -118,6 +119,7 @@
                                                        andAction:nil];
    NSInteger totalRows = [[sections objectAtIndex:indexPath.section] count] + 2;
    [cell setProgressBarColor:[self colorForHoursMade:10.5]];
+   [cell setHidden:NO];
    if (indexPath.row > 0 && indexPath.row < totalRows - 1) {
       NSArray *cells = [sections objectAtIndex:indexPath.section];
       id object = [cells objectAtIndex:indexPath.row - 1];
@@ -199,6 +201,7 @@
    }
    NSNumber *weekNumber = ((Week*)[weeks objectAtIndex:section]).weekNumber;
    cell.mainText.text = [NSString stringWithFormat:@"Week %@", weekNumber];
+
    return cell;
 }
 
@@ -246,16 +249,45 @@
    NSInteger totalRows = [[sections objectAtIndex:indexPath.section] count] + 2;
    [_tableView deselectRowAtIndexPath:indexPath animated:YES];
    if (indexPath.row != 0 && indexPath.row < totalRows - 1) {
-      if (![self isAlreadyShowingContent:indexPath]) {
-         [self inserRowsWithIndexPath:indexPath];
-         OCCustomTableViewCell *cell = (OCCustomTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
-         [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretDown animated:YES];
-      } else {
-         [self removeRowsWithIndexPath:indexPath];
-         OCCustomTableViewCell *cell = (OCCustomTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
-         [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretLeft animated:YES];
+      id object = [[sections objectAtIndex:indexPath.section] objectAtIndex:(indexPath.row-1)];
+      if ([object isKindOfClass:[Task class]]) {
+         if (![self isAlreadyShowingContent:indexPath]) {
+            [self inserRowsWithIndexPath:indexPath];
+            OCCustomTableViewCell *cell = (OCCustomTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+            [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretDown animated:YES];
+         } else {
+            [self removeRowsWithIndexPath:indexPath];
+            OCCustomTableViewCell *cell = (OCCustomTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+            [cell.disclosureButton setStyle:kFRDLivelyButtonStyleCaretLeft animated:YES];
+         }
+      } else if ([object isKindOfClass:[Subtask class]]) {
+         [self showActionSheetWithIndexPath:indexPath];
       }
    }
+}
+
+- (void)showActionSheetWithIndexPath:(NSIndexPath *)indexPath {
+   NSArray* options = [NSArray arrayWithObjects:@"Add Comment",@"View Comments", nil];
+   
+   [OHActionSheet showFromView:self.view
+                         title:nil
+             cancelButtonTitle:@"Cancel"
+        destructiveButtonTitle:nil
+             otherButtonTitles:options
+                    completion:^(OHActionSheet *sheet, NSInteger buttonIndex) {
+                       if (buttonIndex != sheet.cancelButtonIndex) {
+                          switch (buttonIndex) {
+                             case 0:
+                                [self addComment:indexPath];
+                                break;
+                             case 1:
+                                [self performSegueWithIdentifier:@"goToComments" sender:indexPath];
+                                break;
+                             default:
+                                break;
+                          }
+                       }
+                    }];
 }
 
 - (void)inserRowsWithIndexPath:(NSIndexPath *)indexPath {
@@ -273,7 +305,7 @@
    }
    [_tableView beginUpdates];
    [_tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationRight];
-   //   [_tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
+//   [_tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationLeft];
    [_tableView endUpdates];
 }
 
@@ -305,6 +337,15 @@
    return NO;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   if ([segue.identifier isEqualToString:@"goToComments"]) {
+      OCCommentsViewController *vc = [segue destinationViewController];
+      NSIndexPath *indexPath = sender;
+      Subtask *st = [[sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row - 1];
+      vc.outsideComments = st.comments;
+   }
+}
+
 #pragma mark - IBActions
 - (IBAction)addRowToSection:(id)sender {
    [self performSegueWithIdentifier:@"goToNewActivity" sender:self];
@@ -321,13 +362,50 @@
       [composeViewController dismissViewControllerAnimated:YES completion:nil];
       
       if (result == REComposeResultCancelled) {
-         NSLog(@"Cancelled");
       }
       
       if (result == REComposeResultPosted) {
-         NSLog(@"Text: %@", composeViewController.text);
+         [self postCommentWithString:composeViewController.text andIndexPath:sender];
       }
    };
+}
+
+- (void)postCommentWithString:(NSString*)comment andIndexPath:(NSIndexPath*)indexPath {
+   NSString *requestPath = @"comments/createComment";
+   MBProgressHUD *hud = [self showHUDwithTitle:@"Please, wait..." andDetail:@"loading data from API."];
+   [self.view bringSubviewToFront:hud];
+   Subtask *st = [[sections objectAtIndex:indexPath.section] objectAtIndex:indexPath.row - 1];
+   NSString *stringNumber = [NSString stringWithFormat:@"%@%lu", st.sub_task_id, (unsigned long)[st.comments count]];
+   NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+   f.numberStyle = NSNumberFormatterDecimalStyle;
+   NSNumber *comment_id = [f numberFromString:stringNumber];
+   
+   NSDictionary *params = @{@"sub_task_id" : st.sub_task_id,
+                            @"sender_id"   : [self getLoggedUser].user_id,
+                            @"description" : comment,
+                            @"comment_id"  : comment_id,
+                      @"reference_comment" : @0};
+   
+   OCHTTPClient *client = [OCHTTPClient privateClient];
+   [client POST:requestPath
+    parameters:params
+       success:^(AFHTTPRequestOperation *operation, id responseObject) {
+          [hud hide:YES];
+          if ([[responseObject valueForKey:@"success"] intValue] == 0) {
+             [self showAlertWithTitle:@"Alert:" andMessage:[responseObject valueForKey:@"message"]];
+          }else{
+             [self showAlertWithTitle:@"Success:" andMessage:[responseObject valueForKey:@"message"]];
+             NSMutableArray *arr = [st.comments mutableCopy];
+             NSMutableDictionary *commentCreated = [[responseObject objectForKey:@"comment"] mutableCopy];
+             [commentCreated setValue:[self getLoggedUser].name forKey:@"user_first_name"];
+             [commentCreated setValue:@"" forKey:@"user_last_name"];
+             [arr addObject:commentCreated];
+             st.comments = [NSArray arrayWithArray:[arr copy]];
+          }
+       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+          [hud hide:YES];
+          [self showAppropriateFailureMessageWithResponseObject:operation.responseObject];
+       }];
 }
 
 - (NSIndexPath *) getButtonIndexPath:(UIButton *) button
